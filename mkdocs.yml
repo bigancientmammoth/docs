@@ -1,0 +1,22 @@
+site_name: Marketaut
+site_url: https://web.marketaut.ru
+
+markdown_extensions:
+  # Obsidian и многие другие редакторы поддерживают «мягкие переносы» — одиночный перенос строки в исходнике превращается в <br>.
+  # Стандартный CommonMark (который использует MkDocs) так не делает: одиночный перенос строки игнорируется, нужно два подряд (пустая строка) для нового абзаца.
+  - nl2br
+  - mdx_truly_sane_lists
+  - toc:
+      toc_depth: 3
+nav:
+  - Помощь: "1-help_and_support/help.md"
+  - Быстрый старт: "2-quick_start_guides/quick_start.md"
+  - Начало работы: "3-start/register.md"
+  - Работа в системе:
+    - Аккаунты: "4-working_with_platform/01-accounts.md"
+    - Типы аккаунтов: "4-working_with_platform/02-account-types.md"
+    - Диаграммы: "4-working_with_platform/03-diagrams.md"
+  - Работа с ИИ:
+    - Подключение: "5-claude/01-claude-connect.md"
+    - Настройка: "5-claude/02-claude-work.md"
+
