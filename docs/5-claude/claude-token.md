@@ -35,7 +35,7 @@
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://web.marketaut.ru/ebus/ep/v1/mcp",
+        "https://marketaut.ru/ebus/ep/v1/mcp",
         "--header",
         "Authorization:ВАШ_КЛЮЧ"
       ]
