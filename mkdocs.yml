@@ -9,15 +9,14 @@ markdown_extensions:
   - toc:
       toc_depth: 3
 nav:
-  - Помощь: "1-help_and_support/help.md"
-  - Быстрый старт: "2-quick_start_guides/quick_start.md"
+  - Помощь: "1-help/help.md"
+  - Быстрый старт: "2-quick-start/quick_start.md"
   - Начало работы: "3-start/register.md"
   - Работа в системе:
-    - Аккаунты: "4-working_with_platform/01-accounts.md"
-    - Типы аккаунтов: "4-working_with_platform/02-account-types.md"
-    - Диаграммы: "4-working_with_platform/03-diagrams.md"
-    - Настройка диаграмм: "4-working_with_platform/04-diagrams-edit.md"
+    - Аккаунты: "4-working-with-platform/01-accounts.md"
+    - Типы аккаунтов: "4-working-with-platform/02-account-types.md"
+    - Диаграммы: "4-working-with-platform/03-diagrams.md"
+    - Настройка диаграмм: "4-working-with-platform/04-diagrams-edit.md"
   - Работа с ИИ:
     - Подключение: "5-claude/01-claude-connect.md"
     - Настройка: "5-claude/02-claude-work.md"
-
