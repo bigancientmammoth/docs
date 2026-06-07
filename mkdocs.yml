@@ -16,6 +16,7 @@ nav:
     - Аккаунты: "4-working_with_platform/01-accounts.md"
     - Типы аккаунтов: "4-working_with_platform/02-account-types.md"
     - Диаграммы: "4-working_with_platform/03-diagrams.md"
+    - Настройка диаграмм: "4-working_with_platform/04-diagrams-edit.md"
   - Работа с ИИ:
     - Подключение: "5-claude/01-claude-connect.md"
     - Настройка: "5-claude/02-claude-work.md"
