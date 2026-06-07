@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://web.marketaut.ru/2-quick_start_guides/quick_start/">
+        <link rel="canonical" href="https://web.marketaut.ru/4-working-with-platform/04-diagrams-edit/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Быстрый старт - Marketaut</title>
+        <title>Настройка диаграмм - Marketaut</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -35,28 +35,36 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="../../1-help_and_support/help/" class="nav-link">Помощь</a>
+                                <a href="../../1-help/help/" class="nav-link">Помощь</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Быстрый старт</a>
+                                <a href="../../2-quick-start/quick_start/" class="nav-link">Быстрый старт</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../../3-start/register/" class="nav-link">Начало работы</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../4-working_with_platform/01-accounts/" class="dropdown-item">Аккаунты</a>
+    <a href="../00-intro/" class="dropdown-item">Общие концепции</a>
 </li>
                                     
 <li>
-    <a href="../../4-working_with_platform/02-account-types/" class="dropdown-item">Типы аккаунтов</a>
+    <a href="../01-accounts/" class="dropdown-item">Аккаунты</a>
 </li>
                                     
 <li>
-    <a href="../../4-working_with_platform/03-diagrams/" class="dropdown-item">Диаграммы</a>
+    <a href="../02-account-types/" class="dropdown-item">Типы аккаунтов</a>
+</li>
+                                    
+<li>
+    <a href="../03-diagrams/" class="dropdown-item">Диаграммы</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Настройка диаграмм</a>
 </li>
                                 </ul>
                             </li>
@@ -82,12 +90,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../1-help_and_support/help/" class="nav-link">
+                                <a rel="prev" href="../03-diagrams/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../../3-start/register/" class="nav-link">
+                                <a rel="next" href="../../5-claude/01-claude-connect/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -109,18 +117,25 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Быстрый старт</a>
+            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Настройка диаграммы</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#claude-wildberries" class="nav-link">Подключение Claude к магазину Wildberries</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Добавление узла</a>
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Редактирование узла</a>
+              <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#_2" class="nav-link">Видеоуроки</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Привязка узла к аккаунту</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#claude-3" class="nav-link">Создание карточек товара в Claude (3 мин)</a>
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Удаление узла</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Соединение и разъединение узлов</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -131,22 +146,72 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">Быстрый старт</h1>
-<p>Все примеры, представленные ниже, предполагают, что вы уже зарегистрировались и вошли на платформу.</p>
-<p>Если вы еще не зарегистрировались или не вошли, следуйте инструкциям в разделе <a href="/3-start/register">Регистрация</a></p>
-<h2 id="claude-wildberries">Подключение Claude к магазину Wildberries</h2>
-<p>Для подключения к магазину Wildberries потребуется токен API. <a href="">Здесь</a> рассказывается, как его выписать. </p>
-<p>1) Создаем Аккаунт для работы с ВБ<br />
-    1) Заходим в раздел <a href="https://web.marketaut.ru/app/config/accounts
-    2">Конфигурация-&gt;Аккаунты</a> Нажимаем кнопку Добавить Аккаунт<br />
-    3) Выбираем Тип Аккаунта - <strong>Wildberries</strong>. После этого у нас появляются новые поля, соответствующие ВБ<br />
-        1) Вводим Название и Описание (любые)<br />
-        2) Вставляем Токен API (полученный в личном кабинете ВБ)<br />
-        3) Жмем Сохранить<br />
-2) )</p>
-<h1 id="_2">Видеоуроки</h1>
-<h2 id="claude-3">Создание карточек товара в Claude (3 мин)</h2>
-<p><a href="https://youtu.be/jCWPqTDgplk?si=b8VPmztA3k2_sBNZ"></a></p></div>
+<h1 id="_1">Настройка диаграммы</h1>
+<p>Для настройки диаграммы:</p>
+<ol>
+<li>Перейдите в <a href="https://marketaut.ru/app/config/diagrams">Конфигурация -&gt; Диаграммы</a></li>
+<li>Откройте нужную диаграмму (кнопка с квадратом в строке диаграммы)</li>
+</ol>
+<p><strong>Пример окна настройки</strong></p>
+<p><img alt="" src="../img/diagrams/design-numbered.png" /></p>
+<p>(1) Наименование диаграммы и кнопка его редактирования<br />
+(2) Текущее и максимальное количество диаграмм в команде<br />
+(3) Версия диаграммы<br />
+(4) Идентификатор (ID) диаграммы<br />
+(5) Текущее состояние диаграммы<br />
+(6) Кнопка запуска и останова диаграммы<br />
+(7) Кнопка добавления нового элемента на диаграмму<br />
+(8) Область лога событий, связанных с диаграммой<br />
+(9) Холст с размещенными на нем узлами</p>
+<h2 id="_2">Добавление узла</h2>
+<p>Для добавления узла:<br />
+1. Нажмите на кнопку + вверху диаграммы<br />
+<img alt="" src="../img/diagrams/add.png" /></p>
+<ol>
+<li>Выберите нужную группу</li>
+<li>В группе выберите тип узла и нажмите <strong>Добавить</strong><br />
+<img alt="" src="../img/diagrams/choose-block.png" /></li>
+</ol>
+<h2 id="_3">Редактирование узла</h2>
+<p>Для редактирования узла:<br />
+1. Выберите узел на диаграмме. <br />
+2. В правой части экрана откроется "шторка" с его свойствами</p>
+<p><img alt="" src="../img/diagrams/properties.png" /></p>
+<p>(1) Описание узла<br />
+(2) Уникальный идентификатор (ID) узла<br />
+(3) Имя узла<br />
+(4) Область свойств узла<br />
+(5) Кнопки удаления узла и закрытия шторки</p>
+<p>Для редактирования нужного свойства введите его значение на закладке <strong>Свойства</strong> и нажмите <strong>Сохранить</strong></p>
+<h2 id="_4">Привязка узла к аккаунту</h2>
+<p>Многие узлы требуют привязки к аккаунту. Например, узлы для работы с карточками товаров Wildberries нужно привязать к аккаунту, чтобы они работали с нужным магазином.</p>
+<p>Вы можете управлять любым количеством магазинов Wildberries, создав для каждого из них свой аккаунт и привязав узлы к интересующим магазинам. Это позволит, например, с помощью ИИ скопировать все карточки товаров из одного магазина в другой.</p>
+<p>Для привязки узла к аккаунту:<br />
+1. Выберите узел на диаграмме. <br />
+2. В правой части экрана откроется "шторка" с его свойствами<br />
+3. В шторке перейдите на закладку <strong>Аккаунты</strong></p>
+<p><img alt="" src="../img/diagrams/accounts.png" /></p>
+<ol>
+<li>В выпадающем списке выберите нужный аккаунт</li>
+</ol>
+<p>Обратите внимание, что предварительно аккаунт нужно создать. Создание аккаунта описано в разделе <a href="../01-accounts/">Аккаунты</a></p>
+<h2 id="_5">Удаление узла</h2>
+<p>Для удаления узла:<br />
+1. Выберите узел на диаграмме. <br />
+2. В правой части экрана откроется "шторка" с его свойствами<br />
+3. В шторке нажмите кнопку <strong>Удалить</strong></p>
+<p><img alt="" src="../img/diagrams/node-delete.png" /></p>
+<h2 id="_6">Соединение и разъединение узлов</h2>
+<p>Соединение узлов позволяет задать логику работы платформы.</p>
+<p>Например, узел <strong>MCP</strong> предоставляет ИИ доступ ко всем функциям, которые <strong>присоединены</strong> к его входу <strong>tools</strong>. </p>
+<p>За счет этого вы можете создавать агентов с нужными функциями, не замусоривая контекст ИИ ненужными инструментами. </p>
+<p><img alt="" src="../img/diagrams/node-channels.png" /></p>
+<p>Соединять можно только <strong>выходы</strong> со <strong>входами</strong>. Выходы (1) всегда находятся на правой стороне узла, а входы (2) - на левой.</p>
+<p>Соединение делается за счет перетягивания мышкой выхода одного узла на вход другого.</p>
+<p>Для <strong>разъединения</strong> узлов:<br />
+1. Выберите связь, которую хотите удалить (щелкнув на ней мышкой)<br />
+2. Нажмите на появившийся значок крестика<br />
+<img alt="" src="../img/diagrams/n-disconnect.png" /></p></div>
             </div>
         </div>
 

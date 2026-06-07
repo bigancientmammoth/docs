@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://web.marketaut.ru/1-help_and_support/help/">
+        <link rel="canonical" href="https://web.marketaut.ru/2-quick-start/quick_start/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Помощь - Marketaut</title>
+        <title>Быстрый старт - Marketaut</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -35,10 +35,10 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Помощь</a>
+                                <a href="../../1-help/help/" class="nav-link">Помощь</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../../2-quick_start_guides/quick_start/" class="nav-link">Быстрый старт</a>
+                                <a href="./" class="nav-link active" aria-current="page">Быстрый старт</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../../3-start/register/" class="nav-link">Начало работы</a>
@@ -48,15 +48,23 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../4-working_with_platform/01-accounts/" class="dropdown-item">Аккаунты</a>
+    <a href="../../4-working-with-platform/00-intro/" class="dropdown-item">Общие концепции</a>
 </li>
                                     
 <li>
-    <a href="../../4-working_with_platform/02-account-types/" class="dropdown-item">Типы аккаунтов</a>
+    <a href="../../4-working-with-platform/01-accounts/" class="dropdown-item">Аккаунты</a>
 </li>
                                     
 <li>
-    <a href="../../4-working_with_platform/03-diagrams/" class="dropdown-item">Диаграммы</a>
+    <a href="../../4-working-with-platform/02-account-types/" class="dropdown-item">Типы аккаунтов</a>
+</li>
+                                    
+<li>
+    <a href="../../4-working-with-platform/03-diagrams/" class="dropdown-item">Диаграммы</a>
+</li>
+                                    
+<li>
+    <a href="../../4-working-with-platform/04-diagrams-edit/" class="dropdown-item">Настройка диаграмм</a>
 </li>
                                 </ul>
                             </li>
@@ -82,12 +90,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../../1-help/help/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../../2-quick_start_guides/quick_start/" class="nav-link">
+                                <a rel="next" href="../../3-start/register/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -109,13 +117,18 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Часто задаваемые вопросы</a>
+            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Быстрый старт</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#marketaut" class="nav-link">С какими нейросетями работает Marketaut?</a>
+            <li class="nav-item" data-bs-level="2"><a href="#claude-wildberries" class="nav-link">Подключение Claude к магазину Wildberries</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Нужен ли мне аккаунт у поставщика ИИ?</a>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#_2" class="nav-link">Видеоуроки</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#claude-3" class="nav-link">Создание карточек товара в Claude (3 мин)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -126,19 +139,22 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p><strong>Поддержка в телеграм</strong>: <a href="https://t.me/gideonbraver">@gideonbraver</a></p>
-<p><strong>Документация</strong>:  <a href="https://docs.marketaut.ru">https://docs.marketaut.ru</a></p>
-<h1 id="_1">Часто задаваемые вопросы</h1>
-<h2 id="marketaut">С какими нейросетями работает Marketaut?</h2>
-<p>Со всеми, поддерживающими протокол <a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP</a><br />
-Это протокол для взаимодействия ИИ агентов со внешними системами, поддерживается всеми крупными поставщиками, включая, но не ограничиваясь:<br />
-1. Claude (Anthropic)<br />
-2. ChatGPT (OpenAI)<br />
-3. Gemini (Google)<br />
-4. Deepseek (Hangzhou DeepSeek Artificial Intelligence)</p>
-<h2 id="_2">Нужен ли мне аккаунт у поставщика ИИ?</h2>
-<p>Да, нужен. Marketaut НЕ поставляет собственные ИИ. Наша платформа предоставляет возможность подключения <strong>вашего</strong> ИИ к магазину Wildberries.<br />
-Вопросы, связанные с регистрацией, оплатой и доступом к ИИ решаются пользователем самостоятельно.</p></div>
+<h1 id="_1">Быстрый старт</h1>
+<p>Все примеры, представленные ниже, предполагают, что вы уже зарегистрировались и вошли на платформу.</p>
+<p>Если вы еще не зарегистрировались или не вошли, следуйте инструкциям в разделе <a href="../../3-start/register/">Регистрация</a></p>
+<h2 id="claude-wildberries">Подключение Claude к магазину Wildberries</h2>
+<p>Для подключения к магазину Wildberries потребуется токен API. <a href="">Здесь</a> рассказывается, как его выписать. </p>
+<p>1) Создаем Аккаунт для работы с ВБ<br />
+    1) Заходим в раздел <a href="https://marketaut.ru/app/config/accounts
+    2">Конфигурация-&gt;Аккаунты</a> Нажимаем кнопку Добавить Аккаунт<br />
+    3) Выбираем Тип Аккаунта - <strong>Wildberries</strong>. После этого у нас появляются новые поля, соответствующие ВБ<br />
+        1) Вводим Название и Описание (любые)<br />
+        2) Вставляем Токен API (полученный в личном кабинете ВБ)<br />
+        3) Жмем Сохранить<br />
+2) )</p>
+<h1 id="_2">Видеоуроки</h1>
+<h2 id="claude-3">Создание карточек товара в Claude (3 мин)</h2>
+<p><a href="https://youtu.be/jCWPqTDgplk?si=b8VPmztA3k2_sBNZ"></a></p></div>
             </div>
         </div>
 

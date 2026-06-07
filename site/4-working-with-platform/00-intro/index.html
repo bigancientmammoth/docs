@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://web.marketaut.ru/4-working_with_platform/03-diagrams/">
+        <link rel="canonical" href="https://web.marketaut.ru/4-working-with-platform/00-intro/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Диаграммы - Marketaut</title>
+        <title>Общие концепции - Marketaut</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -35,10 +35,10 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="../../1-help_and_support/help/" class="nav-link">Помощь</a>
+                                <a href="../../1-help/help/" class="nav-link">Помощь</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../../2-quick_start_guides/quick_start/" class="nav-link">Быстрый старт</a>
+                                <a href="../../2-quick-start/quick_start/" class="nav-link">Быстрый старт</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../../3-start/register/" class="nav-link">Начало работы</a>
@@ -46,6 +46,10 @@
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
                                 <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Общие концепции</a>
+</li>
                                     
 <li>
     <a href="../01-accounts/" class="dropdown-item">Аккаунты</a>
@@ -56,7 +60,11 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Диаграммы</a>
+    <a href="../03-diagrams/" class="dropdown-item">Диаграммы</a>
+</li>
+                                    
+<li>
+    <a href="../04-diagrams-edit/" class="dropdown-item">Настройка диаграмм</a>
 </li>
                                 </ul>
                             </li>
@@ -82,12 +90,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../02-account-types/" class="nav-link">
+                                <a rel="prev" href="../../3-start/register/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../../5-claude/01-claude-connect/" class="nav-link">
+                                <a rel="next" href="../01-accounts/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -109,26 +117,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Диаграммы</a>
+            <li class="nav-item" data-bs-level="1"><a href="#marketaut" class="nav-link">Marketaut</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">Пользователь</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#_2" class="nav-link">Управление</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Создание диаграммы</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Команда</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Открытие диаграммы</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Диаграмма</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Удаление диаграммы</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Запуск и останов диаграммы</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Аккаунт</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -139,58 +142,47 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">Диаграммы</h1>
-<p><strong>Диаграммы</strong> - визуальные схемы, на которых строится логика автоматизации. На ней вы размещаете модули на холсте и соединяете их между собой, выстраивая нужную логику работы.</p>
+<h1 id="marketaut">Marketaut</h1>
+<p><strong>Marketaut</strong> — это платформа для подключения ИИ-инструментов. </p>
+<p>Основные концепции, используемые на платформе:</p>
+<ul>
+<li>Пользователь</li>
+<li>Команда</li>
+<li>Диаграмма</li>
+<li>Аккаунт</li>
+<li><a href="../../5-claude/01-claude-connect/">ИИ агент</a></li>
+</ul>
+<h2 id="_1">Пользователь</h2>
+<p><strong>Пользователь</strong> — это учётная запись человека на платформе. </p>
+<p>Пользователь может состоять в одной или нескольких Командах, работая с общими диаграммами и аккаунтами каждой из них.</p>
+<p>Текущий пользователь отображается в правом верхнем углу экрана:<br />
+<img alt="" src="../img/intro/user.png" /></p>
+<p>При нажатии на Пользователя открывается его меню:<br />
+<img alt="" src="../img/intro/user-popup.png" /></p>
+<p>В меню можно:<br />
+1. Поменять настройки пользователя<br />
+2. Выписать себе персональный токен*<br />
+3. Выйти с платформы<br />
+4. Сменить язык<br />
+5. Добавить еще один аккаут в случае, если за одним рабочим местом работают несколько человек</p>
+<h2 id="_2">Команда</h2>
+<p><strong>Команда</strong> - это общее рабочее пространство для нескольких пользователей.</p>
+<p>Всё, что создаётся на платформе - аккаунты, диаграммы и другие ресурсы - хранится внутри <strong>Команды</strong> и доступно всем её участникам. Вы приглашаете нужных людей, и они сразу получают доступ к общим материалам.</p>
+<p>Это удобно для совместной работы: не нужно передавать файлы или дублировать настройки - всё уже в одном месте.</p>
+<p>Команда создается автоматически при регистрации нового пользователя.</p>
+<p>Текущая команда отображается в правой верхней части экрана:<br />
+<img alt="" src="../img/intro/team.png" /></p>
+<p>Если вы состоите в нескольких командах, их можно переключать через этот индикатор.</p>
+<h2 id="_3">Диаграмма</h2>
+<p><strong>Диаграммы</strong> - визуальные схемы, на которых строится логика автоматизации. На ней вы размещаете модули на холсте и соединяете их визуально между собой, выстраивая нужную логику работы.</p>
 <p>Одна диаграмма - одна автоматизация. Например, подключение вашего магазина Wildberries к MCP-серверу.</p>
 <p>Все диаграммы хранятся внутри Команды и доступны её участникам.</p>
-<h1 id="_2">Управление</h1>
-<p>Управление Диаграммами осуществляется в разделе <a href="https://web.marketaut.ru/app/config/diagrams">Конфигурация -&gt; Диаграммы</a></p>
-<p><img alt="Окно управления аккаунтами" src="../img/diagrams/list-main.png" /></p>
-<p>(1) Количество созданных / доступных диаграмм <br />
-(2) Кнопка создания новой диаграммы<br />
-(3) Область отображения созданных ранее диаграмм</p>
-<h2 id="_3">Создание диаграммы</h2>
-<ol>
-<li>Перейдите в <a href="https://web.marketaut.ru/app/config/diagrams">Конфигурация -&gt; Диаграммы</a></li>
-<li>Нажмите кнопку Добавить диаграмму</li>
-<li>Заполните поля<br />
-    1. <strong>Название</strong> - произвольное название<br />
-    2. <strong>Описание</strong> - произвольное описание</li>
-<li>Нажмите Сохранить</li>
-</ol>
-<p>После сохранения откроется пустое полотно.</p>
-<p>Процесс настройки диаграммы описывается в разделе <a href="../04-diagrams-edit/">Настройка диаграмм</a>.</p>
-<h2 id="_4">Открытие диаграммы</h2>
-<ol>
-<li>Перейдите в <a href="https://web.marketaut.ru/app/config/diagrams">Конфигурация -&gt; Диаграммы</a></li>
-<li>В строке с нужной диаграммой нажмите кнопку Открыть (в виде квадрата)</li>
-</ol>
-<p><img alt="d-open-diagram" src="d-open-diagram.png" /></p>
-<p>Процесс настройки диаграммы описывается в разделе <a href="../04-diagrams-edit/">Настройка диаграмм</a>.</p>
-<h2 id="_5">Удаление диаграммы</h2>
-<ol>
-<li>Перейдите в <a href="https://web.marketaut.ru/app/config/diagrams">Конфигурация -&gt; Диаграммы</a></li>
-<li>Напротив нужной диаграммы нажмите кнопку всплывающего меню справа<br />
-<img alt="" src="../img/diagrams/delete.png" /></li>
-<li>В меню выберите <strong>Удалить</strong></li>
-</ol>
-<h2 id="_6">Запуск и останов диаграммы</h2>
-<p>Диаграммы имеют два состояния: <br />
-<strong>Запущено</strong>: все процессы, настроенные на диаграмме, работают.<br />
-<strong>Остановлено</strong>: диаграмма находится в состоянии редактирования, связанные с ней процессы <strong>не работают</strong>.</p>
-<p>После создания любая диаграмма находится в состоянии <strong>Остановлено</strong> до момента, пока вы ее не настроете и не запустите вручную. <br />
-При любых изменениях настроек диаграммы она автоматически останавливается.<br />
-После завершения настройки для начала работы диаграмму следует <strong>запустить</strong>.</p>
-<p>Запустить диаграмму можно двумя способами: из общего списка и из окна настройки самой диаграммы.</p>
-<p><strong>Из общего списка</strong><br />
-1. Перейдите в <a href="https://web.marketaut.ru/app/config/diagrams">Конфигурация -&gt; Диаграммы</a><br />
-2. Напротив нужной диаграммы нажмите кнопку запуска (3)</p>
-<p><img alt="" src="../img/diagrams/list-main.png" /></p>
-<p><strong>Из окна настройки диаграммы</strong><br />
-1. Перейдите в <a href="https://web.marketaut.ru/app/config/diagrams">Конфигурация -&gt; Диаграммы</a><br />
-2. Откройте нужную диаграмму<br />
-3. В окне настройки диаграммы нажмите кнопку запуска </p>
-<p>Процесс настройки диаграммы описывается в разделе <a href="../04-diagrams-edit/">Настройка диаграмм</a>.</p></div>
+<p>Подробнее о диаграммах можно прочесть в разделе <a href="../03-diagrams/">Диаграммы</a></p>
+<h2 id="_4">Аккаунт</h2>
+<p><strong>Аккаунты</strong> - это сохранённые учётные данные для подключения к внешнему сервису. Например, токен API от магазина Wildberries, логин и пароль от другого сервиса.</p>
+<p>Вы настраиваете аккаунт один раз, а затем используете его в любых модулях, которым нужен доступ к этому сервису. Не нужно вводить одни и те же данные повторно в каждом модуле.</p>
+<p>Все аккаунты хранятся внутри Команды и доступны её участникам</p>
+<p>Подробнее об аккаунтах можно прочесть в разделе <a href="../01-accounts/">Аккаунты</a></p></div>
             </div>
         </div>
 

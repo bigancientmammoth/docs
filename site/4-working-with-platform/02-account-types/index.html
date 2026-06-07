@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://web.marketaut.ru/6-unsorted/03-diagrams/">
+        <link rel="canonical" href="https://web.marketaut.ru/4-working-with-platform/02-account-types/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>03 diagrams - Marketaut</title>
+        <title>Типы аккаунтов - Marketaut</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -35,28 +35,36 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="../../1-help_and_support/help/" class="nav-link">Помощь</a>
+                                <a href="../../1-help/help/" class="nav-link">Помощь</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../../2-quick_start_guides/quick_start/" class="nav-link">Быстрый старт</a>
+                                <a href="../../2-quick-start/quick_start/" class="nav-link">Быстрый старт</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../../3-start/register/" class="nav-link">Начало работы</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../4-working_with_platform/01-accounts/" class="dropdown-item">Аккаунты</a>
+    <a href="../00-intro/" class="dropdown-item">Общие концепции</a>
 </li>
                                     
 <li>
-    <a href="../../4-working_with_platform/02-account-types/" class="dropdown-item">Типы аккаунтов</a>
+    <a href="../01-accounts/" class="dropdown-item">Аккаунты</a>
 </li>
                                     
 <li>
-    <a href="../../4-working_with_platform/03-diagrams/" class="dropdown-item">Диаграммы</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Типы аккаунтов</a>
+</li>
+                                    
+<li>
+    <a href="../03-diagrams/" class="dropdown-item">Диаграммы</a>
+</li>
+                                    
+<li>
+    <a href="../04-diagrams-edit/" class="dropdown-item">Настройка диаграмм</a>
 </li>
                                 </ul>
                             </li>
@@ -81,6 +89,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../01-accounts/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../03-diagrams/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -98,12 +116,44 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Типы аккаунтов</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#wildberries" class="nav-link">Wildberries</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-</div>
+<h1 id="_1">Типы аккаунтов</h1>
+<p>Тип аккаунта определяет, к какой системе он позволяет подключиться.</p>
+<p><strong>Marketaut</strong> поддерживает следующие типы:</p>
+<ol>
+<li>Wildberries: API токен <a href="https://wildberries.ru">Wildberries</a> </li>
+</ol>
+<h2 id="wildberries">Wildberries</h2>
+<p>Позволяет подключаться к магазину <a href="https://wildberries.ru">Wildberries</a></p>
+<p><strong>Доступно</strong><br />
+- Карточки товаров<br />
+- Цены, скидки, акции<br />
+- Фулфилмент<br />
+- Вопросы и отзывы покупателей<br />
+- Аналитические и финансовые отчеты</p>
+<h4 id="_2">Получение токена</h4>
+<p>Перед созданием Аккаунта необходимо получить Токен API Wildberries.<br />
+Для этого вы должны быть <strong>владельцем</strong> магазина ВБ.</p>
+<p>1) Зайдите в настройки магазина, "<a href="https://seller.wildberries.ru/api-integrations">Интеграции по API</a>"<br />
+2) Нажмите <strong>Создать токен</strong><br />
+3) Выберите <strong>Для интеграции вручную</strong><br />
+4) Выберите <strong>Базовый токен</strong><br />
+5) Выберите разделы, к которым нужен доступ (Контент, Цены и скидки)<br />
+6) Нажмите <strong>Создать токен</strong><br />
+7) Скопируйте токен и добавьте его в <strong>Marketaut</strong></p></div>
             </div>
         </div>
 
