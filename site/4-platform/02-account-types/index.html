@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://web.marketaut.ru/5-claude/01-claude-connect/">
+        <link rel="canonical" href="https://web.marketaut.ru/4-platform/02-account-types/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Подключение - Marketaut</title>
+        <title>Типы аккаунтов - Marketaut</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -44,40 +44,40 @@
                                 <a href="../../3-start/register/" class="nav-link">Начало работы</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../4-platform/00-intro/" class="dropdown-item">Общие концепции</a>
+    <a href="../00-intro/" class="dropdown-item">Общие концепции</a>
 </li>
                                     
 <li>
-    <a href="../../4-platform/01-accounts/" class="dropdown-item">Аккаунты</a>
+    <a href="../01-accounts/" class="dropdown-item">Аккаунты</a>
 </li>
                                     
 <li>
-    <a href="../../4-platform/02-account-types/" class="dropdown-item">Типы аккаунтов</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Типы аккаунтов</a>
 </li>
                                     
 <li>
-    <a href="../../4-platform/03-diagrams/" class="dropdown-item">Диаграммы</a>
+    <a href="../03-diagrams/" class="dropdown-item">Диаграммы</a>
 </li>
                                     
 <li>
-    <a href="../../4-platform/04-diagrams-edit/" class="dropdown-item">Настройка диаграмм</a>
+    <a href="../04-diagrams-edit/" class="dropdown-item">Настройка диаграмм</a>
 </li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа с ИИ</a>
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа с ИИ</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Подключение</a>
+    <a href="../../5-claude/01-claude-connect/" class="dropdown-item">Подключение</a>
 </li>
                                     
 <li>
-    <a href="../02-claude-work/" class="dropdown-item">Настройка</a>
+    <a href="../../5-claude/02-claude-work/" class="dropdown-item">Настройка</a>
 </li>
                                 </ul>
                             </li>
@@ -90,12 +90,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../4-platform/04-diagrams-edit/" class="nav-link">
+                                <a rel="prev" href="../01-accounts/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../02-claude-work/" class="nav-link">
+                                <a rel="next" href="../03-diagrams/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -117,13 +117,12 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Общая информация</a>
+            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Типы аккаунтов</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#wildberries" class="nav-link">Wildberries</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#_2" class="nav-link">Подключение</a>
-              <ul class="nav flex-column">
               </ul>
             </li>
         </ul>
@@ -131,31 +130,30 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">Общая информация</h1>
-<p>Здесь описывается, как настроить подключение вашего ИИ (Claude, ChatGPT, Gemini и др).<br />
-Описание будет на примере Anthropic Claude, тем не менее все современные ИИ агенты поддерживают протокол <a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP</a>, то есть могут подключаться через платформу Marketaut к вашему магазину ВБ.</p>
-<h1 id="_2">Подключение</h1>
-<p>Запустите приложение Claude for Desktop</p>
-<p>В разделе Chats выберите <strong>Customize</strong>. <br />
-<img alt="" src="../img/customize.png" /></p>
-<p>В открывшемся окне выберите <strong>Connectors</strong>. Коннекторы - это подключения вашего ИИ ко внешним системам, в том числе Wildberries.<br />
-<img alt="" src="../img/connect/customize-connectors.png" /></p>
-<p>В открывшемся окне вы увидите список уже подключенных "коннекторов" и кнопку для подключения нового.<br />
-Нажмите на <strong>+</strong> и в открывшемся меню <strong>Add custom connector</strong> для подключения нового коннектора.<br />
-<img alt="" src="../img/connect/connectors-add.png" /></p>
-<p>Откроется окно настроек коннектора. Введите только имя и адрес.<br />
-<strong>Имя</strong>: Любое на ваш выбор, например, MarketAut<br />
-<strong>Адрес</strong>: <code>https://marketaut.ru/mcp/wb</code> </p>
-<p>и нажмите <strong>Add</strong></p>
-<p><img alt="" src="../img/connect/connector-dialog.png" /></p>
-<p><strong>MarketAut</strong> добавится в список коннекторов, но будет отображаться как неподключенный.<br />
-Нажмите кнопку <strong>Connect</strong> для подключения</p>
-<p><img alt="" src="../img/connect/not-connected.png" /></p>
-<p>Вас перенаправит на страницу входа MarketAut. <br />
-Нажмите <strong>Разрешить доступ</strong>.</p>
-<p><img alt="" src="../img/connect/oauth-consent.png" /></p>
-<p>После проверки коннектор отобразится как подключенный</p>
-<p><img alt="" src="../img/connect/connected.png" /></p></div>
+<h1 id="_1">Типы аккаунтов</h1>
+<p>Тип аккаунта определяет, к какой системе он позволяет подключиться.</p>
+<p><strong>Marketaut</strong> поддерживает следующие типы:</p>
+<ol>
+<li>Wildberries: API токен <a href="https://wildberries.ru">Wildberries</a> </li>
+</ol>
+<h2 id="wildberries">Wildberries</h2>
+<p>Позволяет подключаться к магазину <a href="https://wildberries.ru">Wildberries</a></p>
+<p><strong>Доступно</strong><br />
+- Карточки товаров<br />
+- Цены, скидки, акции<br />
+- Фулфилмент<br />
+- Вопросы и отзывы покупателей<br />
+- Аналитические и финансовые отчеты</p>
+<h4 id="_2">Получение токена</h4>
+<p>Перед созданием Аккаунта необходимо получить Токен API Wildberries.<br />
+Для этого вы должны быть <strong>владельцем</strong> магазина ВБ.</p>
+<p>1) Зайдите в настройки магазина, "<a href="https://seller.wildberries.ru/api-integrations">Интеграции по API</a>"<br />
+2) Нажмите <strong>Создать токен</strong><br />
+3) Выберите <strong>Для интеграции вручную</strong><br />
+4) Выберите <strong>Базовый токен</strong><br />
+5) Выберите разделы, к которым нужен доступ (Контент, Цены и скидки)<br />
+6) Нажмите <strong>Создать токен</strong><br />
+7) Скопируйте токен и добавьте его в <strong>Marketaut</strong></p></div>
             </div>
         </div>
 

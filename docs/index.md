@@ -17,6 +17,6 @@
 
 [Регистрация и начало работы](3-start/register.md)
 
-[Работа с платформой](4-working-with-platform/00-intro.md)
+[Работа с платформой](4-platform/00-intro.md)
 
 [Настройка ИИ агента](5-claude/01-claude-connect.md)

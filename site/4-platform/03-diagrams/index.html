@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://web.marketaut.ru/5-claude/01-claude-connect/">
+        <link rel="canonical" href="https://web.marketaut.ru/4-platform/03-diagrams/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Подключение - Marketaut</title>
+        <title>Диаграммы - Marketaut</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -44,40 +44,40 @@
                                 <a href="../../3-start/register/" class="nav-link">Начало работы</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../4-platform/00-intro/" class="dropdown-item">Общие концепции</a>
+    <a href="../00-intro/" class="dropdown-item">Общие концепции</a>
 </li>
                                     
 <li>
-    <a href="../../4-platform/01-accounts/" class="dropdown-item">Аккаунты</a>
+    <a href="../01-accounts/" class="dropdown-item">Аккаунты</a>
 </li>
                                     
 <li>
-    <a href="../../4-platform/02-account-types/" class="dropdown-item">Типы аккаунтов</a>
+    <a href="../02-account-types/" class="dropdown-item">Типы аккаунтов</a>
 </li>
                                     
 <li>
-    <a href="../../4-platform/03-diagrams/" class="dropdown-item">Диаграммы</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Диаграммы</a>
 </li>
                                     
 <li>
-    <a href="../../4-platform/04-diagrams-edit/" class="dropdown-item">Настройка диаграмм</a>
+    <a href="../04-diagrams-edit/" class="dropdown-item">Настройка диаграмм</a>
 </li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа с ИИ</a>
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа с ИИ</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Подключение</a>
+    <a href="../../5-claude/01-claude-connect/" class="dropdown-item">Подключение</a>
 </li>
                                     
 <li>
-    <a href="../02-claude-work/" class="dropdown-item">Настройка</a>
+    <a href="../../5-claude/02-claude-work/" class="dropdown-item">Настройка</a>
 </li>
                                 </ul>
                             </li>
@@ -90,12 +90,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../4-platform/04-diagrams-edit/" class="nav-link">
+                                <a rel="prev" href="../02-account-types/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../02-claude-work/" class="nav-link">
+                                <a rel="next" href="../04-diagrams-edit/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -117,13 +117,29 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Общая информация</a>
+            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Диаграммы</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="1"><a href="#_2" class="nav-link">Подключение</a>
+            <li class="nav-item" data-bs-level="1"><a href="#_2" class="nav-link">Управление</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Создание диаграммы</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Открытие диаграммы</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Удаление диаграммы</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Запуск и останов диаграммы</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -131,31 +147,58 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">Общая информация</h1>
-<p>Здесь описывается, как настроить подключение вашего ИИ (Claude, ChatGPT, Gemini и др).<br />
-Описание будет на примере Anthropic Claude, тем не менее все современные ИИ агенты поддерживают протокол <a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP</a>, то есть могут подключаться через платформу Marketaut к вашему магазину ВБ.</p>
-<h1 id="_2">Подключение</h1>
-<p>Запустите приложение Claude for Desktop</p>
-<p>В разделе Chats выберите <strong>Customize</strong>. <br />
-<img alt="" src="../img/customize.png" /></p>
-<p>В открывшемся окне выберите <strong>Connectors</strong>. Коннекторы - это подключения вашего ИИ ко внешним системам, в том числе Wildberries.<br />
-<img alt="" src="../img/connect/customize-connectors.png" /></p>
-<p>В открывшемся окне вы увидите список уже подключенных "коннекторов" и кнопку для подключения нового.<br />
-Нажмите на <strong>+</strong> и в открывшемся меню <strong>Add custom connector</strong> для подключения нового коннектора.<br />
-<img alt="" src="../img/connect/connectors-add.png" /></p>
-<p>Откроется окно настроек коннектора. Введите только имя и адрес.<br />
-<strong>Имя</strong>: Любое на ваш выбор, например, MarketAut<br />
-<strong>Адрес</strong>: <code>https://marketaut.ru/mcp/wb</code> </p>
-<p>и нажмите <strong>Add</strong></p>
-<p><img alt="" src="../img/connect/connector-dialog.png" /></p>
-<p><strong>MarketAut</strong> добавится в список коннекторов, но будет отображаться как неподключенный.<br />
-Нажмите кнопку <strong>Connect</strong> для подключения</p>
-<p><img alt="" src="../img/connect/not-connected.png" /></p>
-<p>Вас перенаправит на страницу входа MarketAut. <br />
-Нажмите <strong>Разрешить доступ</strong>.</p>
-<p><img alt="" src="../img/connect/oauth-consent.png" /></p>
-<p>После проверки коннектор отобразится как подключенный</p>
-<p><img alt="" src="../img/connect/connected.png" /></p></div>
+<h1 id="_1">Диаграммы</h1>
+<p><strong>Диаграммы</strong> - визуальные схемы, на которых строится логика автоматизации. На ней вы размещаете узлы на холсте и соединяете их между собой, выстраивая нужную логику работы.</p>
+<p>Одна диаграмма - одна автоматизация. Например, подключение вашего магазина Wildberries к MCP-серверу.</p>
+<p>Все диаграммы хранятся внутри Команды и доступны её участникам.</p>
+<h1 id="_2">Управление</h1>
+<p>Управление Диаграммами осуществляется в разделе <a href="https://marketaut.ru/app/config/diagrams">Конфигурация -&gt; Диаграммы</a></p>
+<p><img alt="Окно управления аккаунтами" src="../img/diagrams/list-main.png" /></p>
+<p>(1) Количество созданных / доступных диаграмм <br />
+(2) Кнопка создания новой диаграммы<br />
+(3) Область отображения созданных ранее диаграмм</p>
+<h2 id="_3">Создание диаграммы</h2>
+<ol>
+<li>Перейдите в <a href="https://marketaut.ru/app/config/diagrams">Конфигурация -&gt; Диаграммы</a></li>
+<li>Нажмите кнопку Добавить диаграмму</li>
+<li>Заполните поля<br />
+    1. <strong>Название</strong> - произвольное название<br />
+    2. <strong>Описание</strong> - произвольное описание</li>
+<li>Нажмите Сохранить</li>
+</ol>
+<p>После сохранения откроется пустое полотно.</p>
+<p>Процесс настройки диаграммы описывается в разделе <a href="../04-diagrams-edit/">Настройка диаграмм</a>.</p>
+<h2 id="_4">Открытие диаграммы</h2>
+<ol>
+<li>Перейдите в <a href="https://marketaut.ru/app/config/diagrams">Конфигурация -&gt; Диаграммы</a></li>
+<li>В строке с нужной диаграммой нажмите кнопку Открыть (в виде квадрата)</li>
+</ol>
+<p><img alt="" src="../img/diagrams/d-open-diagram.png" /></p>
+<p>Процесс настройки диаграммы описывается в разделе <a href="../04-diagrams-edit/">Настройка диаграмм</a>.</p>
+<h2 id="_5">Удаление диаграммы</h2>
+<ol>
+<li>Перейдите в <a href="https://marketaut.ru/app/config/diagrams">Конфигурация -&gt; Диаграммы</a></li>
+<li>Напротив нужной диаграммы нажмите кнопку всплывающего меню справа<br />
+<img alt="" src="../img/diagrams/delete.png" /></li>
+<li>В меню выберите <strong>Удалить</strong></li>
+</ol>
+<h2 id="_6">Запуск и останов диаграммы</h2>
+<p>Диаграммы имеют два состояния: <br />
+<strong>Запущено</strong>: все процессы, настроенные на диаграмме, работают.<br />
+<strong>Остановлено</strong>: диаграмма находится в состоянии редактирования, связанные с ней процессы <strong>не работают</strong>.</p>
+<p>После создания любая диаграмма находится в состоянии <strong>Остановлено</strong> до момента, пока вы ее не настроете и не запустите вручную. <br />
+При любых изменениях настроек диаграммы она автоматически останавливается.<br />
+После завершения настройки для начала работы диаграмму следует <strong>запустить</strong>.</p>
+<p>Запустить диаграмму можно двумя способами: из общего списка и из окна настройки самой диаграммы.</p>
+<p><strong>Из общего списка</strong><br />
+1. Перейдите в <a href="https://marketaut.ru/app/config/diagrams">Конфигурация -&gt; Диаграммы</a><br />
+2. Напротив нужной диаграммы нажмите кнопку запуска (3)</p>
+<p><img alt="" src="../img/diagrams/list-main.png" /></p>
+<p><strong>Из окна настройки диаграммы</strong><br />
+1. Перейдите в <a href="https://marketaut.ru/app/config/diagrams">Конфигурация -&gt; Диаграммы</a><br />
+2. Откройте нужную диаграмму<br />
+3. В окне настройки диаграммы нажмите кнопку запуска </p>
+<p>Процесс настройки диаграммы описывается в разделе <a href="../04-diagrams-edit/">Настройка диаграмм</a>.</p></div>
             </div>
         </div>
 
