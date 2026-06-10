@@ -9,7 +9,7 @@
 
 ## С какими ИИ-сервисами работает MarketAut?
 
-**MarketAut** работает с ИИ-агентами, поддерживающими протокол [MCP](https://modelcontextprotocol.io/docs/getting-started/intro)
+**MarketAut** работает с ИИ-агентами, поддерживающими протокол [MCP](https://modelcontextprotocol.io/docs/getting-started/intro).
 
 **MCP** — это протокол для взаимодействия ИИ-агентов с внешними системами. Его поддерживают крупные поставщики ИИ, включая:
 
