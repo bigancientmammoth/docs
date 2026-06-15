@@ -15,7 +15,7 @@
 
 Для этого перейдите в раздел **Customize**.
 
-![](img/customize.png)
+![](img/work/customize.png)
 
 Далее откройте раздел **Connectors**.
 ![](img/work/connectors.png)

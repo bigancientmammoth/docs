@@ -11,7 +11,8 @@
 
 1) Запустите приложение **Claude for Desktop**
 2) В разделе Chats выберите **Customize**
-![](img/customize.png)
+
+![](img/connect/customize.png)
 
 3) В открывшемся окне выберите **Connectors**
 
