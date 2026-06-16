@@ -1,5 +1,5 @@
-site_name: Marketaut
-site_url: https://web.marketaut.ru
+site_name: MarketAut
+site_url: https://marketaut.ru
 
 markdown_extensions:
   # Obsidian и многие другие редакторы поддерживают «мягкие переносы» — одиночный перенос строки в исходнике превращается в <br>.

@@ -26,7 +26,7 @@
 (6) Недоступные разделы
 
 ![](img/accounts/03-accounts-info.png)
-
+<h5 id="ref_account_create"></h5>
 ## Создание аккаунта
 
 1. Перейдите в раздел  [Конфигурация → Аккаунты](https://marketaut.ru/app/config/accounts)
@@ -39,7 +39,7 @@
     3. **Остальные поля** — зависят от выбранного типа аккаунта.;
 5. Нажмите кнопку **Сохранить**.
 ![](img/accounts/a-create.png)
-
+<h5 id="«ref_account_edit"></h5>
 ## Редактирование аккаунта
 
 1) Перейдите в раздел [Конфигурация → Аккаунты](https://marketaut.ru/app/config/accounts)
