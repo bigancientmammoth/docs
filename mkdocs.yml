@@ -19,5 +19,5 @@ nav:
     - Диаграммы: "4-platform/03-diagrams.md"
     - Настройка диаграмм: "4-platform/04-diagrams-edit.md"
   - Работа с ИИ:
-    - Подключение: "5-claude/01-claude-connect.md"
-    - Настройка: "5-claude/02-claude-work.md"
+    - Claude: "5-ai/01-claude.md"
+    - ChatGPT: "5-ai/02-chat-gpt.md"

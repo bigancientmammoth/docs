@@ -17,4 +17,4 @@
 
 [Работа с платформой](4-platform/00-intro.md)
 
-[Настройка ИИ агента](5-claude/01-claude-connect.md)
+[Настройка ИИ агента](01-claude-connect.md)
