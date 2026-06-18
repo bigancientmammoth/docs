@@ -40,8 +40,18 @@
                             <li class="nav-item">
                                 <a href="../../2-quick-start/quick_start/" class="nav-link">Быстрый старт</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="../../3-start/register/" class="nav-link">Начало работы</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Начало работы</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../3-start/01-register/" class="dropdown-item">Регистрация</a>
+</li>
+                                    
+<li>
+    <a href="../../3-start/02-home/" class="dropdown-item">Домашняя страница</a>
+</li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
@@ -73,11 +83,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../5-claude/01-claude-connect/" class="dropdown-item">Подключение</a>
+    <a href="../../5-ai/00-intro/" class="dropdown-item">Начало работы</a>
 </li>
                                     
 <li>
-    <a href="../../5-claude/02-claude-work/" class="dropdown-item">Настройка</a>
+    <a href="../../5-ai/01-claude/" class="dropdown-item">Claude</a>
+</li>
+                                    
+<li>
+    <a href="../../5-ai/02-chat-gpt/" class="dropdown-item">ChatGPT</a>
 </li>
                                 </ul>
                             </li>
@@ -162,46 +176,50 @@
 <p>Все аккаунты хранятся в команде и доступны её участникам.</p>
 <h1 id="_2">Управление</h1>
 <p>Для управления аккаунтами откройте раздел <a href="https://marketaut.ru/app/config/accounts">Конфигурация → Аккаунты</a>.</p>
-<p>(1) Количество созданных аккаунтов и лимит аккаунтов<br />
-(2) Кнопка создания нового аккаунта<br />
-(3) Список созданных аккаунтов</p>
+<p>(1) Количество созданных аккаунтов и лимит аккаунтов;<br />
+(2) Кнопка создания нового аккаунта;<br />
+(3) Список созданных аккаунтов.</p>
 <p><img alt="" src="../img/accounts/02-items.png" /></p>
 <h2 id="_3">Информация об аккаунте</h2>
-<p>(0) Тип аккаунта<br />
-(1) Наименование аккаунта, указанное при его создании<br />
-(2) Описание аккаунта<br />
-(3) Кнопка перехода к  журналу событий  аккаунта<br />
-(4) Сведения о последнем использовании аккаунта<br />
-(5) Доступные разделы<br />
-(6) Недоступные разделы</p>
+<p>(0) Тип аккаунта;<br />
+(1) Наименование аккаунта, указанное при его создании;<br />
+(2) Описание аккаунта;<br />
+(3) Кнопка перехода к  журналу событий  аккаунта;<br />
+(4) Сведения о последнем использовании аккаунта;<br />
+(5) Доступные разделы;<br />
+(6) Недоступные разделы.</p>
 <p><img alt="" src="../img/accounts/03-accounts-info.png" /></p>
 <h5 id="ref_account_create"></h5>
 <h2 id="_4">Создание аккаунта</h2>
 <ol>
-<li>Перейдите в раздел  <a href="https://marketaut.ru/app/config/accounts">Конфигурация → Аккаунты</a></li>
-<li>Нажмите кнопку <strong>+ Создать аккаунт</strong></li>
-<li>Выберите нужный <strong>Тип аккаунта</strong><br />
-Тип аккаунта определяет внешний сервис, для которого будут храниться учётные данные. Подробнее о типах аккаунтов см. в разделе <a href="../02-account-types/">Типы аккаунтов</a></li>
-<li>Заполните поля<br />
+<li>Перейдите в раздел  <a href="https://marketaut.ru/app/config/accounts">Конфигурация → Аккаунты</a>;</li>
+<li>Нажмите кнопку <strong>+ Создать аккаунт;</strong></li>
+<li>Выберите нужный <strong>Тип аккаунта</strong>;<br />
+Тип аккаунта определяет внешний сервис, для которого будут храниться учётные данные. Подробнее о типах аккаунтов см. в разделе <a href="../02-account-types/">Типы аккаунтов</a>.</li>
+<li>Заполните поля:<br />
     1. <strong>Название</strong> —  обязательное поле. Можно указать любое удобное название аккаунта.<br />
     2. <strong>Описание</strong> — необязательное поле. Можно указать любое описание аккаунта.<br />
-    3. <strong>Остальные поля</strong> — зависят от выбранного типа аккаунта.;</li>
+    3. <strong>Остальные поля</strong> — зависят от выбранного типа аккаунта.</li>
 <li>Нажмите кнопку <strong>Сохранить</strong>.<br />
 <img alt="" src="../img/accounts/a-create.png" /></li>
 </ol>
 <h5 id="ref_account_edit"></h5>
 <h2 id="_5">Редактирование аккаунта</h2>
-<p>1) Перейдите в раздел <a href="https://marketaut.ru/app/config/accounts">Конфигурация → Аккаунты</a><br />
-2) Выберите ранее созданный аккаунт и нажмите на него. Откроется окно управления аккаунтом<br />
-3) Поля, доступные для редактирования, отмечены значком карандаша<br />
-4) Нажмите на него, введите новое значение и нажмите <strong>ВВОД</strong> для сохранения<br />
-<img alt="" src="../img/accounts/edit.png" /></p>
+<ol>
+<li>Перейдите в раздел <a href="https://marketaut.ru/app/config/accounts">Конфигурация → Аккаунты</a>;</li>
+<li>Выберите ранее созданный аккаунт и нажмите на него. Откроется окно управления аккаунтом;</li>
+<li>Поля, доступные для редактирования, отмечены значком карандаша;</li>
+<li>Нажмите на него, введите новое значение и нажмите <strong>ВВОД</strong> для сохранения.<br />
+<img alt="" src="../img/accounts/edit.png" /></li>
+</ol>
 <h2 id="_6">Удаление аккаунта</h2>
-<p>1) Перейдите в раздел  <a href="https://marketaut.ru/app/config/accounts">Конфигурация → Аккаунты</a><br />
-2) Выберите аккаунт, который необходимо удалить. Откроется окно редактирования аккаунта<br />
-3) Нажмите  кнопку удаления (значок корзины)<br />
-4) Подтвердите удаление аккаунта<br />
-<img alt="" src="../img/accounts/delete.png" /></p>
+<ol>
+<li>Перейдите в раздел  <a href="https://marketaut.ru/app/config/accounts">Конфигурация → Аккаунты</a>;</li>
+<li>Выберите аккаунт, который необходимо удалить. Откроется окно редактирования аккаунта;</li>
+<li>Нажмите  кнопку удаления (значок корзины);</li>
+<li>Подтвердите удаление аккаунта.<br />
+<img alt="" src="../img/accounts/delete.png" /></li>
+</ol>
 <h1 id="faq">FAQ</h1>
 <h2 id="invalid-jwt">⚠️ Не создаётся аккаунт: <code>invalid jwt</code></h2>
 <p><img alt="" src="../img/accounts/faq-invalid-jwt.png" /></p>
