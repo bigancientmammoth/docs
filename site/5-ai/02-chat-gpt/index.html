@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://marketaut.ru/5-claude/01-claude-connect/">
+        <link rel="canonical" href="https://marketaut.ru/5-ai/02-chat-gpt/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Подключение - MarketAut</title>
+        <title>ChatGPT - MarketAut</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -40,8 +40,18 @@
                             <li class="nav-item">
                                 <a href="../../2-quick-start/quick_start/" class="nav-link">Быстрый старт</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="../../3-start/register/" class="nav-link">Начало работы</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Начало работы</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../3-start/01-register/" class="dropdown-item">Регистрация</a>
+</li>
+                                    
+<li>
+    <a href="../../3-start/02-home/" class="dropdown-item">Домашняя страница</a>
+</li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
@@ -73,11 +83,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Подключение</a>
+    <a href="../00-intro/" class="dropdown-item">Начало работы</a>
 </li>
                                     
 <li>
-    <a href="../02-claude-work/" class="dropdown-item">Настройка</a>
+    <a href="../01-claude/" class="dropdown-item">Claude</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">ChatGPT</a>
 </li>
                                 </ul>
                             </li>
@@ -90,12 +104,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../4-platform/04-diagrams-edit/" class="nav-link">
+                                <a rel="prev" href="../01-claude/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../02-claude-work/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -126,38 +140,83 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#chatgpt" class="nav-link">Работа с ChatGPT</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Проверка подключения</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Обновление инструментов</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
 <h1 id="_1">Общая информация</h1>
-<p>В этом разделе описано подключение ИИ-агентов (Claude, ChatGPT, Gemini и др.) к платформе MarketAut.</p>
-<p>В качестве примера используется <strong>Claude</strong> от Anthropic. При этом большинство современных ИИ-агентов поддерживают протокол <a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP</a> и могут подключаться через платформу MarketАut к вашему магазину Wildberries.</p>
+<p>В этом разделе описан процесс подключение <strong>ChatGPT</strong> к платформе MarketAut. </p>
+<p>Подключение выполняется через протокол <a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP</a> . </p>
+<p>После подключения ChatGPT сможет использовать инструменты и ресурсы, доступные в вашей диаграмме MarketAut, напрямую из диалога.</p>
+<p>Перед началом подключения убедитесь, что:</p>
+<ul>
+<li>аккаунт Wildberries успешно создан и настроен;</li>
+<li>диаграмма создана, настроена и запущена;</li>
+<li>получен MCP-адрес на домашней странице MarketAut.</li>
+</ul>
 <h1 id="_2">Подключение</h1>
-<p>1) Запустите приложение <strong>Claude for Desktop</strong><br />
-2) В разделе Chats выберите <strong>Customize</strong></p>
-<p><img alt="" src="../img/connect/customize.png" /></p>
-<p>3) В открывшемся окне выберите <strong>Connectors</strong></p>
-<p><strong>Connectors</strong> — это механизм подключения ИИ к внешним системам. С их помощью Claude может взаимодействовать с различными сервисами, включая Wildberries, через платформу MarketAut.</p>
-<p><img alt="" src="../img/connect/customize-connectors.png" /></p>
-<p>В открывшемся окне отображается список уже подключённых коннекторов.</p>
-<p>4) Для подключения нового коннектора нажмите <strong>(+)</strong>, затем в открывшемся меню выберите <strong>Add custom connector</strong><br />
-<img alt="" src="../img/connect/connectors-add.png" /></p>
-<p>Откроется окно настроек <strong>сonnectors</strong>. </p>
-<p>Заполните следующие значения:<br />
-<strong>Имя</strong> — любое название на ваш выбор, например <strong><code>MarketAut</code></strong><br />
-<strong>Адрес</strong> — <strong><code>https://marketaut.ru/mcp/wb</code></strong></p>
-<p>После заполнения полей нажмите <strong>Add</strong>.</p>
-<p><img alt="" src="../img/connect/connector-dialog.png" /></p>
-<p>После добавления коннектора <strong>MarketAut</strong> появится в списке, но будет отображаться как неподключённый. <br />
-Нажмите <strong>Connect</strong>, чтобы установить подключение.</p>
-<p><img alt="" src="../img/connect/not-connected.png" /></p>
-<p>Вы будете перенаправлены на страницу авторизации <strong>MarketAut</strong>. <br />
-Нажмите <strong>Разрешить доступ</strong>.</p>
-<p><img alt="" src="../img/connect/oauth-consent.png" /></p>
-<p>После завершения проверки статус коннектора изменится на «<strong>Подключён</strong>».</p>
-<p><img alt="" src="../img/connect/connected.png" /></p></div>
+<ol>
+<li>В левом нижнем углу окна ChatGPT нажмите на значок профиля и выберите <strong>Настройки</strong>;</li>
+</ol>
+<p><img alt="" src="../img/gpt/profile_open.png" /><br />
+2. Перейдите в раздел <strong>Приложения;</strong><br />
+3. Нажмите <strong>Создать приложение</strong>.</p>
+<p><img alt="" src="../img/gpt/app_create.png" /><br />
+Откроется окно создания нового приложения ChatGPT.<br />
+4. Заполните следующие значения:</p>
+<ul>
+<li><strong>Название</strong> — любое название на ваш выбор, например <code>MarketAut</code>;</li>
+<li><strong>Подключение</strong> — URL-адрес MCP-сервера;</li>
+<li><strong>Аутентификация</strong> — <code>OAuth</code>.</li>
+</ul>
+<p>Скопируйте MCP-адрес из блока подключения агента на домашней странице MarketAut и вставьте его в поле <strong>Подключение</strong>.</p>
+<p>Например: <code>https://marketaut.ru/mcp/myMCP</code></p>
+<p><img alt="" src="../img/gpt/connector_dialog.png" /></p>
+<p>Заполните поле подключения вашим MCP-адресом и убедитесь, что в качестве способа аутентификации выбран <strong>OAuth</strong>.</p>
+<p>После заполнения всех полей установите флажок подтверждения и нажмите <strong>Создать</strong>.</p>
+<p><img alt="" src="../img/gpt/confirm_creation.png" /><br />
+5. Далее нажмите <strong>Войти через  MarketAut</strong>;<br />
+6. Откроется страница авторизации MarketAut;<br />
+7. В окне предоставления доступа нажмите <strong>Разрешить доступ</strong>.</p>
+<p><img alt="" src="../img/gpt/oauth_consent.png" /></p>
+<p>После завершения подключения приложение появится в разделе <strong>Приложения</strong>.</p>
+<p><img alt="" src="../img/gpt/app_connected.png" /></p>
+<p>Откройте приложение, чтобы просмотреть информацию о подключении и список доступных инструментов MarketAut.</p>
+<p><img alt="" src="../img/gpt/tools_available.png" /></p>
+<p>Если список инструментов отображается, приложение успешно подключено к MarketAut и готово к использованию.</p>
+<h1 id="chatgpt">Работа с ChatGPT</h1>
+<h2 id="_3">Проверка подключения</h2>
+<p>Для проверки подключения откройте новый диалог ChatGPT.</p>
+<p>Нажмите кнопку <strong>+</strong> рядом с полем ввода сообщения и выберите:</p>
+<p><strong>Больше → Режим агента → MarketAut</strong></p>
+<p><img alt="" src="../img/gpt/add_marketaut.png" /></p>
+<p>После выбора агента MarketAut он будет подключён к текущему диалогу.</p>
+<p>Для проверки отправьте запрос, например:</p>
+<blockquote>
+<p>Привет! Выведи список моих карточек WB.</p>
+</blockquote>
+<p>Если подключение настроено корректно, ChatGPT сможет обратиться к инструментам MarketAut и получить данные из вашего магазина Wildberries.</p>
+<p><img alt="" src="../img/gpt/ask.png" /></p>
+<h2 id="_4">Обновление инструментов</h2>
+<p>После изменения списка инструментов в диаграмме MarketAut необходимо обновить приложение в ChatGPT.</p>
+<p>Для обновления приложения откройте:</p>
+<p><strong>Настройки → Приложения → MarketAut</strong> и нажмите <strong>Обновить</strong>.</p>
+<p><img alt="" src="../img/gpt/tools_update.png" /></p>
+<p>После обновления ChatGPT получит актуальный список инструментов из вашей диаграммы MarketAut.</p></div>
             </div>
         </div>
 

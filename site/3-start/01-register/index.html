@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://marketaut.ru/5-claude/02-claude-work/">
+        <link rel="canonical" href="https://marketaut.ru/3-start/01-register/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Настройка - MarketAut</title>
+        <title>Регистрация - MarketAut</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -40,8 +40,18 @@
                             <li class="nav-item">
                                 <a href="../../2-quick-start/quick_start/" class="nav-link">Быстрый старт</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="../../3-start/register/" class="nav-link">Начало работы</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Начало работы</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Регистрация</a>
+</li>
+                                    
+<li>
+    <a href="../02-home/" class="dropdown-item">Домашняя страница</a>
+</li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
@@ -69,15 +79,19 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа с ИИ</a>
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа с ИИ</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../01-claude-connect/" class="dropdown-item">Подключение</a>
+    <a href="../../5-ai/00-intro/" class="dropdown-item">Начало работы</a>
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Настройка</a>
+    <a href="../../5-ai/01-claude/" class="dropdown-item">Claude</a>
+</li>
+                                    
+<li>
+    <a href="../../5-ai/02-chat-gpt/" class="dropdown-item">ChatGPT</a>
 </li>
                                 </ul>
                             </li>
@@ -90,12 +104,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../01-claude-connect/" class="nav-link">
+                                <a rel="prev" href="../../2-quick-start/quick_start/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../02-home/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -117,24 +131,18 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#claude" class="nav-link">Работа с Claude</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">Проверка подключения</a>
+            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Регистрация</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Обновление инструментов</a>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#_2" class="nav-link">Вход</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Настройка доступа к инструментам</a>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#_3" class="nav-link">Восстановление пароля</a>
               <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#add-from-marketaut" class="nav-link">Добавление ресурсов через Add from MarketAut</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -142,41 +150,57 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="claude">Работа с Claude</h1>
-<h2 id="_1">Проверка подключения</h2>
-<p>В любом диалоге с Claude нажмите на символ <strong>(+)</strong> под полем ввода сообщения и выберите <strong>Connectors</strong>.</p>
-<p>Если подключение настроено корректно, в списке <strong>Connectors</strong> будет отображаться <strong>MarketAut</strong> (или другое имя, указанное при настройке подключения).</p>
-<p><img alt="" src="../img/work/check_connectors.png" /></p>
-<h2 id="_2">Обновление инструментов</h2>
-<p>После изменения списка доступных инструментов в веб-интерфейсе MarketAut необходимо обновить список инструментов в Claude.</p>
-<p>Для этого перейдите в раздел <strong>Customize</strong>.</p>
-<p><img alt="" src="../img/work/customize.png" /></p>
-<p>Далее откройте раздел <strong>Connectors</strong>.<br />
-<img alt="" src="../img/work/connectors.png" /></p>
-<p>Выберите нужный коннектор, нажмите на кнопку меню <strong>(⋯)</strong> в правом верхнем углу и выберите <strong>Refresh tools list</strong>.</p>
-<p><img alt="" src="../img/work/refresh-tools.png" /></p>
-<h2 id="_3">Настройка доступа к инструментам</h2>
-<p>Для каждого инструмента можно настроить отдельную политику доступа. </p>
-<p>Доступны следующие варианты:<br />
-1. Полный запрет<br />
-2. Подтверждение перед каждым использованием<br />
-3. Использование без подтверждения</p>
-<p>Для настройки перейдите в раздел <strong>Customize</strong> и выберите коннектор <strong>MarketAut</strong>.</p>
-<p><img alt="" src="../img/work/connectors.png" /></p>
-<p>В правой части окна отображается список инструментов. Для каждого инструмента можно выбрать один из режимов доступа:</p>
-<p><img alt="" src="../img/work/access-mode.png" /></p>
-<h2 id="add-from-marketaut">Добавление ресурсов через Add from MarketAut</h2>
-<p>Если к модулю MCP подключены инструменты, для которых существует skill, в меню Claude появляется пункт <strong>Add from MarketAut</strong>.</p>
-<p>Через него можно добавить ресурсы MCP-сервера в текущий диалог или проект. После добавления Claude сможет использовать эти ресурсы при работе с запросами.</p>
-<p><img alt="" src="../img/work/skill-ma.png" /></p>
-<p>Чтобы добавить ресурс:</p>
+<h1 id="_1">Регистрация</h1>
+<p>В настоящее время доступны следующие способы регистрации:</p>
+<ul>
+<li>Адрес электронной почты </li>
+<li>Учётная запись Google</li>
+</ul>
+<p>Для регистрации по электронной почте:</p>
 <ol>
-<li>Нажмите кнопку <strong>+</strong> в поле ввода Claude</li>
-<li>Выберите <strong>Connectors</strong></li>
-<li>Откройте <strong>Add from MarketAut</strong></li>
-<li>Выберите нужный ресурс, например <strong>Wildberries</strong></li>
+<li>Перейдите на Главную страницу;</li>
+<li>Укажите адрес электронной почты и придумайте пароль;</li>
+<li>Нажмите <strong>Зарегистрироваться</strong>;</li>
+<li>Введите код подтверждения из письма;</li>
+<li>После успешного подтверждения будет создана ваша учётная запись MarketAut.</li>
 </ol>
-<p>После добавления ресурс станет доступен в текущем диалоге или проекте.</p></div>
+<p>Для регистрации через Google:</p>
+<ol>
+<li>Перейдите на <a href="https://marketaut.ru">Главную страницу</a>;</li>
+<li>Нажмите <strong>Продолжить с Google</strong>;</li>
+<li>Выберите учётную запись Google или выполните вход в неё;</li>
+<li>После успешной авторизации будет создана ваша учетная запись MarketAut.</li>
+</ol>
+<p><img alt="" src="../img/register/register.png" /></p>
+<p>При регистрации по адресу электронной почты на указанный email будет отправлено письмо с кодом подтверждения. Введите полученный код для завершения регистрации и создания учётной записи MarketAut.</p>
+<p><img alt="" src="../img/register/verification_code.png" /></p>
+<p>Если письмо не пришло в течение нескольких минут:</p>
+<ul>
+<li>Проверьте папку <strong>Спам</strong>;</li>
+<li>Убедитесь, что адрес электронной почты указан без ошибок;</li>
+<li>При необходимости запросите отправку письма повторно.</li>
+</ul>
+<h1 id="_2">Вход</h1>
+<p>Если вы уже зарегистрированы и ранее выполняли вход на этом устройстве, система автоматически авторизует вас при посещении сайта.</p>
+<p>Если автоматическая авторизация не произошла (например, при входе с нового устройства или после выхода из аккаунта), выполните вход с помощью адреса электронной почты или учетной записи Google , использованных при регистрации.</p>
+<h1 id="_3">Восстановление пароля</h1>
+<p>Если вы забыли пароль, нажмите <strong>Восстановить пароль</strong> на странице входа и укажите адрес электронной почты, который использовался при регистрации.</p>
+<p>На указанный email будет отправлено письмо для сброса пароля.</p>
+<p><img alt="" src="../img/register/password_reset.png" /></p>
+<p>В письме содержатся:</p>
+<ul>
+<li>Кнопка <strong>Сбросить пароль</strong> для создания нового пароля;</li>
+<li>Прямая ссылка для восстановления пароля на случай, если кнопка не открывается или работает некорректно.</li>
+</ul>
+<p>Если письмо не пришло:</p>
+<ul>
+<li>Проверьте папки <strong>Спам</strong>;</li>
+<li>Убедитесь, что адрес электронной почты указан верно;</li>
+<li>Запросите письмо повторно через несколько минут.</li>
+</ul>
+<blockquote>
+<p>Обратите внимание: письма для подтверждения регистрации и восстановления пароля могут попадать в папку «Спам».</p>
+</blockquote></div>
             </div>
         </div>
 

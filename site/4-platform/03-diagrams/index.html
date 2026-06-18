@@ -40,8 +40,18 @@
                             <li class="nav-item">
                                 <a href="../../2-quick-start/quick_start/" class="nav-link">Быстрый старт</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="../../3-start/register/" class="nav-link">Начало работы</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Начало работы</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../3-start/01-register/" class="dropdown-item">Регистрация</a>
+</li>
+                                    
+<li>
+    <a href="../../3-start/02-home/" class="dropdown-item">Домашняя страница</a>
+</li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
@@ -73,11 +83,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../5-claude/01-claude-connect/" class="dropdown-item">Подключение</a>
+    <a href="../../5-ai/00-intro/" class="dropdown-item">Начало работы</a>
 </li>
                                     
 <li>
-    <a href="../../5-claude/02-claude-work/" class="dropdown-item">Настройка</a>
+    <a href="../../5-ai/01-claude/" class="dropdown-item">Claude</a>
+</li>
+                                    
+<li>
+    <a href="../../5-ai/02-chat-gpt/" class="dropdown-item">ChatGPT</a>
 </li>
                                 </ul>
                             </li>
@@ -153,36 +167,36 @@
 <p>Все диаграммы хранятся в команде и доступны её участникам.</p>
 <h1 id="_2">Управление</h1>
 <p>Для управления диаграммами откройте раздел <a href="https://marketaut.ru/app/config/diagrams">Конфигурация → Диаграммы</a></p>
-<p>(1) Количество созданных диаграмм и доступный лимит.<br />
-(2) Кнопка создания новой диаграммы.<br />
+<p>(1) Количество созданных диаграмм и доступный лимит;<br />
+(2) Кнопка создания новой диаграммы;<br />
 (3) Список созданных диаграмм.</p>
 <p><img alt="Окно управления диаграммами" src="../img/diagrams/list-main.png" /></p>
 <h5 id="ref_diagram_create"></h5>
 <h2 id="_3">Создание диаграммы</h2>
 <ol>
-<li>Перейдите в раздел <a href="https://marketaut.ru/app/config/diagrams">Конфигурация → Диаграммы</a></li>
-<li>Нажмите кнопку <strong>+ Добавить диаграмму</strong></li>
+<li>Перейдите в раздел <a href="https://marketaut.ru/app/config/diagrams">Конфигурация → Диаграммы</a>;</li>
+<li>Нажмите кнопку <strong>+ Добавить диаграмму</strong>;</li>
 <li>Заполните поля:<br />
     1. <strong>Название</strong> — обязательное поле. Укажите любое удобное название диаграммы.<br />
     2. <strong>Описание</strong> — необязательное поле. При необходимости добавьте описание диаграммы.</li>
-<li>Нажмите <strong>Сохранить</strong></li>
+<li>Нажмите <strong>Сохранить</strong>.</li>
 </ol>
 <p>Перед вами откроется пустой холст диаграммы.</p>
 <p>Подробнее о настройке диаграмм см. в разделе <a href="../04-diagrams-edit/">Настройка диаграмм</a></p>
 <h5 id="ref_diagram_open"></h5>
 <h2 id="_4">Открытие диаграммы</h2>
 <ol>
-<li>Перейдите в раздел <a href="https://marketaut.ru/app/config/diagrams">Конфигурация → Диаграммы</a></li>
-<li>В строке с нужной диаграммой нажмите кнопку <strong>Открыть</strong></li>
+<li>Перейдите в раздел <a href="https://marketaut.ru/app/config/diagrams">Конфигурация → Диаграммы</a>;</li>
+<li>В строке с нужной диаграммой нажмите кнопку <strong>Открыть</strong>.</li>
 </ol>
 <p><img alt="" src="../img/diagrams/open-diagram.png" /></p>
-<p>Подробнее о настройке диаграмм см. в разделе <a href="../04-diagrams-edit/">Настройка диаграмм</a></p>
+<p>Подробнее о настройке диаграмм см. в разделе <a href="../04-diagrams-edit/">Настройка диаграмм</a>.</p>
 <h2 id="_5">Удаление диаграммы</h2>
 <ol>
-<li>Перейдите в раздел <a href="https://marketaut.ru/app/config/diagrams">Конфигурация → Диаграммы</a></li>
-<li>Напротив нужной диаграммы нажмите кнопку меню</li>
-<li>В открывшемся меню выберите <strong>Удалить</strong></li>
-<li>Подтвердите удаление диаграммы </li>
+<li>Перейдите в раздел <a href="https://marketaut.ru/app/config/diagrams">Конфигурация → Диаграммы</a>;</li>
+<li>Напротив нужной диаграммы нажмите кнопку меню;</li>
+<li>В открывшемся меню выберите <strong>Удалить</strong>;</li>
+<li>Подтвердите удаление диаграммы.</li>
 </ol>
 <p><img alt="" src="../img/diagrams/delete-diagram.png" /></p>
 <h5 id="ref_diagram_start_stop"></h5>
@@ -194,13 +208,13 @@
 <p>При изменении настроек диаграмма автоматически <strong>останавливается</strong>. После завершения настройки её необходимо снова <strong>запустить</strong>.</p>
 <p>Запустить диаграмму можно двумя способами: из общего списка диаграмм или из окна настройки диаграммы.</p>
 <p><strong>Из списка диаграмм</strong><br />
-1. Перейдите в раздел  <a href="https://marketaut.ru/app/config/diagrams">Конфигурация → Диаграммы</a><br />
-2. Напротив нужной диаграммы нажмите кнопку запуска (3)</p>
+1. Перейдите в раздел  <a href="https://marketaut.ru/app/config/diagrams">Конфигурация → Диаграммы</a>;<br />
+2. Напротив нужной диаграммы нажмите кнопку запуска (3).</p>
 <p><img alt="" src="../img/diagrams/list-main.png" /></p>
 <p><strong>Из окна настройки диаграммы</strong><br />
-1. Перейдите в раздел <a href="https://marketaut.ru/app/config/diagrams">Конфигурация → Диаграммы</a><br />
-2. Откройте нужную диаграмму<br />
-3. В окне настройки диаграммы нажмите кнопку <strong>Запустить</strong> </p>
+1. Перейдите в раздел <a href="https://marketaut.ru/app/config/diagrams">Конфигурация → Диаграммы</a>;<br />
+2. Откройте нужную диаграмму;<br />
+3. В окне настройки диаграммы нажмите кнопку <strong>Запустить</strong>.</p>
 <p>Подробнее о настройке диаграмм см. в разделе <a href="../04-diagrams-edit/">Настройка диаграмм</a>.</p></div>
             </div>
         </div>

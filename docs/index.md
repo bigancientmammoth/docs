@@ -13,8 +13,8 @@
 
 [Инструкция по подключению за 10 минут](2-quick-start/quick_start.md)
 
-[Регистрация и начало работы](3-start/register.md)
+[Регистрация и начало работы](3-start/01-register.md)
 
 [Работа с платформой](4-platform/00-intro.md)
 
-[Настройка ИИ агента](01-claude-connect.md)
+[Настройка ИИ агента](5-ai/00-intro.md)
