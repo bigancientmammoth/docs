@@ -11,7 +11,9 @@ markdown_extensions:
 nav:
   - Помощь: "1-help/help.md"
   - Быстрый старт: "2-quick-start/quick_start.md"
-  - Начало работы: "3-start/register.md"
+  - Начало работы: 
+    - Регистрация: "3-start/01-register.md"
+    - Домашняя страница: "3-start/02-home.md"
   - Работа в системе:
     - Общие концепции: "4-platform/00-intro.md"
     - Аккаунты: "4-platform/01-accounts.md"
@@ -19,5 +21,6 @@ nav:
     - Диаграммы: "4-platform/03-diagrams.md"
     - Настройка диаграмм: "4-platform/04-diagrams-edit.md"
   - Работа с ИИ:
+    - Начало работы: "5-ai/00-intro.md"
     - Claude: "5-ai/01-claude.md"
     - ChatGPT: "5-ai/02-chat-gpt.md"
