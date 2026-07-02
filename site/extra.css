@@ -1,0 +1,58 @@
+[role="main"] table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 16px;
+}
+
+[role="main"] table th,
+[role="main"] table td {
+    padding: 8px 10px;
+    border-top: 1px solid #ddd;
+    vertical-align: top;
+    text-align: left;
+}
+
+[role="main"] table thead th {
+    border-bottom: 2px solid #ddd;
+    font-weight: 600;
+}
+
+[role="main"] table tbody tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+[role="main"] table th:nth-child(1),
+[role="main"] table td:nth-child(1) {
+    white-space: nowrap;
+}
+
+[role="main"] table th:nth-child(2),
+[role="main"] table td:nth-child(2) {
+    white-space: nowrap;
+}
+
+[role="main"] table th:nth-child(4),
+[role="main"] table td:nth-child(4) {
+    white-space: nowrap;
+}
+
+[role="main"] table th:nth-child(1),
+[role="main"] table td:nth-child(1) {
+    width: 14%;
+}
+
+[role="main"] table th:nth-child(2),
+[role="main"] table td:nth-child(2) {
+    width: 16%;
+}
+
+[role="main"] table th:nth-child(3),
+[role="main"] table td:nth-child(3) {
+    width: 45%;
+}
+
+[role="main"] table th:nth-child(4),
+[role="main"] table td:nth-child(4) {
+    width: 25%;
+}
