@@ -17,6 +17,7 @@ nav:
   - Начало работы: 
     - Регистрация: "3-start/01-register.md"
     - Домашняя страница: "3-start/02-home.md"
+    - Получение API-токена: 3-start/03-api-token.md
   - Работа в системе:
     - Общие концепции: "4-platform/00-intro.md"
     - Аккаунты: "4-platform/01-accounts.md"
