@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://marketaut.ru/5-ai/02-chat-gpt/">
+        <link rel="canonical" href="https://marketaut.ru/3-start/03-api-token/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>ChatGPT - MarketAut</title>
+        <title>Получение API-токена - MarketAut</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -42,19 +42,19 @@
                                 <a href="../../2-quick-start/quick_start/" class="nav-link">Быстрый старт</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Начало работы</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Начало работы</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../3-start/01-register/" class="dropdown-item">Регистрация</a>
+    <a href="../01-register/" class="dropdown-item">Регистрация</a>
 </li>
                                     
 <li>
-    <a href="../../3-start/02-home/" class="dropdown-item">Домашняя страница</a>
+    <a href="../02-home/" class="dropdown-item">Домашняя страница</a>
 </li>
                                     
 <li>
-    <a href="../../3-start/03-api-token/" class="dropdown-item">Получение API-токена</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Получение API-токена</a>
 </li>
                                 </ul>
                             </li>
@@ -84,19 +84,19 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа с ИИ</a>
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа с ИИ</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../00-intro/" class="dropdown-item">Начало работы</a>
+    <a href="../../5-ai/00-intro/" class="dropdown-item">Начало работы</a>
 </li>
                                     
 <li>
-    <a href="../01-claude/" class="dropdown-item">Claude</a>
+    <a href="../../5-ai/01-claude/" class="dropdown-item">Claude</a>
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">ChatGPT</a>
+    <a href="../../5-ai/02-chat-gpt/" class="dropdown-item">ChatGPT</a>
 </li>
                                 </ul>
                             </li>
@@ -109,12 +109,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../01-claude/" class="nav-link">
+                                <a rel="prev" href="../02-home/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../../4-platform/00-intro/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -136,17 +136,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Общая информация</a>
+            <li class="nav-item" data-bs-level="1"><a href="#api-wildberries" class="nav-link">Получение API-токена Wildberries</a>
               <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#_2" class="nav-link">Подключение</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#chatgpt" class="nav-link">Использование ChatGPT</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -154,58 +145,25 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">Общая информация</h1>
-<p>В этом разделе описан процесс подключение <strong>ChatGPT</strong> к платформе MarketAut. </p>
-<p>Подключение выполняется через протокол <a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP</a> . </p>
-<p>После подключения ChatGPT сможет использовать инструменты и ресурсы, доступные в вашей диаграмме MarketAut, напрямую из диалога.</p>
-<p>Перед началом подключения убедитесь, что:</p>
-<ul>
-<li>аккаунт Wildberries успешно создан и настроен;</li>
-<li>диаграмма создана, настроена и запущена;</li>
-<li>получен MCP-адрес на домашней странице MarketAut.</li>
-</ul>
-<h1 id="_2">Подключение</h1>
-<ol>
-<li>В правом верхнем углу окна ChatGPT выберите раздел <strong>Плагины</strong>;</li>
-</ol>
-<p><img alt="" src="../img/gpt/plugin.png" /><br />
-2. Нажмите  <strong>Добавить плагин</strong>;</p>
-<p><img alt="" src="../img/gpt/add-plugin.png" /><br />
-3. Заполните поля:</p>
-<ul>
-<li><strong>Название</strong> — любое название на ваш выбор, например <code>MarketAut</code>;</li>
-<li><strong>Подключение</strong> — URL-адрес MCP-сервера;</li>
-<li><strong>Аутентификация</strong> — <code>OAuth</code>.</li>
-</ul>
-<p>Скопируйте MCP-адрес из блока подключения агента на домашней странице MarketAut и вставьте его в поле <strong>Подключение</strong>.</p>
-<p>Например: <code>https://marketaut.ru/mcp/myMCP</code></p>
-<p><img alt="" src="../img/gpt/connected-dialog.png" /></p>
-<p>Заполните поле подключения вашим MCP-адресом и убедитесь, что в качестве способа аутентификации выбран <strong>OAuth</strong>.</p>
-<p>После заполнения всех полей установите флажок подтверждения и нажмите <strong>Создать</strong>.</p>
-<p><img alt="" src="../img/gpt/confirm-creation.png" /><br />
-4. Далее нажмите <strong>Войти через  MarketAut</strong>;<br />
-5. Откроется страница авторизации MarketAut;<br />
-6. В окне предоставления доступа нажмите <strong>Разрешить доступ</strong>.</p>
-<p><img alt="" src="../img/gpt/oauth_consent.png" /></p>
-<p>После успешного подключения плагин <strong>MarketAut</strong> появится в разделе <strong>Плагины → Личные</strong>.</p>
-<p><img alt="" src="../img/gpt/plugin-list.png" /><br />
-Откройте плагин <strong>MarketAut</strong>.</p>
-<p>В правом верхнем углу нажмите <strong>Настройки</strong>.</p>
-<p><img alt="" src="../img/gpt/plugin-settings-button.png" /><br />
-В открывшемся окне будет отображаться информация о подключении и список доступных инструментов MarketAut.</p>
-<p><img alt="" src="../img/gpt/tools_available.png" /></p>
-<p>Если список инструментов отображается, подключение успешно завершено.</p>
-<h2 id="chatgpt">Использование ChatGPT</h2>
-<p>Откройте новый диалог ChatGPT.</p>
-<p>Нажмите кнопку <strong>+</strong> рядом с полем ввода сообщения и выберите <strong>MarketAut</strong>.</p>
-<p><img alt="" src="../img/gpt/chat-plugin-list.png" /></p>
-<p>Если <strong>MarketAut</strong> отображается в списке, плагин успешно подключён и готов к использованию.</p>
-<p>Отправьте любой запрос, например:</p>
-<blockquote>
-<p>Привет! Выведи список моих карточек WB.</p>
-</blockquote>
-<p><img alt="" src="../img/gpt/ask.png" /></p>
-<p>Если подключение настроено корректно, ChatGPT сможет обратиться к инструментам MarketAut и получить данные из вашего магазина Wildberries.</p></div>
+<h1 id="api-wildberries">Получение API-токена Wildberries</h1>
+<p>Для подключения аккаунта к MarketAut необходимо получить API-токен Wildberries.</p>
+<p>Войдите в личный кабинет продавца Wildberries и откройте раздел <strong>Доступ к API</strong>.</p>
+<pre><code class="language-md">![Раздел «Доступ к API»](img/api-token/01-api-menu.png)
+</code></pre>
+<p>Нажмите <strong>Создать токен</strong>, укажите название токена и выберите необходимые категории доступа.</p>
+<pre><code class="language-md">![Создание API-токена](img/api-token/02-create-token.png)
+</code></pre>
+<p>После создания Wildberries отобразит API-токен. Скопируйте его и сохраните.</p>
+<p>!!! warning "Важно"</p>
+<pre><code>API-токен отображается только один раз. Если он был утерян, потребуется создать новый.
+</code></pre>
+<pre><code class="language-md">![Полученный API-токен](img/api-token/03-copy-token.png)
+</code></pre>
+<p>После получения токена вернитесь на <strong>Домашнюю страницу</strong> MarketAut.</p>
+<p>Вставьте API-токен в поле <strong>Введите WB API-токен</strong> и нажмите <strong>Сохранить</strong>.</p>
+<pre><code class="language-md">![Добавление API-токена](img/home/add-token.png)
+</code></pre>
+<p>После сохранения токена аккаунт будет настроен, и вы сможете запустить диаграмму и получить ссылку для подключения ИИ-агента.</p></div>
             </div>
         </div>
 

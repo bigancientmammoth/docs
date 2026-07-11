@@ -6,7 +6,6 @@
 
 1. Wildberries — API-токен [Wildberries](https://wildberries.ru)
 
-
 ## Wildberries
 
 Позволяет работать с данными магазина через API [Wildberries](https://wildberries.ru).
