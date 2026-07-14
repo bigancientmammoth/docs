@@ -1,5 +1,8 @@
 
 # Поддержка 
+
+**Почта**: [support@marketaut.ru](mailto:support@marketaut.ru)
+
 **Телеграм**:  [@gideonbraver](https://telegram.me/gideonbraver)
 
 **Документация**:  [https://docs.marketaut.ru](https://docs.marketaut.ru)
