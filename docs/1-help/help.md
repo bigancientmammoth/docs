@@ -1,6 +1,6 @@
 
 # Поддержка 
-**Телеграм**:  [@gideonbraver](https://t.me/gideonbraver)
+**Телеграм**:  [@gideonbraver](https://telegram.me/gideonbraver)
 
 **Документация**:  [https://docs.marketaut.ru](https://docs.marketaut.ru)
 
