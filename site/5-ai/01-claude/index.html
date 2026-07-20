@@ -152,11 +152,15 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Обновление инструментов</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Пример запроса</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Настройка доступа к инструментам</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Обновление инструментов</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Настройка доступа к инструментам</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -180,21 +184,17 @@
 </blockquote>
 <h1 id="_2">Подключение</h1>
 <ol>
-<li>Запустите приложение <strong>Claude for Desktop</strong>;</li>
-<li>В разделе <strong>Chats</strong> выберите <strong>Customize</strong>;</li>
-</ol>
-<p><img alt="" src="../img/claude/customize.png" /></p>
-<ol>
-<li>В открывшемся окне выберите <strong>Connectors;</strong></li>
+<li>Запустите приложение <strong>Claude Desktop</strong>;</li>
+<li>В боковом меню выберите <strong>Customize</strong>;<br />
+<img alt="" src="../img/claude/customize.png" /></li>
+<li>Откройте раздел <strong>Connectors;</strong></li>
 </ol>
 <p><strong>Connectors</strong> — механизм подключения Claude к внешним системам. С его помощью Claude может получать доступ к инструментам и данным платформы MarketAut.</p>
-<p><img alt="" src="../img/claude/customize-connectors.png" /></p>
-<p>В разделе <strong>Connectors</strong> отображаются уже подключённые коннекторы и доступные подключения.</p>
-<ol>
-<li>Для подключения нового коннектора нажмите кнопку <strong>+</strong> и выберите <strong>Add custom connector</strong>;<br />
-<img alt="" src="../img/claude/connectors-add.png" /></li>
-</ol>
-<p>Откроется окно настройки <strong>Connectors</strong>.</p>
+<p><img alt="" src="../img/claude/customize-connectors.png" /><br />
+Чтобы добавить новый коннектор:<br />
+4. Нажмите кнопку <strong>Add</strong> и нажмите <strong>Add custom connector</strong>;<br />
+<img alt="" src="../img/claude/add-connectors.png" /></p>
+<p>Откроется окно добавления коннектора.</p>
 <p>Заполните следующие поля:</p>
 <ul>
 <li><strong>Имя</strong> — любое удобное название, например <code>MarketAut</code>.</li>
@@ -208,35 +208,51 @@
 <p>Для продолжения настройки нажмите <strong>Connect</strong>.</p>
 <p><img alt="" src="../img/claude/not-connected.png" /></p>
 <p>После нажатия кнопки <strong>Connect</strong> откроется страница авторизации MarketAut.</p>
-<p>В окне предоставления доступа нажмите <strong>Разрешить доступ</strong>.</p>
-<p><img alt="" src="../img/claude/oauth_consent.png" /></p>
+<p>В окне предоставления доступа нажмите <strong>Разрешить доступ</strong>.<br />
+<img alt="" src="../img/claude/claude-add-custom-connector.png" /></p>
 <p>После успешной авторизации Claude получит доступ к инструментам и данным, доступным в вашей диаграмме MarketAut.</p>
-<p>После завершения подключения статус коннектора изменится на <strong>«Подключён»</strong>.</p>
+<p>После завершения подключения рядом с коннектором появится отметка подключения, а на его странице — кнопка <strong>Disconnect</strong>.</p>
 <p><img alt="" src="../img/claude/connected.png" /></p>
 <h1 id="claude">Работа с Claude</h1>
 <h2 id="_3">Проверка подключения</h2>
 <p>В любом диалоге Claude нажмите кнопку <strong>(+)</strong> рядом с полем ввода сообщения и выберите <strong>Connectors</strong>.</p>
 <p>Если подключение настроено корректно, в списке коннекторов будет отображаться <strong>MarketAut</strong> (или другое имя, указанное при настройке подключения).<br />
 <img alt="" src="../img/claude/check_connectors.png" /></p>
-<h2 id="_4">Обновление инструментов</h2>
+<h2 id="_4">Пример запроса</h2>
+<p>Чтобы проверить работу инструментов MarketAut:</p>
+<ol>
+<li>Откройте новый диалог Claude;</li>
+<li>Нажмите кнопку <strong>(+)</strong> рядом с полем ввода сообщения;</li>
+<li>Выберите <strong>Connectors</strong>;</li>
+<li>Убедитесь, что коннектор <strong>MarketAut</strong> включён;</li>
+<li>Задайте вопрос о вашем магазине, например:</li>
+</ol>
+<blockquote>
+<p>Выведи список неотвеченных вопрсов в моём магазине??</p>
+</blockquote>
+<p>Claude обратится к доступным инструментам MarketAut и выведет полученные данные в диалоге.<br />
+<img alt="" src="../img/claude/claude-marketaut-response.png" /></p>
+<p>Если Claude получил данные из MarketAut, подключение настроено корректно.</p>
+<h2 id="_5">Обновление инструментов</h2>
 <p>После изменения списка инструментов в MarketAut необходимо обновить список инструментов в Claude.</p>
-<p>Для этого перейдите в раздел <strong>Customize</strong>.</p>
-<p><img alt="" src="../img/claude/customize.png" /></p>
-<p>Далее откройте раздел <strong>Connectors</strong>.<br />
-<img alt="" src="../img/claude/connectors.png" /></p>
-<p>Выберите нужный коннектор, нажмите на кнопку меню <strong>(⋯)</strong> в правом верхнем углу и выберите <strong>Refresh tools list</strong>.</p>
+<ol>
+<li>Перейдите в раздел <strong>Customize</strong>;</li>
+<li>Откройте раздел <strong>Connectors</strong> и выберите <strong>MarketAut</strong>;<br />
+<img alt="" src="../img/claude/connectors.png" /></li>
+<li>Откройте меню <strong>(⋮)</strong> и выберите <strong>Refresh tools list</strong>.</li>
+</ol>
 <p><img alt="" src="../img/claude/refresh-tools.png" /></p>
-<h2 id="_5">Настройка доступа к инструментам</h2>
+<h2 id="_6">Настройка доступа к инструментам</h2>
 <p>Для каждого инструмента можно отдельно настроить способ доступа.</p>
 <p>Доступны следующие варианты:</p>
 <ol>
-<li><strong>Полный запрет</strong> — Claude не сможет использовать инструмент;</li>
-<li><strong>Подтверждение перед каждым использованием</strong> — перед вызовом ;инструмента потребуется подтверждение пользователя;</li>
-<li><strong>Использование без подтверждения</strong> — Claude сможет использовать инструмент без дополнительных запросов.</li>
+<li><strong>Использование без подтверждения</strong> — Claude сможет использовать инструмент без дополнительных запросов;</li>
+<li><strong>Подтверждение перед каждым использованием</strong> — перед вызовом инструмента потребуется подтверждение пользователя;</li>
+<li><strong>Полный запрет</strong> — Claude не сможет использовать инструмент.</li>
 </ol>
-<p>Для настройки перейдите в раздел <strong>Customize</strong> и откройте коннектор <strong>MarketAut</strong>.</p>
+<p>Для настройки перейдите в раздел <strong>Connectors</strong> и откройте коннектор <strong>MarketAut</strong>.</p>
 <p>В правой части окна отображается список доступных инструментов. Для каждого инструмента можно выбрать один из режимов доступа:</p>
-<p><img alt="" src="../img/claude/connectors.png" /></p>
+<p><img alt="" src="../img/claude/connector-list.png" /></p>
 <p>В правой части окна отображается список доступных инструментов. Для каждого инструмента можно выбрать один из режимов доступа:</p>
 <p><img alt="" src="../img/claude/access-mode.png" /><br />
 Значки режимов доступа:</p>
@@ -261,7 +277,7 @@
 <li>Нажмите кнопку <strong>+</strong> рядом с полем ввода сообщения;</li>
 <li>Выберите <strong>Connectors</strong>;</li>
 <li>Откройте <strong>Add from MarketAut</strong>;</li>
-<li>Выберите нужный ресурс, например <strong>Wildberries</strong>.</li>
+<li>Выберите нужный ресурс, например <strong>Wildberries Content</strong>.</li>
 </ol>
 <p>После добавления ресурс станет доступен в текущем диалоге или проекте.</p></div>
             </div>
