@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://marketaut.ru/4-platform/05-tools/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Инструменты - MarketAut</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../extra.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MarketAut</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../1-help/help/" class="nav-link">Помощь</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../2-quick-start/quick_start/" class="nav-link">Быстрый старт</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Начало работы</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../3-start/01-register/" class="dropdown-item">Регистрация</a>
+</li>
+                                    
+<li>
+    <a href="../../3-start/02-home/" class="dropdown-item">Домашняя страница</a>
+</li>
+                                    
+<li>
+    <a href="../../3-start/03-api-token/" class="dropdown-item">Получение API-токена</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа в системе</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../00-intro/" class="dropdown-item">Общие концепции</a>
+</li>
+                                    
+<li>
+    <a href="../01-accounts/" class="dropdown-item">Аккаунты</a>
+</li>
+                                    
+<li>
+    <a href="../02-account-types/" class="dropdown-item">Типы аккаунтов</a>
+</li>
+                                    
+<li>
+    <a href="../03-diagrams/" class="dropdown-item">Диаграммы</a>
+</li>
+                                    
+<li>
+    <a href="../04-diagrams-edit/" class="dropdown-item">Настройка диаграмм</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Инструменты</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Работа с ИИ</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../5-ai/00-intro/" class="dropdown-item">Начало работы</a>
+</li>
+                                    
+<li>
+    <a href="../../5-ai/01-claude/" class="dropdown-item">Claude</a>
+</li>
+                                    
+<li>
+    <a href="../../5-ai/02-chat-gpt/" class="dropdown-item">ChatGPT</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../04-diagrams-edit/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../5-ai/00-intro/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#marketaut" class="nav-link">Инструменты MarketAut</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">Контент</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Цены</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Коммуникации</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_11" class="nav-link">Отчёты</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_14" class="nav-link">Информация</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_17" class="nav-link">Интеграции</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="marketaut">Инструменты MarketAut</h1>
+<p>MarketAut предоставляет инструменты для работы с магазином Wildberries через ChatGPT и Claude.</p>
+<p>Инструменты добавляются в диаграмму в виде узлов. Можно подключить всю группу с помощью пункта <strong>ALL</strong> или выбрать только отдельные функции.</p>
+<p><img alt="" src="../img/tools/tools-overview.png" /></p>
+<p>Все доступные инструменты разделены по направлениям:</p>
+<ul>
+<li>Контент</li>
+<li>Цены</li>
+<li>Коммуникации</li>
+<li>Отчёты</li>
+<li>Информация</li>
+<li>Интеграции</li>
+</ul>
+<h2 id="_1">Контент</h2>
+<h3 id="_2">Каталог товаров</h3>
+<p>Инструменты для получения справочной информации Wildberries, просмотра карточек товаров и управления ими.</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getCategories</code></td>
+<td>Получает список категорий товаров</td>
+</tr>
+<tr>
+<td><code>getSubjects</code></td>
+<td>Получает список предметов Wildberries</td>
+</tr>
+<tr>
+<td><code>getColors</code></td>
+<td>Получает доступные цвета</td>
+</tr>
+<tr>
+<td><code>getGenders</code></td>
+<td>Получает доступные значения пола</td>
+</tr>
+<tr>
+<td><code>getCountries</code></td>
+<td>Получает список стран производства</td>
+</tr>
+<tr>
+<td><code>getSeasons</code></td>
+<td>Получает доступные сезоны</td>
+</tr>
+<tr>
+<td><code>getVAT</code></td>
+<td>Получает доступные ставки НДС</td>
+</tr>
+<tr>
+<td><code>getTNVED</code></td>
+<td>Получает коды ТН ВЭД</td>
+</tr>
+<tr>
+<td><code>getBrands</code></td>
+<td>Получает список брендов</td>
+</tr>
+<tr>
+<td><code>getSubjectCharacteristics</code></td>
+<td>Получает характеристики выбранного предмета</td>
+</tr>
+<tr>
+<td><code>getCards</code></td>
+<td>Получает список карточек товаров</td>
+</tr>
+<tr>
+<td><code>getCardByNm</code></td>
+<td>Получает карточку товара по артикулу Wildberries</td>
+</tr>
+<tr>
+<td><code>getFailedCards</code></td>
+<td>Получает карточки, при обработке которых возникли ошибки</td>
+</tr>
+<tr>
+<td><code>createCard</code></td>
+<td>Создаёт новую карточку товара</td>
+</tr>
+<tr>
+<td><code>updateCard</code></td>
+<td>Обновляет карточку товара</td>
+</tr>
+<tr>
+<td><code>moveCardToDeleted</code></td>
+<td>Перемещает одну карточку в удалённые</td>
+</tr>
+<tr>
+<td><code>moveCardsToDeleted</code></td>
+<td>Перемещает несколько карточек в удалённые</td>
+</tr>
+<tr>
+<td><code>deletedCards</code></td>
+<td>Получает список удалённых карточек</td>
+</tr>
+<tr>
+<td><code>attachCardPhoto</code></td>
+<td>Добавляет фотографию в карточку товара</td>
+</tr>
+<tr>
+<td><code>attachCardPhotoAsUrl</code></td>
+<td>Добавляет фотографию в карточку товара по ссылке</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">Цены</h2>
+<h3 id="_4">Цены и скидки</h3>
+<p>Инструменты для просмотра и изменения цен на товары Wildberries.</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getPrices</code></td>
+<td>Получает текущие цены и скидки на товары</td>
+</tr>
+<tr>
+<td><code>setPrice</code></td>
+<td>Устанавливает новую цену или скидку на товар</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">Коммуникации</h2>
+<h3 id="_6">Отзывы</h3>
+<p>Инструменты для просмотра отзывов покупателей и работы с ответами.</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>countUnansweredFeedbacks</code></td>
+<td>Получает количество неотвеченных отзывов</td>
+</tr>
+<tr>
+<td><code>countFeedbacks</code></td>
+<td>Получает общее количество отзывов</td>
+</tr>
+<tr>
+<td><code>getFeedbacks</code></td>
+<td>Получает список отзывов</td>
+</tr>
+<tr>
+<td><code>getFeedbackById</code></td>
+<td>Получает отзыв по его идентификатору</td>
+</tr>
+<tr>
+<td><code>answerFeedback</code></td>
+<td>Отправляет ответ на отзыв</td>
+</tr>
+<tr>
+<td><code>editFeedbackAnswer</code></td>
+<td>Редактирует ранее отправленный ответ</td>
+</tr>
+<tr>
+<td><code>returnForFeedback</code></td>
+<td>Оформляет возврат товара по идентификатору отзыва</td>
+</tr>
+<tr>
+<td><code>getArchivedFeedbacks</code></td>
+<td>Получает архивные отзывы</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">Закреплённые отзывы</h3>
+<p>Инструменты для управления отзывами, закреплёнными в карточках товаров.</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getPins</code></td>
+<td>Получает список закреплённых отзывов</td>
+</tr>
+<tr>
+<td><code>pin</code></td>
+<td>Закрепляет отзыв</td>
+</tr>
+<tr>
+<td><code>unpin</code></td>
+<td>Снимает закрепление с отзыва</td>
+</tr>
+<tr>
+<td><code>countPins</code></td>
+<td>Получает количество закреплённых отзывов</td>
+</tr>
+<tr>
+<td><code>getPinLimits</code></td>
+<td>Получает доступные лимиты на закрепление отзывов</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">Вопросы</h3>
+<p>Инструменты для просмотра вопросов покупателей и отправки ответов.</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getQuestions</code></td>
+<td>Получает список вопросов покупателей</td>
+</tr>
+<tr>
+<td><code>getQuestionById</code></td>
+<td>Получает вопрос по его идентификатору</td>
+</tr>
+<tr>
+<td><code>getUnansweredQuestionsCount</code></td>
+<td>Получает количество неотвеченных вопросов</td>
+</tr>
+<tr>
+<td><code>updateQuestion</code></td>
+<td>Отправляет или редактирует ответ на вопрос</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_9">Чат с покупателем</h3>
+<p>Инструменты для общения с покупателями в чатах Wildberries.</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getChats</code></td>
+<td>Получает список чатов с покупателями</td>
+</tr>
+<tr>
+<td><code>getChatEvents</code></td>
+<td>Получает сообщения и события из чатов</td>
+</tr>
+<tr>
+<td><code>sendChatMessage</code></td>
+<td>Отправляет сообщение покупателю</td>
+</tr>
+<tr>
+<td><code>downloadMessageFile</code></td>
+<td>Скачивает файл из сообщения</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_10">Возвраты</h3>
+<p>Инструменты для работы с заявками покупателей на возврат товаров.</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getClaims</code></td>
+<td>Получает заявки покупателей на возврат товаров</td>
+</tr>
+<tr>
+<td><code>respondClaim</code></td>
+<td>Отправляет решение по заявке на возврат</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_11">Отчёты</h2>
+<h3 id="_12">Отчёты об удержаниях</h3>
+<p>Инструменты для получения информации об удержаниях Wildberries.</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>measurementPenalties</code></td>
+<td>Получает отчёт об удержаниях за занижение габаритов упаковки</td>
+</tr>
+<tr>
+<td><code>warehouseMeasurements</code></td>
+<td>Получает результаты замеров упаковки на складах Wildberries</td>
+</tr>
+<tr>
+<td><code>deductions</code></td>
+<td>Получает отчёт об удержаниях</td>
+</tr>
+<tr>
+<td><code>selfPurchase</code></td>
+<td>Получает отчёт об удержаниях за самовыкупы</td>
+</tr>
+<tr>
+<td><code>labeling</code></td>
+<td>Получает отчёт об удержаниях за отсутствие обязательной маркировки</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_13">Отчёт об остатках на складах</h3>
+<p>Инструменты для формирования и загрузки отчёта об остатках товаров на складах Wildberries.</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>createReport</code></td>
+<td>Запускает формирование отчёта об остатках</td>
+</tr>
+<tr>
+<td><code>checkStatus</code></td>
+<td>Проверяет статус формирования отчёта</td>
+</tr>
+<tr>
+<td><code>downloadReport</code></td>
+<td>Скачивает готовый отчёт</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_14">Информация</h2>
+<h3 id="_15">Новости</h3>
+<p>Инструмент для получения новостей Wildberries для продавцов.</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getNews</code></td>
+<td>Получает список новостей Wildberries</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_16">Оферта</h3>
+<p>Инструмент для просмотра оферты.</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>read</code></td>
+<td>Получает текст оферты</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_17">Интеграции</h2>
+<h3 id="telegram">Telegram</h3>
+<p>Инструменты для отправки сообщений и работы с файлами через Telegram.</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sendMessage</code></td>
+<td>Отправляет сообщение в Telegram</td>
+</tr>
+<tr>
+<td><code>downloadFile</code></td>
+<td>Скачивает файл из Telegram</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
