@@ -24,6 +24,7 @@ nav:
     - Типы аккаунтов: "4-platform/02-account-types.md"
     - Диаграммы: "4-platform/03-diagrams.md"
     - Настройка диаграмм: "4-platform/04-diagrams-edit.md"
+    - Инструменты: "4-platform/05-tools.md"
   - Работа с ИИ:
     - Начало работы: "5-ai/00-intro.md"
     - Claude: "5-ai/01-claude.md"
