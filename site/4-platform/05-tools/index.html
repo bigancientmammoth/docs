@@ -150,19 +150,23 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Коммуникации</a>
+            <li class="nav-item" data-bs-level="2"><a href="#fbs" class="nav-link">FBS</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_11" class="nav-link">Отчёты</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Коммуникации</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_15" class="nav-link">Информация</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_13" class="nav-link">Отчёты</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_18" class="nav-link">Интеграции</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_17" class="nav-link">Информация</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_20" class="nav-link">Интеграции</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -182,6 +186,7 @@
 <ul>
 <li>Контент</li>
 <li>Цены</li>
+<li>FBS</li>
 <li>Коммуникации</li>
 <li>Отчёты</li>
 <li>Информация</li>
@@ -299,8 +304,131 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_5">Коммуникации</h2>
-<h3 id="_6">Отзывы</h3>
+<h2 id="fbs">FBS</h2>
+<h3 id="_5">Заказы и поставки</h3>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getNewOrders</code></td>
+<td>Получает список новых сборочных заданий</td>
+</tr>
+<tr>
+<td><code>getOrdersByPeriod</code></td>
+<td>Получает сборочные задания за выбранный период</td>
+</tr>
+<tr>
+<td><code>getOrdersStatuses</code></td>
+<td>Получает статусы сборочных заданий</td>
+</tr>
+<tr>
+<td><code>getReshipmentOrders</code></td>
+<td>Получает сборочные задания для повторной отгрузки</td>
+</tr>
+<tr>
+<td><code>cancelOrder</code></td>
+<td>Отменяет сборочное задание</td>
+</tr>
+<tr>
+<td><code>getOrderStickers</code></td>
+<td>Получает стикеры сборочных заданий</td>
+</tr>
+<tr>
+<td><code>getCrossBorderOrderStickers</code></td>
+<td>Получает стикеры трансграничных заказов</td>
+</tr>
+<tr>
+<td><code>getCrossBorderOrderStatusHistory</code></td>
+<td>Получает историю статусов трансграничных заказов</td>
+</tr>
+<tr>
+<td><code>getOrderClientInfo</code></td>
+<td>Получает информацию о получателе заказа</td>
+</tr>
+<tr>
+<td><code>getArchiveOrders</code></td>
+<td>Получает архив сборочных заданий</td>
+</tr>
+<tr>
+<td><code>createSupply</code></td>
+<td>Создаёт новую поставку</td>
+</tr>
+<tr>
+<td><code>getSupplies</code></td>
+<td>Получает список поставок</td>
+</tr>
+<tr>
+<td><code>addOrdersToSupply</code></td>
+<td>Добавляет сборочные задания в поставку</td>
+</tr>
+<tr>
+<td><code>getSupplyDetails</code></td>
+<td>Получает информацию о поставке</td>
+</tr>
+<tr>
+<td><code>deleteSupply</code></td>
+<td>Удаляет поставку</td>
+</tr>
+<tr>
+<td><code>getSupplyOrderIds</code></td>
+<td>Получает идентификаторы сборочных заданий в поставке</td>
+</tr>
+<tr>
+<td><code>moveSupplyToDelivery</code></td>
+<td>Передаёт поставку в доставку</td>
+</tr>
+<tr>
+<td><code>getSupplyQRCode</code></td>
+<td>Получает QR-код поставки</td>
+</tr>
+<tr>
+<td><code>addShippingUnitsToSupply</code></td>
+<td>Добавляет грузовые места в поставку</td>
+</tr>
+<tr>
+<td><code>getSupplyShippingUnits</code></td>
+<td>Получает список грузовых мест поставки</td>
+</tr>
+<tr>
+<td><code>deleteShippingUnitsFromSupply</code></td>
+<td>Удаляет грузовые места из поставки</td>
+</tr>
+<tr>
+<td><code>getSupplyShippingUnitQRCodes</code></td>
+<td>Получает QR-коды грузовых мест поставки</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">Маркировка сборочных заданий</h3>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>labels</code></td>
+<td>Закрепляет маркировку за сборочным заданием</td>
+</tr>
+<tr>
+<td><code>getLabels</code></td>
+<td>Получает маркировку сборочного задания</td>
+</tr>
+<tr>
+<td><code>deleteLabels</code></td>
+<td>Удаляет маркировку сборочного задания</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_7">Коммуникации</h2>
+<h3 id="_8">Отзывы</h3>
 <table>
 <thead>
 <tr>
@@ -343,7 +471,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_7">Закреплённые отзывы</h3>
+<h3 id="_9">Закреплённые отзывы</h3>
 <table>
 <thead>
 <tr>
@@ -374,7 +502,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_8">Вопросы</h3>
+<h3 id="_10">Вопросы</h3>
 <table>
 <thead>
 <tr>
@@ -401,7 +529,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_9">Чат с покупателем</h3>
+<h3 id="_11">Чат с покупателем</h3>
 <table>
 <thead>
 <tr>
@@ -428,7 +556,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_10">Возвраты</h3>
+<h3 id="_12">Возвраты</h3>
 <table>
 <thead>
 <tr>
@@ -447,8 +575,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_11">Отчёты</h2>
-<h3 id="_12">Отчёты об удержаниях</h3>
+<h2 id="_13">Отчёты</h2>
+<h3 id="_14">Отчёты об удержаниях</h3>
 <table>
 <thead>
 <tr>
@@ -479,7 +607,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_13">Отчёт о продажах по регионам</h3>
+<h3 id="_15">Отчёт о продажах по регионам</h3>
 <table>
 <thead>
 <tr>
@@ -494,7 +622,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_14">Отчёт об остатках на складах</h3>
+<h3 id="_16">Отчёт об остатках на складах</h3>
 <table>
 <thead>
 <tr>
@@ -517,8 +645,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_15">Информация</h2>
-<h3 id="_16">Новости</h3>
+<h2 id="_17">Информация</h2>
+<h3 id="_18">Новости</h3>
 <table>
 <thead>
 <tr>
@@ -533,7 +661,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_17">Оферта</h3>
+<h3 id="_19">Оферта</h3>
 <table>
 <thead>
 <tr>
@@ -548,7 +676,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_18">Интеграции</h2>
+<h2 id="_20">Интеграции</h2>
 <h3 id="telegram">Telegram</h3>
 <table>
 <thead>
