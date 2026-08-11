@@ -29,3 +29,4 @@ nav:
     - Начало работы: "5-ai/00-intro.md"
     - Claude: "5-ai/01-claude.md"
     - ChatGPT: "5-ai/02-chat-gpt.md"
+    - Grok: "5-ai/03-grok.md"
