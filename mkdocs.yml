@@ -30,3 +30,4 @@ nav:
     - Claude: "5-ai/01-claude.md"
     - ChatGPT: "5-ai/02-chat-gpt.md"
     - Grok: "5-ai/03-grok.md"
+    - QwenWork: "5-ai/04-qwen-work.md"
