@@ -150,6 +150,10 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Общая информация</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Видеоинструкция</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#claude-desktop" class="nav-link">Установка Claude Desktop</a>
               <ul class="nav flex-column">
               </ul>
@@ -157,26 +161,26 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="1"><a href="#_2" class="nav-link">Подключение</a>
+            <li class="nav-item" data-bs-level="1"><a href="#_3" class="nav-link">Подключение</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
             <li class="nav-item" data-bs-level="1"><a href="#claude" class="nav-link">Работа с Claude</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Проверка подключения</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Проверка подключения</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Пример запроса</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Пример запроса</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Обновление инструментов</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Обновление инструментов</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Настройка доступа к инструментам</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Настройка доступа к инструментам</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -192,23 +196,24 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="_1">Общая информация</h1>
-<p>В этом разделе описано подключение <strong>Claude</strong> к платформе MarketAut.</p>
-<p>Подключение выполняется через протокол <a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP</a>.</p>
+<p>В этом разделе описан процесс подключения <strong>Claude</strong> к платформе MarketAut по протоколу <a href="https://modelcontextprotocol.io">MCP</a>.</p>
 <p>После подключения Claude сможет использовать инструменты и данные, доступные в вашей диаграмме MarketAut, напрямую из диалога.</p>
 <p>Перед началом подключения убедитесь, что:</p>
 <ul>
-<li>аккаунт Wildberries успешно создан и настроен;</li>
-<li>диаграмма создана, настроена и запущена;</li>
-<li>получен MCP-адрес на домашней странице MarketAut.</li>
+<li>аккаунт Wildberries успешно создан и настроен — <a href="/4-platform/01-accounts/">Настройка аккаунта</a>; </li>
+<li>диаграмма создана, настроена и запущена — <a href="/4-platform/03-diagrams/">Создание и запуск диаграммы </a>; </li>
+<li>получен MCP-адрес на домашней странице MarketAut — <a href="/3-start/02-home/">Где найти MCP-адрес </a>.</li>
 </ul>
 <blockquote>
 <p><strong>Важно</strong></p>
 <p>Добавление собственного MCP-коннектора доступно в <a href="https://claude.ai/">веб-версии Claude</a> и в приложении <a href="https://claude.ai/download">Claude Desktop</a>. В этой инструкции подключение показано на примере Claude Desktop.</p>
 </blockquote>
+<h2 id="_2">Видеоинструкция</h2>
+<p><a href="https://youtu.be/WlDrAIhThdY">Смотреть видео по подключению MarketAut к Claude →</a></p>
 <h2 id="claude-desktop">Установка Claude Desktop</h2>
 <p>Скачайте Claude Desktop с <a href="https://claude.ai/download">официальной страницы Claude</a>.</p>
 <p>Установите приложение, запустите его и войдите в свой аккаунт.</p>
-<h1 id="_2">Подключение</h1>
+<h1 id="_3">Подключение</h1>
 <ol>
 <li>Запустите приложение <strong>Claude Desktop</strong>;</li>
 <li>В боковом меню выберите <strong>Customize</strong>;<br />
@@ -224,7 +229,7 @@
 <p>Заполните следующие поля:</p>
 <ul>
 <li><strong>Имя</strong> — любое удобное название, например <code>MarketAut</code>.</li>
-<li><strong>Адрес</strong> — MCP-адрес вашей диаграммы, полученный на домашней странице MarketAut.</li>
+<li><strong>Адрес</strong> — MCP-адрес вашей диаграммы, полученный на <a href="https://marketaut.ru/app/home">домашней странице MarketAut</a>.</li>
 </ul>
 <p>Пример MCP-адреса:<br />
 <code>https://marketaut.ru/mcp/wb</code></p>
@@ -240,11 +245,11 @@
 <p>После завершения подключения рядом с коннектором появится отметка подключения, а на его странице — кнопка <strong>Disconnect</strong>.</p>
 <p><img alt="" src="../img/claude/connected.png" /></p>
 <h1 id="claude">Работа с Claude</h1>
-<h2 id="_3">Проверка подключения</h2>
+<h2 id="_4">Проверка подключения</h2>
 <p>В любом диалоге Claude нажмите кнопку <strong>(+)</strong> рядом с полем ввода сообщения и выберите <strong>Connectors</strong>.</p>
 <p>Если подключение настроено корректно, в списке коннекторов будет отображаться <strong>MarketAut</strong> (или другое имя, указанное при настройке подключения).<br />
 <img alt="" src="../img/claude/check_connectors.png" /></p>
-<h2 id="_4">Пример запроса</h2>
+<h2 id="_5">Пример запроса</h2>
 <p>Чтобы проверить работу инструментов MarketAut:</p>
 <ol>
 <li>Откройте новый диалог Claude;</li>
@@ -259,7 +264,7 @@
 <p>Claude обратится к доступным инструментам MarketAut и выведет полученные данные в диалоге.<br />
 <img alt="" src="../img/claude/claude-marketaut-response.png" /></p>
 <p>Если Claude получил данные из MarketAut, подключение настроено корректно.</p>
-<h2 id="_5">Обновление инструментов</h2>
+<h2 id="_6">Обновление инструментов</h2>
 <p>После изменения списка инструментов в MarketAut необходимо обновить список инструментов в Claude.</p>
 <ol>
 <li>Перейдите в раздел <strong>Customize</strong>;</li>
@@ -268,7 +273,7 @@
 <li>Откройте меню <strong>(⋮)</strong> и выберите <strong>Refresh tools list</strong>.</li>
 </ol>
 <p><img alt="" src="../img/claude/refresh-tools.png" /></p>
-<h2 id="_6">Настройка доступа к инструментам</h2>
+<h2 id="_7">Настройка доступа к инструментам</h2>
 <p>Для каждого инструмента можно отдельно настроить способ доступа.</p>
 <p>Доступны следующие варианты:</p>
 <ol>
