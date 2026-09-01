@@ -37,3 +37,4 @@ MCP  — это протокол, который позволяет ИИ-аге�
 - Подключить [Grok](03-grok.md)
 - Подключить [Claude](01-claude.md)
 - Подключить [ChatGPT](02-chat-gpt.md)
+- Подключить [QwenWork](04-qwen-work.md)
