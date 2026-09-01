@@ -182,14 +182,13 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="_1">Общая информация</h1>
-<p>В этом разделе описан процесс подключения <strong>QwenWork</strong> к платформе MarketAut.</p>
-<p>Подключение выполняется через протокол <a href="https://modelcontextprotocol.io">MCP</a>.</p>
+<p>В этом разделе описан процесс подключения <strong>QwenWork</strong> к платформе MarketAut по протоколу <a href="https://modelcontextprotocol.io">MCP</a>.</p>
 <p>После подключения QwenWork сможет использовать инструменты и данные, доступные в вашей диаграмме MarketAut, напрямую из диалога.</p>
 <p>Перед началом подключения убедитесь, что:</p>
 <ul>
-<li>аккаунт Wildberries успешно создан и настроен;</li>
-<li>диаграмма создана, настроена и запущена;</li>
-<li>получен MCP-адрес на домашней странице MarketAut.</li>
+<li>аккаунт Wildberries успешно создан и настроен — <a href="/4-platform/01-accounts/">Настройка аккаунта</a>; </li>
+<li>диаграмма создана, настроена и запущена — <a href="/4-platform/03-diagrams/">Создание и запуск диаграммы </a>; </li>
+<li>получен MCP-адрес на домашней странице MarketAut — <a href="/3-start/02-home/">Где найти MCP-адрес </a>.</li>
 </ul>
 <blockquote>
 <p><strong>Важно</strong></p>
@@ -217,17 +216,17 @@
 <ul>
 <li><strong>Server Type</strong> — выберите <code>Streamable HTTP</code>;</li>
 <li><strong>Server Name</strong> — укажите удобное название без пробелов, например <code>marketaut</code>;</li>
-<li><strong>Server URL</strong> — вставьте персональный MCP-адрес, скопированный из блока подключения агента на домашней странице MarketAut;</li>
+<li><strong>Server URL</strong> — вставьте персональный MCP-адрес, скопированный из блока подключения агента на <a href="https://marketaut.ru/app/home">домашней странице MarketAut</a>;</li>
 <li><strong>Headers</strong> — оставьте пустыми;</li>
 <li><strong>Timeout</strong> — оставьте пустым или укажите <code>60</code>.</li>
 </ul>
 <p>Пример MCP-адреса:</p>
-<p><code>https://marketaut.ru/mcp/test</code></p>
+<p><code>https://marketaut.ru/mcp/wb</code></p>
 <blockquote>
 <p>Название сервера не должно содержать пробелы. Если поле подсвечивается красным и появляется сообщение <code>Server name cannot contain spaces</code>, удалите пробелы и повторно введите название, например <code>marketaut</code>.</p>
 </blockquote>
-<p><img alt="" src="../img/qwen/qwenwork-http-configuration.png" /><br />
-После заполнения полей нажмите <strong>Add</strong>.</p>
+<p><img alt="" src="../img/qwen/https-configuration.png" /></p>
+<p>После заполнения полей нажмите <strong>Add</strong>.</p>
 <h2 id="_3">Авторизация</h2>
 <p>После добавления MCP-сервера откроется страница авторизации MarketAut.</p>
 <p>Проверьте запрашиваемые права и нажмите <strong>Разрешить доступ</strong>.</p>
