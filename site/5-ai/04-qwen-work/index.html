@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://marketaut.ru/5-ai/03-grok/">
+        <link rel="canonical" href="https://marketaut.ru/5-ai/04-qwen-work/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Grok - MarketAut</title>
+        <title>QwenWork - MarketAut</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -104,11 +104,11 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Grok</a>
+    <a href="../03-grok/" class="dropdown-item">Grok</a>
 </li>
                                     
 <li>
-    <a href="../04-qwen-work/" class="dropdown-item">QwenWork</a>
+    <a href="./" class="dropdown-item active" aria-current="page">QwenWork</a>
 </li>
                                 </ul>
                             </li>
@@ -121,12 +121,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../02-chat-gpt/" class="nav-link">
+                                <a rel="prev" href="../03-grok/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../04-qwen-work/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -150,11 +150,27 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Общая информация</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#qwenwork" class="nav-link">Установка QwenWork</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Подключение</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#grok" class="nav-link">Использование Grok</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Авторизация</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Проверка подключения</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#qwenwork_1" class="nav-link">Использование QwenWork</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Обновление инструментов</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -166,9 +182,9 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="_1">Общая информация</h1>
-<p>В этом разделе описан процесс подключения <strong>Grok</strong> к платформе MarketAut.</p>
-<p>Подключение выполняется через протокол <a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP</a>.</p>
-<p>После подключения Grok сможет использовать инструменты и ресурсы, доступные в вашей диаграмме MarketAut, напрямую из диалога.</p>
+<p>В этом разделе описан процесс подключения <strong>QwenWork</strong> к платформе MarketAut.</p>
+<p>Подключение выполняется через протокол <a href="https://modelcontextprotocol.io">MCP</a>.</p>
+<p>После подключения QwenWork сможет использовать инструменты и данные, доступные в вашей диаграмме MarketAut, напрямую из диалога.</p>
 <p>Перед началом подключения убедитесь, что:</p>
 <ul>
 <li>аккаунт Wildberries успешно создан и настроен;</li>
@@ -177,42 +193,83 @@
 </ul>
 <blockquote>
 <p><strong>Важно</strong></p>
-<p>Добавление собственного MCP-коннектора доступно в <a href="https://grok.com/">веб-версии Grok</a> и в приложении Grok для компьютера. В этой инструкции подключение показано на примере веб-версии Grok.</p>
+<p>Добавление собственного MCP-коннектора доступно только в приложении QwenWork для компьютера. В веб-версии QwenWork кнопка добавления пользовательского коннектора отсутствует. Скачать приложение можно на <a href="https://qwenwork.ai/">официальном сайте QwenWork</a>.</p>
 </blockquote>
+<h2 id="qwenwork">Установка QwenWork</h2>
+<ol>
+<li>Перейдите на официальный сайт <a href="https://qwenwork.ai/">QwenWork</a>;</li>
+<li>Скачайте приложение для своей операционной системы;</li>
+<li>Установите и запустите QwenWork;</li>
+<li>Войдите в свой аккаунт.</li>
+</ol>
 <h2 id="_2">Подключение</h2>
 <ol>
-<li>
-<p>В боковом меню Grok выберите раздел <strong>«Навыки и коннекторы»</strong>.<br />
-<img alt="" src="../img/grok/skills-and-connectors.png" /></p>
-</li>
-<li>
-<p>Перейдите во вкладку <strong>«Коннекторы»</strong> и нажмите <strong>«Новый коннектор»</strong>.</p>
-</li>
+<li>Запустите приложение QwenWork;</li>
+<li>В боковом меню откройте раздел <strong>Extensions</strong>;</li>
+<li>Выберите <strong>Connectors</strong>.<br />
+<img alt="" src="../img/qwen/qwenwork-connectors-section.png" /></li>
+<li>В правом верхнем углу нажмите <strong>+ Add</strong>;</li>
+<li>Выберите <strong>Fill in Config Manually</strong>.<br />
+<img alt="" src="../img/qwen/qwenwork-add-connector.png" /><br />
+Откроется окно <strong>Add MCP Server</strong>.</li>
 </ol>
-<p><img alt="Добавление нового коннектора" src="../img/grok/new-connector.png" /><br />
-3. В открывшемся окне выберите <strong>«Пользовательские настройки»</strong>.</p>
-<p><img alt="Пользовательские настройки" src="../img/grok/custom-connector.png" /><br />
-4. Заполните поля:</p>
+<p>Заполните следующие поля:</p>
 <ul>
-<li><strong>Название</strong>: укажите любое удобное название коннектора, например <code>MarketAut</code>;</li>
-<li><strong>URL сервера</strong>: вставьте персональный MCP-адрес, скопированный из блока подключения агента на домашней странице MarketAut.</li>
+<li><strong>Server Type</strong> — выберите <code>Streamable HTTP</code>;</li>
+<li><strong>Server Name</strong> — укажите удобное название без пробелов, например <code>marketaut</code>;</li>
+<li><strong>Server URL</strong> — вставьте персональный MCP-адрес, скопированный из блока подключения агента на домашней странице MarketAut;</li>
+<li><strong>Headers</strong> — оставьте пустыми;</li>
+<li><strong>Timeout</strong> — оставьте пустым или укажите <code>60</code>.</li>
 </ul>
-<p>Например: <code>https://marketaut.ru/mcp/test</code></p>
-<p>После заполнения полей нажмите <strong>«Добавить коннектор»</strong>.</p>
-<p><img alt="Настройка коннектора MarketAut" src="../img/grok/connector-settings.png" /><br />
-5. Откроется окно предоставления доступа. При необходимости выберите нужную команду и нажмите <strong>«Разрешить доступ»</strong>.</p>
-<p><img alt="Предоставление доступа" src="../img/grok/allow-access.png" /></p>
-<p>После успешного подключения MarketAut появится в разделе <strong>«Установленные»</strong> со статусом <code>Connected</code>.</p>
-<p><img alt="MarketAut подключён" src="../img/grok/connected.png" /></p>
-<p>Если отображается статус <code>Connected</code>, подключение успешно завершено.</p>
-<h2 id="grok">Использование Grok</h2>
-<p>Откройте новый диалог Grok и отправьте запрос, для выполнения которого необходимы данные вашего магазина Wildberries.</p>
+<p>Пример MCP-адреса:</p>
+<p><code>https://marketaut.ru/mcp/test</code></p>
+<blockquote>
+<p>Название сервера не должно содержать пробелы. Если поле подсвечивается красным и появляется сообщение <code>Server name cannot contain spaces</code>, удалите пробелы и повторно введите название, например <code>marketaut</code>.</p>
+</blockquote>
+<p><img alt="" src="../img/qwen/qwenwork-http-configuration.png" /><br />
+После заполнения полей нажмите <strong>Add</strong>.</p>
+<h2 id="_3">Авторизация</h2>
+<p>После добавления MCP-сервера откроется страница авторизации MarketAut.</p>
+<p>Проверьте запрашиваемые права и нажмите <strong>Разрешить доступ</strong>.</p>
+<p><img alt="" src="../img/qwen/qwenwork-oauth-permission.png" /></p>
+<p>После успешной авторизации появится сообщение:</p>
+<p><code>AUTHORIZATION SUCCESSFUL</code></p>
+<p><img alt="" src="../img/qwen/qwenwork-authorization-success.png" /><br />
+Дождитесь завершения процесса авторизации. Авторизация завершена, когда появляется сообщение <code>AUTHORIZATION SUCCESSFUL</code>, а зелёная полоса в нижней части окна доходит до конца.</p>
+<p>После этого окно можно закрыть вручную и вернуться в приложение QwenWork.</p>
+<h2 id="_4">Проверка подключения</h2>
+<ol>
+<li>Откройте <strong>Extensions → Connectors</strong>;</li>
+<li>Перейдите во вкладку <strong>Installed</strong>;</li>
+<li>Найдите коннектор <code>marketaut</code>;</li>
+<li>Раскройте коннектор;</li>
+<li>Убедитесь, что переключатель справа включён и отображается зелёным цветом.</li>
+</ol>
+<p>Зелёный переключатель означает, что коннектор MarketAut активен и QwenWork может использовать его инструменты в задачах.</p>
+<p>Ниже названия коннектора отображается список доступных инструментов MarketAut.</p>
+<p><img alt="" src="../img/qwen/qwenwork-tools-list.png" /></p>
+<p>Если переключатель включён и инструменты отображаются в списке, подключение успешно завершено.</p>
+<p>Чтобы временно запретить QwenWork использовать MarketAut, выключите переключатель. Удалять коннектор для этого не требуется.</p>
+<h2 id="qwenwork_1">Использование QwenWork</h2>
+<p>Откройте новую задачу QwenWork и отправьте запрос, для выполнения которого необходимы данные вашего магазина Wildberries.</p>
 <p>Например:</p>
 <blockquote>
-<p>Проанализируй мои карточки товаров на Wildberries, что нужно улучшить?</p>
+<p>Выведи список моих карточек товаров на Wildberries.</p>
 </blockquote>
-<p><img alt="Пример запроса в Grok" src="../img/grok/test-request.png" /></p>
-<p>Если подключение настроено корректно, Grok сможет обратиться к инструментам MarketAut и получить данные из вашего магазина Wildberries.</p></div>
+<p><img alt="" src="../img/qwen/qwenwork-example-request.png" /></p>
+<p>QwenWork обратится к доступным инструментам MarketAut и выведет полученные данные.</p>
+<p>Если QwenWork получил данные из MarketAut, подключение настроено корректно.</p>
+<h2 id="_5">Обновление инструментов</h2>
+<p>Если в диаграмме MarketAut появились новые инструменты или были изменены существующие, обновите их список в QwenWork.</p>
+<ol>
+<li>Откройте <strong>Extensions → Connectors</strong>;</li>
+<li>Перейдите во вкладку <strong>Installed</strong>;</li>
+<li>Найдите коннектор <code>marketaut</code>;</li>
+<li>Нажмите кнопку <strong>Reset</strong>.</li>
+</ol>
+<p><img alt="" src="../img/qwen/qwenwork-reset-tools.png" /></p>
+<p>Кнопка <strong>Reset</strong> сбрасывает текущее подключение и запускает его повторно, чтобы QwenWork заново получил актуальный список инструментов MarketAut.</p>
+<p>При необходимости повторно подтвердите авторизацию. После обновления раскройте коннектор и проверьте список доступных инструментов.</p></div>
             </div>
         </div>
 
