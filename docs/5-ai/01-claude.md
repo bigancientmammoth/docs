@@ -17,7 +17,9 @@
 
 ## Видеоинструкция
 
-[Смотреть видео по подключению MarketAut к Claude →](https://youtu.be/WlDrAIhThdY)
+[Смотреть на YouTube →](https://youtu.be/WlDrAIhThdY)
+
+[Смотреть на RuTube →](https://rutube.ru/video/4e85f35c7804ee08a655cc56aa6e4c94/)
 ## Установка Claude Desktop
 
 Скачайте Claude Desktop с [официальной страницы Claude](https://claude.ai/download).

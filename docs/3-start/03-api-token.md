@@ -26,6 +26,11 @@
 
 ⚠️ Передавайте API-токен только тем сервисам, которым доверяете. Он предоставляет доступ к данным личного кабинета в пределах выбранных разрешений.
 
+> **MarketAut входит в список проверенных сервисов Wildberries**
+>
+> [Проверить MarketAut на сайте Wildberries →](https://seller.wildberries.ru/auth-services?id=marketaut.ru)
+
+
 ![](img/api-token/new-token.png)
 
 ## Название токена
