@@ -17,7 +17,9 @@
 
 ## Видеоинструкция
 
-[Смотреть видео по подключению MarketAut к Grok →](https://youtu.be/f1yZfK4_wbY)
+[Смотреть на YouTube →](https://youtu.be/f1yZfK4_wbY)
+
+[Смотреть на RuTube →](https://rutube.ru/video/13c685ed8cd4a3568f1f26f5e44a547c/)
 
 ## Подключение
 
