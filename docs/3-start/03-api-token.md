@@ -51,10 +51,10 @@ MarketAut откроется автоматически. Проверьте вы
 >
 > [Проверить MarketAut на сайте Wildberries →](https://seller.wildberries.ru/auth-services?id=marketaut.ru)
 
-![Создание базового токена](img/api-token/new-token.png)
-
 
 ![](img/api-token/new-token.png)
+
+
 
 ## Название токена
 
