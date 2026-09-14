@@ -14,6 +14,11 @@
 >
 > Добавление собственного MCP-коннектора доступно только в приложении QwenWork для компьютера. В веб-версии QwenWork кнопка добавления пользовательского коннектора отсутствует. Скачать приложение можно на [официальном сайте QwenWork](https://qwenwork.ai/).
 
+## Видеоинструкция
+
+[Смотреть на YouTube →](https://youtu.be/4yKU_wPC2to)
+
+[Смотреть на RuTube →](https://rutube.ru/video/private/c334b5616b0ceefec434e1e9b87bba36/?p=Dd6QP0g7FF5M_Knb4hN4gA)
 ## Установка QwenWork
 
 1. Перейдите на официальный сайт [QwenWork](https://qwenwork.ai/);
