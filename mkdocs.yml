@@ -11,6 +11,8 @@ markdown_extensions:
   - mdx_truly_sane_lists
   - toc:
       toc_depth: 3
+  - attr_list
+  - md_in_html
 nav:
   - Помощь: "1-help/help.md"
   - Быстрый старт: "2-quick-start/quick_start.md"
