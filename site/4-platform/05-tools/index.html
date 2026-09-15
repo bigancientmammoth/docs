@@ -150,7 +150,11 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#marketaut" class="nav-link">Инструменты MarketAut</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">Контент</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">Все инструменты</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Контент</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -162,19 +166,19 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_8" class="nav-link">Коммуникации</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Коммуникации</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_14" class="nav-link">Отчёты</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Отчёты</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_23" class="nav-link">Информация</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Информация</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_26" class="nav-link">Интеграции</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Интеграции</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -190,18 +194,56 @@
 <p>Инструменты добавляются в диаграмму в виде узлов. Можно подключить всю группу с помощью пункта <strong>ALL</strong> или выбрать только отдельные функции.</p>
 <p>О новых инструментах и обновлениях MarketAut сообщаем в <a href="https://t.me/marketaut1">Telegram-канале</a>.</p>
 <p><img alt="" src="../img/tools/tools-overview.png" /></p>
-<p>Все доступные инструменты разделены по направлениям:</p>
+<div class="tools-page">
+<h2 id="_1">Все инструменты</h2>
+<p>Выберите нужный блок, чтобы перейти к его описанию:</p>
 <ul>
-<li>Контент</li>
-<li>Цены</li>
-<li>FBS</li>
-<li>Коммуникации</li>
-<li>Отчёты</li>
-<li>Информация</li>
-<li>Интеграции</li>
+<li><strong>Контент</strong><br />
+    - <a href="#catalogue">Каталог товаров</a></li>
 </ul>
-<h2 id="_1">Контент</h2>
-<h3 id="_2">Каталог товаров</h3>
+<ul>
+<li><strong>Цены</strong><br />
+    - <a href="#prices">Цены и скидки</a></li>
+</ul>
+<ul>
+<li><strong>FBS</strong><br />
+    - <a href="#orders-supplies">Заказы и поставки</a><br />
+    - <a href="#labels">Маркировка сборочных заданий</a><br />
+    - <a href="#passes">Пропуска</a></li>
+</ul>
+<ul>
+<li><strong>Коммуникации</strong><br />
+    - <a href="#feedbacks">Отзывы</a><br />
+    - <a href="#pinned-feedbacks">Закреплённые отзывы</a><br />
+    - <a href="#questions">Вопросы</a><br />
+    - <a href="#chats">Чат с покупателем</a><br />
+    - <a href="#returns">Возвраты</a></li>
+</ul>
+<ul>
+<li><strong>Отчёты</strong><br />
+    - <a href="#finance-reports">Финансы: отчёты</a><br />
+    - <a href="#balance">Финансы: баланс</a><br />
+    - <a href="#paid-storage">Платное хранение</a><br />
+    - <a href="#deductions">Удержания</a><br />
+    - <a href="#sales-regions">Продажи по регионам</a><br />
+    - <a href="#stocks">Остатки на складах</a><br />
+    - <a href="#order-feed">Лента заказов</a><br />
+    - <a href="#documents">Документы</a></li>
+</ul>
+<ul>
+<li><strong>Информация</strong><br />
+    - <a href="#news">Новости</a><br />
+    - <a href="#offer">Оферта</a></li>
+</ul>
+<ul>
+<li><strong>Интеграции</strong><br />
+    - <a href="#telegram">Telegram</a></li>
+</ul>
+<h2 id="_2">Контент</h2>
+<h3 id="catalogue">Каталог товаров</h3>
+<p>Блок позволяет получать и изменять карточки товаров, их характеристики и фотографии.</p>
+<p><strong>Категория токена WB:</strong> Контент<br />
+<strong>Доступ:</strong> чтение и запись</p>
 <table>
 <thead>
 <tr>
@@ -249,7 +291,10 @@
 </tbody>
 </table>
 <h2 id="_3">Цены</h2>
-<h3 id="_4">Цены и скидки</h3>
+<h3 id="prices">Цены и скидки</h3>
+<p>Блок позволяет получать текущие цены и скидки, а также изменять их.</p>
+<p><strong>Категория токена WB:</strong> Цены и скидки<br />
+<strong>Доступ:</strong> чтение и запись</p>
 <table>
 <thead>
 <tr>
@@ -269,7 +314,10 @@
 </tbody>
 </table>
 <h2 id="fbs">FBS</h2>
-<h3 id="_5">Заказы и поставки</h3>
+<h3 id="orders-supplies">Заказы и поставки</h3>
+<p>Блок позволяет работать со сборочными заданиями, заказами и поставками FBS.</p>
+<p><strong>Категория токена WB:</strong> Маркетплейс<br />
+<strong>Доступ:</strong> чтение и запись</p>
 <table>
 <thead>
 <tr>
@@ -368,7 +416,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_6">Маркировка сборочных заданий</h3>
+<h3 id="labels">Маркировка сборочных заданий</h3>
+<p>Блок позволяет получать информацию для маркировки сборочных заданий FBS.</p>
+<p><strong>Категория токена WB:</strong> Маркетплейс<br />
+<strong>Доступ:</strong> только чтение</p>
 <table>
 <thead>
 <tr>
@@ -387,7 +438,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_7">Пропуска</h3>
+<h3 id="passes">Пропуска</h3>
+<p>Блок позволяет получать список пропусков и офисов Wildberries, а также создавать, изменять и удалять пропуска.</p>
+<p><strong>Категория токена WB:</strong> Маркетплейс<br />
+<strong>Доступ:</strong> чтение и запись</p>
 <table>
 <thead>
 <tr>
@@ -418,8 +472,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_8">Коммуникации</h2>
-<h3 id="_9">Отзывы</h3>
+<h2 id="_4">Коммуникации</h2>
+<h3 id="feedbacks">Отзывы</h3>
+<p>Блок позволяет получать отзывы покупателей и выполнять действия с ними.</p>
+<p><strong>Категория токена WB:</strong> Вопросы и отзывы<br />
+<strong>Доступ:</strong> чтение и запись</p>
 <table>
 <thead>
 <tr>
@@ -429,40 +486,19 @@
 </thead>
 <tbody>
 <tr>
-<td><code>countUnansweredFeedbacks</code></td>
-<td>Получает количество неотвеченных отзывов</td>
+<td><code>read</code></td>
+<td>Получает данные об отзывах</td>
 </tr>
 <tr>
-<td><code>countFeedbacks</code></td>
-<td>Получает общее количество отзывов</td>
-</tr>
-<tr>
-<td><code>getFeedbacks</code></td>
-<td>Получает список отзывов</td>
-</tr>
-<tr>
-<td><code>getFeedbackById</code></td>
-<td>Получает отзыв по его идентификатору</td>
-</tr>
-<tr>
-<td><code>answerFeedback</code></td>
-<td>Отправляет ответ на отзыв</td>
-</tr>
-<tr>
-<td><code>editFeedbackAnswer</code></td>
-<td>Редактирует ранее отправленный ответ</td>
-</tr>
-<tr>
-<td><code>returnForFeedback</code></td>
-<td>Оформляет возврат товара по идентификатору отзыва</td>
-</tr>
-<tr>
-<td><code>getArchivedFeedbacks</code></td>
-<td>Получает архивные отзывы</td>
+<td><code>update</code></td>
+<td>Выполняет действия с отзывами</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_10">Закреплённые отзывы</h3>
+<h3 id="pinned-feedbacks">Закреплённые отзывы</h3>
+<p>Блок позволяет получать закреплённые отзывы, проверять доступные лимиты, закреплять отзывы и снимать закрепление.</p>
+<p><strong>Категория токена WB:</strong> Вопросы и отзывы<br />
+<strong>Доступ:</strong> чтение и запись</p>
 <table>
 <thead>
 <tr>
@@ -493,7 +529,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_11">Вопросы</h3>
+<h3 id="questions">Вопросы</h3>
+<p>Блок позволяет получать вопросы покупателей и отправлять или изменять ответы на них.</p>
+<p><strong>Категория токена WB:</strong> Вопросы и отзывы<br />
+<strong>Доступ:</strong> чтение и запись</p>
 <table>
 <thead>
 <tr>
@@ -520,7 +559,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_12">Чат с покупателем</h3>
+<h3 id="chats">Чат с покупателем</h3>
+<p>Блок позволяет получать чаты и сообщения покупателей, скачивать вложения и отправлять сообщения.</p>
+<p><strong>Категория токена WB:</strong> Чат с покупателем<br />
+<strong>Доступ:</strong> чтение и запись</p>
 <table>
 <thead>
 <tr>
@@ -530,24 +572,23 @@
 </thead>
 <tbody>
 <tr>
-<td><code>getChats</code></td>
-<td>Получает список чатов с покупателями</td>
-</tr>
-<tr>
-<td><code>getChatEvents</code></td>
-<td>Получает сообщения и события из чатов</td>
-</tr>
-<tr>
-<td><code>sendChatMessage</code></td>
-<td>Отправляет сообщение покупателю</td>
+<td><code>read</code></td>
+<td>Получает список чатов, сообщения и события</td>
 </tr>
 <tr>
 <td><code>downloadMessageFile</code></td>
 <td>Скачивает файл из сообщения</td>
 </tr>
+<tr>
+<td><code>sendChatMessage</code></td>
+<td>Отправляет сообщение покупателю</td>
+</tr>
 </tbody>
 </table>
-<h3 id="_13">Возвраты</h3>
+<h3 id="returns">Возвраты</h3>
+<p>Блок позволяет получать заявки покупателей на возврат и принимать по ним решения.</p>
+<p><strong>Категория токена WB:</strong> Возвраты<br />
+<strong>Доступ:</strong> чтение и запись</p>
 <table>
 <thead>
 <tr>
@@ -566,8 +607,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_14">Отчёты</h2>
-<h3 id="_15">Финансы: отчёты</h3>
+<h2 id="_5">Отчёты</h2>
+<h3 id="finance-reports">Финансы: отчёты</h3>
+<p>Блок позволяет получать детализированный финансовый отчёт за выбранный период.</p>
+<p><strong>Категория токена WB:</strong> Статистика<br />
+<strong>Доступ:</strong> только чтение</p>
 <table>
 <thead>
 <tr>
@@ -582,7 +626,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_16">Финансы: баланс</h3>
+<h3 id="balance">Финансы: баланс</h3>
+<p>Блок позволяет получать текущий баланс продавца.</p>
+<p><strong>Категория токена WB:</strong> Финансы<br />
+<strong>Доступ:</strong> только чтение</p>
 <table>
 <thead>
 <tr>
@@ -597,7 +644,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_17">Отчёт о платном хранении</h3>
+<h3 id="paid-storage">Отчёт о платном хранении</h3>
+<p>Блок позволяет получать отчёт о начислениях за платное хранение товаров.</p>
+<p><strong>Категория токена WB:</strong> Аналитика<br />
+<strong>Доступ:</strong> только чтение</p>
 <table>
 <thead>
 <tr>
@@ -612,7 +662,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_18">Отчёты об удержаниях</h3>
+<h3 id="deductions">Отчёты об удержаниях</h3>
+<p>Блок позволяет получать отчёты об удержаниях, замерах упаковки, самовыкупах и отсутствии обязательной маркировки.</p>
+<p><strong>Категория токена WB:</strong> Аналитика<br />
+<strong>Доступ:</strong> только чтение</p>
 <table>
 <thead>
 <tr>
@@ -643,7 +696,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_19">Отчёт о продажах по регионам</h3>
+<h3 id="sales-regions">Отчёт о продажах по регионам</h3>
+<p>Блок позволяет получать отчёт о продажах товаров по регионам.</p>
+<p><strong>Категория токена WB:</strong> Аналитика<br />
+<strong>Доступ:</strong> только чтение</p>
 <table>
 <thead>
 <tr>
@@ -658,7 +714,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_20">Отчёт об остатках на складах</h3>
+<h3 id="stocks">Отчёт об остатках на складах {#stocks</h3>
+<p>Блок позволяет получать отчёт об остатках товаров на складах Wildberries.</p>
+<p><strong>Категория токена WB:</strong> Статистика<br />
+<strong>Доступ:</strong> только чтение</p>
 <table>
 <thead>
 <tr>
@@ -673,7 +732,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_21">Лента заказов</h3>
+<h3 id="order-feed">Лента заказов</h3>
+<p>Блок позволяет получать отчёт «Лента заказов».</p>
+<p><strong>Категория токена WB:</strong> Статистика<br />
+<strong>Доступ:</strong> только чтение</p>
 <table>
 <thead>
 <tr>
@@ -688,7 +750,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_22">Документы</h3>
+<h3 id="documents">Документы</h3>
+<p>Блок позволяет находить и загружать документы Wildberries в ZIP-архиве.</p>
+<p><strong>Категория токена WB:</strong> Документы<br />
+<strong>Доступ:</strong> только чтение</p>
 <table>
 <thead>
 <tr>
@@ -699,12 +764,15 @@
 <tbody>
 <tr>
 <td><code>documents</code></td>
-<td>Загружает документы Wildberries в ZIP-архиве с Excel-файлами</td>
+<td>Загружает документы Wildberries в ZIP-архиве</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_23">Информация</h2>
-<h3 id="_24">Новости</h3>
+<h2 id="_6">Информация</h2>
+<h3 id="news">Новости</h3>
+<p>Блок позволяет получать список новостей Wildberries для продавцов.</p>
+<p><strong>Категория токена WB:</strong> отдельная категория не требуется<br />
+<strong>Доступ:</strong> только чтение</p>
 <table>
 <thead>
 <tr>
@@ -719,7 +787,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_25">Оферта</h3>
+<h3 id="offer">Оферта</h3>
+<p>Блок позволяет получать актуальный текст оферты Wildberries.</p>
+<p><strong>Категория токена WB:</strong> не требуется<br />
+<strong>Доступ:</strong> только чтение</p>
 <table>
 <thead>
 <tr>
@@ -734,8 +805,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_26">Интеграции</h2>
+<h2 id="_7">Интеграции</h2>
 <h3 id="telegram">Telegram</h3>
+<p>Блок позволяет отправлять сообщения и скачивать файлы через Telegram.</p>
+<p><strong>Категория токена WB:</strong> не требуется<br />
+<strong>Доступ:</strong> чтение и запись в Telegram</p>
 <table>
 <thead>
 <tr>
@@ -753,7 +827,8 @@
 <td>Скачивает файл из Telegram</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+</div></div>
             </div>
         </div>
 
