@@ -56,3 +56,26 @@
 [role="main"] table td:nth-child(4) {
     width: 25%;
 }
+
+/* Таблицы только на странице «Инструменты» */
+[role="main"] .tools-page table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+[role="main"] .tools-page table th:first-child,
+[role="main"] .tools-page table td:first-child {
+  width: 37%;
+  white-space: normal;
+}
+
+[role="main"] .tools-page table th:nth-child(2),
+[role="main"] .tools-page table td:nth-child(2) {
+  width: 63%;
+  white-space: normal;
+}
+
+[role="main"] .tools-page table code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
