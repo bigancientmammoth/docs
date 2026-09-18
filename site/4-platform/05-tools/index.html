@@ -170,15 +170,23 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Отчёты</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Финансы</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Информация</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Отчёты</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Интеграции</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Документы</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_8" class="nav-link">Информация</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_9" class="nav-link">Интеграции</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -220,14 +228,20 @@
     - <a href="#returns">Возвраты</a></li>
 </ul>
 <ul>
-<li><strong>Отчёты</strong><br />
+<li><strong>Финансы</strong><br />
     - <a href="#finance-reports">Финансы: отчёты</a><br />
-    - <a href="#balance">Финансы: баланс</a><br />
+    - <a href="#balance">Финансы: баланс</a></li>
+</ul>
+<ul>
+<li><strong>Отчёты</strong><br />
     - <a href="#paid-storage">Платное хранение</a><br />
     - <a href="#deductions">Удержания</a><br />
     - <a href="#sales-regions">Продажи по регионам</a><br />
     - <a href="#stocks">Остатки на складах</a><br />
-    - <a href="#order-feed">Лента заказов</a><br />
+    - <a href="#order-feed">Лента заказов</a></li>
+</ul>
+<ul>
+<li><strong>Документы</strong><br />
     - <a href="#documents">Документы</a></li>
 </ul>
 <ul>
@@ -595,7 +609,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_5">Отчёты</h2>
+<h2 id="_5">Финансы</h2>
 <h3 id="finance-reports">Финансы: отчёты</h3>
 <p>Блок позволяет получать детализированный финансовый отчёт за выбранный период.</p>
 <p><strong>Категория токена WB:</strong> Статистика<br />
@@ -632,6 +646,7 @@
 </tr>
 </tbody>
 </table>
+<h2 id="_6">Отчёты</h2>
 <h3 id="paid-storage">Отчёт о платном хранении</h3>
 <p>Блок позволяет получать отчёт о начислениях за платное хранение товаров.</p>
 <p><strong>Категория токена WB:</strong> Аналитика<br />
@@ -720,24 +735,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="order-feed">Лента заказов</h3>
-<p>Блок позволяет получать отчёт «Лента заказов».</p>
-<p><strong>Категория токена WB:</strong> Статистика<br />
-<strong>Доступ:</strong> только чтение</p>
-<table>
-<thead>
-<tr>
-<th>Инструмент</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>getOrders</code></td>
-<td>Получает отчёт «Лента заказов»</td>
-</tr>
-</tbody>
-</table>
+<h2 id="_7">Документы</h2>
 <h3 id="documents">Документы</h3>
 <p>Блок позволяет находить и загружать документы Wildberries в ZIP-архиве.</p>
 <p><strong>Категория токена WB:</strong> Документы<br />
@@ -756,7 +754,25 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_6">Информация</h2>
+<h3 id="order-feed">Лента заказов</h3>
+<p>Блок позволяет получать отчёт «Лента заказов».</p>
+<p><strong>Категория токена WB:</strong> Статистика<br />
+<strong>Доступ:</strong> только чтение</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getOrders</code></td>
+<td>Получает отчёт «Лента заказов»</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_8">Информация</h2>
 <h3 id="news">Новости</h3>
 <p>Блок позволяет получать список новостей Wildberries для продавцов.</p>
 <p><strong>Категория токена WB:</strong> отдельная категория не требуется<br />
@@ -793,7 +809,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_7">Интеграции</h2>
+<h2 id="_9">Интеграции</h2>
 <h3 id="telegram">Telegram</h3>
 <p>Блок позволяет отправлять сообщения и скачивать файлы через Telegram.</p>
 <p><strong>Категория токена WB:</strong> не требуется<br />
