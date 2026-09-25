@@ -158,7 +158,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Цены</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Цены</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -166,27 +166,27 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Коммуникации</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Коммуникации</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Финансы</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_8" class="nav-link">Финансы</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Отчёты</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_9" class="nav-link">Отчёты</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Документы</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_10" class="nav-link">Документы</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_8" class="nav-link">Информация</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_11" class="nav-link">Информация</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_9" class="nav-link">Интеграции</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_12" class="nav-link">Интеграции</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -201,7 +201,7 @@
 <p>MarketAut предоставляет инструменты для работы с магазином Wildberries через поддерживаемые ИИ-сервисы: ChatGPT, Claude, Grok и QwenWork.</p>
 <p>Инструменты добавляются в диаграмму в виде узлов. Можно подключить всю группу с помощью пункта <strong>ALL</strong> или выбрать только отдельные функции.</p>
 <p>О новых инструментах и обновлениях MarketAut сообщаем в <a href="https://t.me/marketaut1">Telegram-канале</a>.</p>
-<p><img alt="" src="../img/tools/tools-overview.png" /></p>
+<p><img alt="" src="../img/tools/all-tools.png" /></p>
 <div class="tools-page">
 <h2 id="_1">Все инструменты</h2>
 <p>Выберите нужный блок, чтобы перейти к его описанию:</p>
@@ -255,9 +255,10 @@
 </ul>
 <h2 id="_2">Контент</h2>
 <h3 id="catalogue">Каталог товаров</h3>
-<p>Блок позволяет получать и изменять карточки товаров, их характеристики и фотографии.</p>
+<p>Блок позволяет получать справочники Wildberries, создавать, обновлять и удалять карточки товаров.</p>
+<h4 id="_3">Чтение карточек</h4>
 <p><strong>Категория токена WB:</strong> Контент<br />
-<strong>Доступ:</strong> чтение и запись</p>
+<strong>Доступ:</strong> чтение </p>
 <table>
 <thead>
 <tr>
@@ -267,25 +268,38 @@
 </thead>
 <tbody>
 <tr>
-<td><code>catalogue</code></td>
-<td>Получает данные каталога товаров</td>
+<td><code>getCategories</code></td>
+<td>Получает категории</td>
 </tr>
 <tr>
-<td><code>delete</code></td>
-<td>Удаляет карточку товара</td>
+<td><code>getSubjects</code></td>
+<td>Получает предметы</td>
 </tr>
 <tr>
-<td><code>getCards</code></td>
-<td>Получает список карточек товаров</td>
+<td><code>getColors</code></td>
+<td>Получает цвета</td>
 </tr>
 <tr>
-<td><code>getCardByNm</code></td>
-<td>Получает карточку товара по артикулу WB</td>
+<td><code>getGenders</code></td>
+<td>Получает варианты пола</td>
 </tr>
 <tr>
-<td><code>getFailedCards</code></td>
-<td>Получает список карточек с ошибками</td>
+<td><code>getCountries</code></td>
+<td>Получает страны</td>
 </tr>
+</tbody>
+</table>
+<h4 id="_4">Создание и обновление карточек</h4>
+<p><strong>Категория токена WB:</strong> Контент<br />
+<strong>Доступ:</strong> запись </p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td><code>createCard</code></td>
 <td>Создаёт карточку товара</td>
@@ -296,15 +310,40 @@
 </tr>
 <tr>
 <td><code>attachCardPhoto</code></td>
-<td>Добавляет фотографию в карточку товара</td>
+<td>Добавляет фотографию в карточку</td>
 </tr>
 <tr>
 <td><code>attachCardPhotoAsUrl</code></td>
-<td>Добавляет фотографию в карточку товара по ссылке</td>
+<td>Добавляет фотографию по ссылке</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_3">Цены</h2>
+<h4 id="_5">Удаление карточек</h4>
+<p><strong>Категория токена WB:</strong> Контент<br />
+<strong>Доступ:</strong> запись </p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>moveCardToDeleted</code></td>
+<td>Перемещает карточку в корзину</td>
+</tr>
+<tr>
+<td><code>moveCardsToDeleted</code></td>
+<td>Перемещает несколько карточек в корзину</td>
+</tr>
+<tr>
+<td><code>deletedCards</code></td>
+<td>Удаляет карточки</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_6">Цены</h2>
 <h3 id="prices">Цены и скидки</h3>
 <p>Блок позволяет получать текущие цены и скидки, а также изменять их.</p>
 <p><strong>Категория токена WB:</strong> Цены и скидки<br />
@@ -486,7 +525,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_4">Коммуникации</h2>
+<h2 id="_7">Коммуникации</h2>
 <h3 id="feedbacks">Отзывы</h3>
 <p>Блок позволяет получать отзывы покупателей и выполнять действия с ними.</p>
 <p><strong>Категория токена WB:</strong> Вопросы и отзывы<br />
@@ -609,7 +648,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_5">Финансы</h2>
+<h2 id="_8">Финансы</h2>
 <h3 id="finance-reports">Финансы: отчёты</h3>
 <p>Блок позволяет получать детализированный финансовый отчёт за выбранный период.</p>
 <p><strong>Категория токена WB:</strong> Статистика<br />
@@ -646,7 +685,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_6">Отчёты</h2>
+<h2 id="_9">Отчёты</h2>
 <h3 id="paid-storage">Отчёт о платном хранении</h3>
 <p>Блок позволяет получать отчёт о начислениях за платное хранение товаров.</p>
 <p><strong>Категория токена WB:</strong> Аналитика<br />
@@ -735,7 +774,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_7">Документы</h2>
+<h2 id="_10">Документы</h2>
 <h3 id="documents">Документы</h3>
 <p>Блок позволяет находить и загружать документы Wildberries в ZIP-архиве.</p>
 <p><strong>Категория токена WB:</strong> Документы<br />
@@ -772,7 +811,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_8">Информация</h2>
+<h2 id="_11">Информация</h2>
 <h3 id="news">Новости</h3>
 <p>Блок позволяет получать список новостей Wildberries для продавцов.</p>
 <p><strong>Категория токена WB:</strong> отдельная категория не требуется<br />
@@ -809,7 +848,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_9">Интеграции</h2>
+<h2 id="_12">Интеграции</h2>
 <h3 id="telegram">Telegram</h3>
 <p>Блок позволяет отправлять сообщения и скачивать файлы через Telegram.</p>
 <p><strong>Категория токена WB:</strong> не требуется<br />
