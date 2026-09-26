@@ -158,15 +158,15 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Если отсутствует кнопка «+»</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Проверка подключения</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#chatgpt" class="nav-link">Использование ChatGPT</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Проверка в чате</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#marketaut-chatgpt" class="nav-link">Обновление инструментов MarketAut в ChatGPT</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Удаление плагина</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -195,88 +195,68 @@
 <p><a href="https://rutube.ru/video/3cb0bcead19957f75e6739333b8cdc1f/">Смотреть на RuTube →</a></p>
 <h2 id="_3">Подключение</h2>
 <ol>
-<li>В правом верхнем углу окна ChatGPT выберите раздел <strong>Плагины</strong>;</li>
-</ol>
-<p><img alt="" src="../img/gpt/plugin.png" /><br />
-2. Нажмите  <strong>Добавить плагин</strong>;</p>
-<p><img alt="" src="../img/gpt/add-plugin.png" /></p>
-<h2 id="_4">Если отсутствует кнопка «+»</h2>
-<p>Если рядом со строкой поиска в разделе <strong>Плагины</strong> отсутствует кнопка <strong>«+»</strong>, необходимо включить режим разработчика.</p>
+<li>
+<p>В левом меню ChatGPT откройте <strong>Плагины</strong>;</p>
+<p><img alt="Раздел «Плагины» в меню ChatGPT" src="../img/gpt/plugins-sidebar.png" /></p>
+</li>
+<li>
+<p>Справа нажмите <strong>Добавить</strong> и выберите <strong>Создать MCP-приложение</strong>;</p>
+<p><img alt="" src="../img/gpt/create-mcp-app.png" /></p>
+</li>
+<li>
+<p>На домашней странице MarketAut скопируйте MCP-адрес из блока <strong>«Подключите вашего агента»</strong>;</p>
+<p><img alt="" src="../img/gpt/mcp-address.png" /></p>
+</li>
+<li>
+<p>Заполните форму создания приложения:</p>
 <ul>
-<li>Откройте настройки</li>
-</ul>
-<p>Откройте меню профиля и перейдите в <strong>Настройки</strong>.</p>
-<ul>
-<li>Перейдите в раздел Плагины</li>
-</ul>
-<p>Откройте раздел <strong>Плагины</strong> и найдите пункт <strong>Режим разработчика</strong>.</p>
-<p><img alt="" src="../img/gpt/developer-mode-settings.png" /></p>
-<ul>
-<li>Включите режим разработчика</li>
-</ul>
-<p>Включите переключатель <strong>Режим разработчика</strong>.</p>
-<p>При включении может появиться предупреждение <strong>Повышенный риск</strong>. Это стандартное уведомление о том, что режим разработчика позволяет подключать неподтверждённые MCP-коннекторы.</p>
-<p><img alt="" src="../img/gpt/enable-developer-mode.png" /></p>
-<ul>
-<li>Продолжите подключение</li>
-</ul>
-<p>Вернитесь в раздел <strong>Плагины</strong>. После включения режима разработчика рядом со строкой поиска появится кнопка <strong>«+»</strong>, и вы сможете продолжить подключение плагина.</p>
-<p>Если пункт <strong>Режим разработчика</strong> отсутствует, проверьте тариф и права пользователя в рабочем пространстве ChatGPT.<br />
-3. Заполните поля:</p>
-<p>После нажатия кнопки <strong>«+»</strong> откроется окно добавления плагина.</p>
-<ul>
-<li><strong>Название</strong> — любое название на ваш выбор, например <code>MarketAut</code>;</li>
+<li><strong>Название</strong>  — любое название на ваш выбор, например <code>Wildberries</code></li>
+<li><strong>Описание</strong> — можно оставить пустым;</li>
 <li><strong>Подключение</strong> — URL-адрес MCP-сервера;</li>
 <li><strong>Аутентификация</strong> — <code>OAuth</code>.</li>
 </ul>
-<p>Скопируйте MCP-адрес из блока подключения агента на <a href="https://marketaut.ru/app/home">домашней странице MarketAut</a> и вставьте его в поле <strong>Подключение</strong>.</p>
-<p>Например: <code>https://marketaut.ru/mcp/wb</code></p>
-<p><img alt="" src="../img/gpt/gpt-connected-dialog.png" /></p>
-<p>Заполните поле подключения вашим MCP-адресом и убедитесь, что в качестве способа аутентификации выбран <strong>OAuth</strong>.</p>
-<p>После заполнения всех полей установите флажок подтверждения и нажмите <strong>Создать</strong>.</p>
-<p><img alt="" src="../img/gpt/confirm-creation.png" /><br />
-4. Далее нажмите <strong>Войти через  MarketAut</strong>;<br />
-5. Откроется страница авторизации MarketAut;<br />
-6. В окне предоставления доступа нажмите <strong>Разрешить доступ</strong>.</p>
-<p><img alt="" src="../img/gpt/oauth_consent.png" /></p>
-<p>После успешного подключения плагин <strong>MarketAut</strong> появится в разделе <strong>Плагины → Личные</strong>.</p>
-<p><img alt="" src="../img/gpt/plugin-list.png" /><br />
-Откройте плагин <strong>MarketAut</strong>.</p>
-<p>В правом верхнем углу нажмите <strong>Настройки</strong>.</p>
-<p><img alt="" src="../img/gpt/plugin-settings-button.png" /></p>
-<p>В открывшемся окне будет отображаться информация о подключении и список доступных инструментов MarketAut. При необходимости обновите список инструментов.</p>
-<p><img alt="" src="../img/gpt/tools_available.png" /></p>
-<p>Если список инструментов отображается, подключение успешно завершено.</p>
-<h2 id="chatgpt">Использование ChatGPT</h2>
-<p>Откройте новый диалог ChatGPT.</p>
-<p>Нажмите кнопку <strong>+</strong> рядом с полем ввода сообщения и выберите <strong>MarketAut</strong>.</p>
-<p><img alt="" src="../img/gpt/chat-plugin-list.png" /></p>
-<p>Если <strong>MarketAut</strong> отображается в списке, плагин успешно подключён и готов к использованию.</p>
-<p>Отправьте любой запрос, например:</p>
-<blockquote>
-<p>Привет! Выведи список моих карточек WB.</p>
-</blockquote>
-<p><img alt="" src="../img/gpt/ask.png" /></p>
-<p>Если подключение настроено корректно, ChatGPT сможет обратиться к инструментам MarketAut и получить данные из вашего магазина Wildberries.</p>
-<h2 id="marketaut-chatgpt">Обновление инструментов MarketAut в ChatGPT</h2>
-<p>Если в MarketAut появились новые инструменты или были обновлены существующие, обновите их список в ChatGPT.</p>
-<h3 id="marketaut">Переход к настройкам MarketAut</h3>
-<ol>
-<li>В боковом меню ChatGPT откройте раздел <strong>«Плагины»</strong>.</li>
+</li>
 </ol>
-<p><img alt="" src="../img/gpt/chatgpt-plugins.png" /><br />
-2. В блоке <strong>«Установленные»</strong> выберите <strong>MarketAut</strong>.<br />
-<img alt="" src="../img/gpt/chatgpt-installed-marketaut.png" /><br />
-3. Нажмите на три точки в правом верхнем углу и выберите <strong>«Настройки»</strong>.<br />
-<img alt="" src="../img/gpt/chatgpt-marketaut-settings.png" /></p>
-<h3 id="_5">Обновление списка инструментов</h3>
-<p>Прокрутите страницу вниз до раздела <strong>«Информация»</strong> и нажмите <strong>«Обновить»</strong>.</p>
-<p><img alt="" src="../img/gpt/chatgpt-update-tools.png" /></p>
-<p>После обновления создайте новый чат и проверьте работу инструментов MarketAut.</p>
-<h3 id="_6">Повторное подключение</h3>
-<p>Если после обновления новые инструменты не появились, нажмите на три точки в настройках MarketAut и выберите <strong>«Подключить повторно»</strong>.</p>
-<p><img alt="" src="../img/gpt/chatgpt-reconnect-marketaut.png" /></p>
-<p>При необходимости снова подтвердите авторизацию. После повторного подключения создайте новый чат.</p></div>
+<p>Скопируйте MCP-адрес из блока подключения агента на <a href="https://marketaut.ru/app/home">домашней странице MarketAut</a> и вставьте его в поле <strong>Подключение</strong>.</p>
+<p>Например: <code>https://marketaut.ru/mcp/wb</code></p>
+<p>Установите флажок подтверждения условий и нажмите <strong>Создать</strong>.</p>
+<p><img alt="" src="../img/gpt/mcp-app-settings.png" /></p>
+<ol>
+<li>
+<p>Нажмите <strong>Перейти к Wildberries</strong>.</p>
+<p><img alt="" src="../img/gpt/connect-wildberries.png" /></p>
+</li>
+<li>
+<p>В открывшемся окне авторизации нажмите <strong>Разрешить доступ</strong>.</p>
+<p><img alt="" src="../img/gpt/authorize-marketaut.png" /></p>
+</li>
+</ol>
+<h2 id="_4">Проверка подключения</h2>
+<p>Откройте <strong>Плагины → Личные</strong>. В разделе созданных вами плагинов появится <strong>Wildberries</strong>.</p>
+<p><img alt="" src="../img/gpt/personal-plugins.png" /></p>
+<p>Нажмите на Wildberries, чтобы открыть его страницу.</p>
+<p><img alt="" src="../img/gpt/wildberries-app-page.png" /></p>
+<p>Чтобы посмотреть доступные инструменты, откройте приложение <strong>Wildberries</strong> в блоке <strong>«Приложения»</strong> на этой странице. Инструменты будут показаны по группам.</p>
+<p><img alt="" src="../img/gpt/wildberries-tools.png" /></p>
+<h2 id="_5">Проверка в чате</h2>
+<p>Нажмите <strong>Попробовать в чате</strong> на странице Wildberries. Также можно открыть новый чат, нажать <strong>«+»</strong> возле поля ввода и выбрать Wildberries.</p>
+<p><img alt="" src="../img/gpt/add-wildberries-to-chat.png" /></p>
+<p>Отправьте запрос, например:</p>
+<blockquote>
+<p>Проанализируй цены конкурентов на повязки для волос и предложи, какую цену выставить мне.</p>
+</blockquote>
+<p><img alt="" src="../img/gpt/example-question.png" /></p>
+<p>Если подключение работает, ChatGPT обратится к инструментам Wildberries и подготовит ответ.</p>
+<p><img alt="" src="../img/gpt/example-answer.png" /></p>
+<h3 id="_6">Обновление инструментов</h3>
+<p>Если вы добавили новые узлы на диаграмму MarketAut, сначала убедитесь, что диаграмма <strong>запущена</strong>. Остановленная диаграмма не работает, и её инструменты будут недоступны в ChatGPT.</p>
+<p>Откройте <strong>Плагины → Личные → Wildberries</strong>. Нажмите на три точки справа и выберите <strong>«Управлять»</strong>.</p>
+<p><img alt="" src="../img/gpt/manage-wildberries-app.png" /></p>
+<p>Прокрутите страницу вниз и нажмите <strong>«Обновить инструменты»</strong>. После обновления проверьте список инструментов приложения Wildberries.<br />
+<img alt="" src="../img/gpt/refresh-wildberries-tools.png" /></p>
+<h2 id="_7">Удаление плагина</h2>
+<p>Откройте страницу Wildberries, нажмите <strong>«…»</strong> справа и выберите <strong>Удалить плагин</strong>.</p>
+<p><img alt="" src="../img/gpt/plugin-actions.png" /></p></div>
             </div>
         </div>
 
