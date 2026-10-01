@@ -214,18 +214,18 @@
     - <a href="#prices">Цены и скидки</a></li>
 </ul>
 <ul>
-<li><strong>FBS</strong><br />
-    - <a href="#orders-supplies">Заказы и поставки</a><br />
-    - <a href="#labels">Маркировка сборочных заданий</a><br />
-    - <a href="#passes">Пропуска</a></li>
+<li><strong>FBS</strong><p>- <a href="#passes">Пропуска</a><br />
+  - <a href="#orders-supplies">Заказы и поставки</a><br />
+  - <a href="#labels">Маркировка сборочных заданий</a></p>
+</li>
 </ul>
 <ul>
 <li><strong>Коммуникации</strong><br />
     - <a href="#feedbacks">Отзывы</a><br />
-    - <a href="#pinned-feedbacks">Закреплённые отзывы</a><br />
     - <a href="#questions">Вопросы</a><br />
+    - <a href="#returns">Возвраты</a><br />
     - <a href="#chats">Чат с покупателем</a><br />
-    - <a href="#returns">Возвраты</a></li>
+    - <a href="#pinned-feedbacks">Закреплённые отзывы</a></li>
 </ul>
 <ul>
 <li><strong>Финансы</strong><br />
@@ -234,11 +234,12 @@
 </ul>
 <ul>
 <li><strong>Отчёты</strong><br />
-    - <a href="#paid-storage">Платное хранение</a><br />
     - <a href="#deductions">Удержания</a><br />
-    - <a href="#sales-regions">Продажи по регионам</a><br />
+    - <a href="#order-feed">Лента заказов</a><br />
+    - <a href="#paid-storage">Платное хранение</a><br />
     - <a href="#stocks">Остатки на складах</a><br />
-    - <a href="#order-feed">Лента заказов</a></li>
+    - <a href="#search-reports">Поисковые запросы</a><br />
+    - <a href="#sales-regions">Продажи по регионам</a></li>
 </ul>
 <ul>
 <li><strong>Документы</strong><br />
@@ -808,6 +809,40 @@
 <tr>
 <td><code>getOrders</code></td>
 <td>Получает отчёт «Лента заказов»</td>
+</tr>
+</tbody>
+</table>
+<h3 id="search-reports">Поисковые запросы</h3>
+<p>Блок позволяет получать аналитику по поисковым запросам покупателей, позициям товаров и заказам из поиска.</p>
+<p>Категория токена WB: Аналитика<br />
+Доступ: только чтение</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>main</code></td>
+<td>Получает основной отчёт по поисковым запросам</td>
+</tr>
+<tr>
+<td><code>paginationByGroups</code></td>
+<td>Получает данные с пагинацией по группам</td>
+</tr>
+<tr>
+<td><code>paginationByProductsWithinGroup</code></td>
+<td>Получает данные с пагинацией по товарам внутри группы</td>
+</tr>
+<tr>
+<td><code>searchTextsByProduct</code></td>
+<td>Получает поисковые запросы по товару</td>
+</tr>
+<tr>
+<td><code>ordersAndPositionsBySearchTexts</code></td>
+<td>Получает заказы и позиции товара по поисковым запросам</td>
 </tr>
 </tbody>
 </table>
