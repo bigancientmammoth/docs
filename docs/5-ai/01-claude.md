@@ -29,21 +29,22 @@
 
 1. Запустите приложение **Claude Desktop**;
 2. В боковом меню выберите **Customize**;
-![](img/claude/customize.png)
+![](img/claude/claude-customize.png)
 3. Откройте раздел **Connectors;**
 
 **Connectors** — механизм подключения Claude к внешним системам. С его помощью Claude может получать доступ к инструментам и данным платформы MarketAut.
 
-![](img/claude/customize-connectors.png)
+![](img/claude/claude-connectors.png)
+
 Чтобы добавить новый коннектор:
-4. Нажмите кнопку **Add** и нажмите **Add custom connector**;
-![](img/claude/add-connectors.png)
+4. Нажмите  **+ Add** в правом верхнем углу и выберите **Add custom connector**;
+![](img/claude/add-custom-connector.png)
 
 Откроется окно добавления коннектора.
 
 Заполните следующие поля:
 
-- **Имя** — любое удобное название, например `MarketAut`.
+- **Название**  — любое удобное название, например `MarketAut`.
 - **Адрес** — MCP-адрес вашей диаграммы, полученный на [домашней странице MarketAut](https://marketaut.ru/app/home).
 
 Пример MCP-адреса:
@@ -52,16 +53,15 @@
 После заполнения полей нажмите **Add**.
 
 ![](img/claude/connector-dialog.png)
+5.  В следующем окне выберите параметры:
+- **Authentication → Sign in now**;
+- **OAuth client → Use Claude’s published identity**.
 
-После добавления коннектора **MarketAut** появится в списке подключений, но будет отображаться как неподключённый.
-
-Для продолжения настройки нажмите **Connect**.
-
-![](img/claude/not-connected.png)
-
-После нажатия кнопки **Connect** откроется страница авторизации MarketAut.
-
-В окне предоставления доступа нажмите **Разрешить доступ**.
+Если эти варианты уже выбраны, оставьте их без изменений.
+![](img/claude/claude-connector-authentication.png)
+6. Прокрутите окно вниз и нажмите **Add**.
+![](img/claude/claude-connector-add.png)
+7. В окне предоставления доступа нажмите **Разрешить доступ**.
 ![](img/claude/claude-add-custom-connector.png)
 
 После успешной авторизации Claude получит доступ к инструментам и данным, доступным в вашей диаграмме MarketAut.
