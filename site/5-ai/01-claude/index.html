@@ -218,29 +218,32 @@
 <ol>
 <li>Запустите приложение <strong>Claude Desktop</strong>;</li>
 <li>В боковом меню выберите <strong>Customize</strong>;<br />
-<img alt="" src="../img/claude/customize.png" /></li>
+<img alt="" src="../img/claude/claude-customize.png" /></li>
 <li>Откройте раздел <strong>Connectors;</strong></li>
 </ol>
 <p><strong>Connectors</strong> — механизм подключения Claude к внешним системам. С его помощью Claude может получать доступ к инструментам и данным платформы MarketAut.</p>
-<p><img alt="" src="../img/claude/customize-connectors.png" /><br />
-Чтобы добавить новый коннектор:<br />
-4. Нажмите кнопку <strong>Add</strong> и нажмите <strong>Add custom connector</strong>;<br />
-<img alt="" src="../img/claude/add-connectors.png" /></p>
+<p><img alt="" src="../img/claude/claude-connectors.png" /></p>
+<p>Чтобы добавить новый коннектор:<br />
+4. Нажмите  <strong>+ Add</strong> в правом верхнем углу и выберите <strong>Add custom connector</strong>;<br />
+<img alt="" src="../img/claude/add-custom-connector.png" /></p>
 <p>Откроется окно добавления коннектора.</p>
 <p>Заполните следующие поля:</p>
 <ul>
-<li><strong>Имя</strong> — любое удобное название, например <code>MarketAut</code>.</li>
+<li><strong>Название</strong>  — любое удобное название, например <code>MarketAut</code>.</li>
 <li><strong>Адрес</strong> — MCP-адрес вашей диаграммы, полученный на <a href="https://marketaut.ru/app/home">домашней странице MarketAut</a>.</li>
 </ul>
 <p>Пример MCP-адреса:<br />
 <code>https://marketaut.ru/mcp/wb</code></p>
 <p>После заполнения полей нажмите <strong>Add</strong>.</p>
-<p><img alt="" src="../img/claude/connector-dialog.png" /></p>
-<p>После добавления коннектора <strong>MarketAut</strong> появится в списке подключений, но будет отображаться как неподключённый.</p>
-<p>Для продолжения настройки нажмите <strong>Connect</strong>.</p>
-<p><img alt="" src="../img/claude/not-connected.png" /></p>
-<p>После нажатия кнопки <strong>Connect</strong> откроется страница авторизации MarketAut.</p>
-<p>В окне предоставления доступа нажмите <strong>Разрешить доступ</strong>.<br />
+<p><img alt="" src="../img/claude/connector-dialog.png" /><br />
+5.  В следующем окне выберите параметры:<br />
+- <strong>Authentication → Sign in now</strong>;<br />
+- <strong>OAuth client → Use Claude’s published identity</strong>.</p>
+<p>Если эти варианты уже выбраны, оставьте их без изменений.<br />
+<img alt="" src="../img/claude/claude-connector-authentication.png" /><br />
+6. Прокрутите окно вниз и нажмите <strong>Add</strong>.<br />
+<img alt="" src="../img/claude/claude-connector-add.png" /><br />
+7. В окне предоставления доступа нажмите <strong>Разрешить доступ</strong>.<br />
 <img alt="" src="../img/claude/claude-add-custom-connector.png" /></p>
 <p>После успешной авторизации Claude получит доступ к инструментам и данным, доступным в вашей диаграмме MarketAut.</p>
 <p>После завершения подключения рядом с коннектором появится отметка подключения, а на его странице — кнопка <strong>Disconnect</strong>.</p>
