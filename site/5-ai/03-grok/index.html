@@ -110,6 +110,10 @@
 <li>
     <a href="../04-qwen-work/" class="dropdown-item">QwenWork</a>
 </li>
+                                    
+<li>
+    <a href="../05-gemini/" class="dropdown-item">Gemini</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -154,11 +158,23 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Подключение</a>
+            <li class="nav-item" data-bs-level="2"><a href="#connect" class="nav-link">Подключение</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Доступные инструменты</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             <li class="nav-item" data-bs-level="2"><a href="#grok" class="nav-link">Использование Grok</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Обновление инструментов</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Удаление коннектора</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -175,8 +191,8 @@
 <p>Перед началом подключения убедитесь, что:</p>
 <ul>
 <li>аккаунт Wildberries успешно создан и настроен — <a href="/4-platform/01-accounts/">Настройка аккаунта</a>; </li>
-<li>диаграмма создана, настроена и запущена — <a href="/4-platform/03-diagrams/">Создание и запуск диаграммы </a>; </li>
-<li>получен MCP-адрес на домашней странице MarketAut — <a href="/3-start/02-home/">Где найти MCP-адрес </a>.</li>
+<li>диаграмма создана, настроена и запущена — <a href="/4-platform/03-diagrams/">Создание и запуск диаграммы</a>; </li>
+<li>получен MCP-адрес на домашней странице MarketAut — <a href="/3-start/02-home/">Где найти MCP-адрес</a>.</li>
 </ul>
 <blockquote>
 <p><strong>Важно</strong></p>
@@ -185,32 +201,37 @@
 <h2 id="_2">Видеоинструкция</h2>
 <p><a href="https://youtu.be/f1yZfK4_wbY">Смотреть на YouTube →</a></p>
 <p><a href="https://rutube.ru/video/13c685ed8cd4a3568f1f26f5e44a547c/">Смотреть на RuTube →</a></p>
-<h2 id="_3">Подключение</h2>
+<h2 id="connect">Подключение</h2>
 <ol>
 <li>
-<p>В боковом меню Grok выберите раздел <strong>«Навыки и коннекторы»</strong>.<br />
-<img alt="" src="../img/grok/skills-and-connectors.png" /></p>
+<p>Внизу бокового меню Grok откройте <strong>Плагины</strong>;</p>
+<p><img alt="" src="../img/grok/plugins.png" /></p>
 </li>
 <li>
-<p>Перейдите во вкладку <strong>«Коннекторы»</strong> и нажмите <strong>«Новый коннектор»</strong>.</p>
+<p>На вкладке <strong>Коннекторы</strong> нажмите <strong>Новый коннектор</strong>;</p>
+<p><img alt="" src="../img/grok/new-connector.png" /></p>
+</li>
+<li>
+<p>В открывшемся окне выберите <strong>Пользовательские настройки</strong>;</p>
+<p><img alt="" src="../img/grok/custom-connector.png" /></p>
+</li>
+<li>
+<p>Заполните поля и нажмите <strong>Добавить коннектор</strong>:<br />
+    - <strong>Название</strong> — любое удобное название, например <code>MarketAut WB</code>;<br />
+    - <strong>URL сервера</strong> — MCP-адрес с <a href="../../3-start/02-home/">домашней страницы MarketAut</a>, например <code>https://marketaut.ru/mcp/wb</code>.</p>
+<p><img alt="" src="../img/grok/connector-settings.png" /></p>
+</li>
+<li>
+<p>В окне предоставления доступа при необходимости выберите команду и нажмите <strong>Разрешить доступ</strong>.</p>
+<p><img alt="" src="../img/grok/allow-access.png" /></p>
 </li>
 </ol>
-<p><img alt="Добавление нового коннектора" src="../img/grok/new-connector.png" /><br />
-3. В открывшемся окне выберите <strong>«Пользовательские настройки»</strong>.</p>
-<p><img alt="Пользовательские настройки" src="../img/grok/custom-connector.png" /><br />
-4. Заполните поля:</p>
-<ul>
-<li><strong>Название</strong>: укажите любое удобное название коннектора, например <code>MarketAut</code>;</li>
-<li><strong>URL сервера</strong>: вставьте персональный MCP-адрес, скопированный из блока подключения агента на <a href="https://marketaut.ru/app/home">домашней странице MarketAut</a>.</li>
-</ul>
-<p>Например: <code>https://marketaut.ru/mcp/wb</code></p>
-<p>После заполнения полей нажмите <strong>«Добавить коннектор»</strong>.</p>
-<p><img alt="" src="../img/grok/grok-connector-settings.png" /><br />
-5. Откроется окно предоставления доступа. При необходимости выберите нужную команду и нажмите <strong>«Разрешить доступ»</strong>.</p>
-<p><img alt="Предоставление доступа" src="../img/grok/allow-access.png" /></p>
-<p>После успешного подключения MarketAut появится в разделе <strong>«Установленные»</strong> со статусом <code>Connected</code>.</p>
-<p><img alt="MarketAut подключён" src="../img/grok/connected.png" /></p>
-<p>Если отображается статус <code>Connected</code>, подключение успешно завершено.</p>
+<p>После подключения <strong>MarketAut WB</strong> появится в разделе <strong>Подключено</strong> с отметкой <strong>Добавлено</strong>.</p>
+<p><img alt="" src="../img/grok/grok-connected.png" /></p>
+<h2 id="_3">Доступные инструменты</h2>
+<p>Чтобы посмотреть инструменты MarketAut, доступные Grok, откройте <strong>Плагины → Коннекторы</strong> и нажмите на <strong>MarketAut WB</strong>.</p>
+<p>На странице коннектора отображается список инструментов. Чтобы увидеть весь список, нажмите <strong>Показать ещё</strong>.</p>
+<p><img alt="" src="../img/grok/grok-tools.png" /></p>
 <h2 id="grok">Использование Grok</h2>
 <p>Откройте новый диалог Grok и отправьте запрос, для выполнения которого необходимы данные вашего магазина Wildberries.</p>
 <p>Например:</p>
@@ -218,7 +239,20 @@
 <p>Проанализируй мои карточки товаров на Wildberries, что нужно улучшить?</p>
 </blockquote>
 <p><img alt="Пример запроса в Grok" src="../img/grok/test-request.png" /></p>
-<p>Если подключение настроено корректно, Grok сможет обратиться к инструментам MarketAut и получить данные из вашего магазина Wildberries.</p></div>
+<p>Если подключение настроено корректно, Grok сможет обратиться к инструментам MarketAut и получить данные из вашего магазина Wildberries.</p>
+<h2 id="_4">Обновление инструментов</h2>
+<p>Если вы добавили или удалили инструменты в диаграмме MarketAut, обновите их список в Grok:</p>
+<ol>
+<li>Откройте <strong>Плагины → Коннекторы</strong> и нажмите на <strong>MarketAut WB</strong>;</li>
+<li>Нажмите <strong>Повторная аутентификация</strong> и подтвердите доступ.</li>
+</ol>
+<p>После этого в списке инструментов появятся изменения.</p>
+<h2 id="_5">Удаление коннектора</h2>
+<ol>
+<li>Откройте <strong>Плагины → Коннекторы</strong> и нажмите на <strong>MarketAut WB</strong>;</li>
+<li>Нажмите <strong>Отключить</strong>. Коннектор будет удалён из Grok — чтобы подключить его снова, повторите шаги из раздела <a href="#connect">Подключение</a><p><img alt="" src="../img/grok/grok-dissconect.png" /></p>
+</li>
+</ol></div>
             </div>
         </div>
 

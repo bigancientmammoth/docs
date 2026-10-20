@@ -110,6 +110,10 @@
 <li>
     <a href="./" class="dropdown-item active" aria-current="page">QwenWork</a>
 </li>
+                                    
+<li>
+    <a href="../05-gemini/" class="dropdown-item">Gemini</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -126,7 +130,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../05-gemini/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -158,15 +162,15 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Подключение</a>
+            <li class="nav-item" data-bs-level="2"><a href="#connect" class="nav-link">Подключение</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Авторизация</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Авторизация</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Проверка подключения</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Проверка подключения</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -174,7 +178,11 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Обновление инструментов</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Обновление инструментов</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Удаление коннектора</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -191,8 +199,8 @@
 <p>Перед началом подключения убедитесь, что:</p>
 <ul>
 <li>аккаунт Wildberries успешно создан и настроен — <a href="/4-platform/01-accounts/">Настройка аккаунта</a>; </li>
-<li>диаграмма создана, настроена и запущена — <a href="/4-platform/03-diagrams/">Создание и запуск диаграммы </a>; </li>
-<li>получен MCP-адрес на домашней странице MarketAut — <a href="/3-start/02-home/">Где найти MCP-адрес </a>.</li>
+<li>диаграмма создана, настроена и запущена — <a href="/4-platform/03-diagrams/">Создание и запуск диаграммы</a>; </li>
+<li>получен MCP-адрес на домашней странице MarketAut — <a href="/3-start/02-home/">Где найти MCP-адрес</a>.</li>
 </ul>
 <blockquote>
 <p><strong>Важно</strong></p>
@@ -208,7 +216,7 @@
 <li>Установите и запустите QwenWork;</li>
 <li>Войдите в свой аккаунт.</li>
 </ol>
-<h2 id="_3">Подключение</h2>
+<h2 id="connect">Подключение</h2>
 <ol>
 <li>Запустите приложение QwenWork;</li>
 <li>В боковом меню откройте раздел <strong>Extensions</strong>;</li>
@@ -222,7 +230,7 @@
 <p>Заполните следующие поля:</p>
 <ul>
 <li><strong>Server Type</strong> — выберите <code>Streamable HTTP</code>;</li>
-<li><strong>Server Name</strong> — укажите удобное название без пробелов, например <code>marketaut</code>;</li>
+<li><strong>Server Name</strong> — название латиницей, строчными буквами, без пробелов, например <code>marketaut-wb</code>;</li>
 <li><strong>Server URL</strong> — вставьте персональный MCP-адрес, скопированный из блока подключения агента на <a href="https://marketaut.ru/app/home">домашней странице MarketAut</a>;</li>
 <li><strong>Headers</strong> — оставьте пустыми;</li>
 <li><strong>Timeout</strong> — оставьте пустым или укажите <code>60</code>.</li>
@@ -230,11 +238,11 @@
 <p>Пример MCP-адреса:</p>
 <p><code>https://marketaut.ru/mcp/wb</code></p>
 <blockquote>
-<p>Название сервера не должно содержать пробелы. Если поле подсвечивается красным и появляется сообщение <code>Server name cannot contain spaces</code>, удалите пробелы и повторно введите название, например <code>marketaut</code>.</p>
+<p>Название сервера не должно содержать пробелы. Если поле подсвечивается красным и появляется сообщение <code>Server name cannot contain spaces</code>, удалите пробелы и повторно введите название, например <code>marketaut-wb</code>.</p>
 </blockquote>
 <p><img alt="" src="../img/qwen/https-configuration.png" /></p>
 <p>После заполнения полей нажмите <strong>Add</strong>.</p>
-<h2 id="_4">Авторизация</h2>
+<h2 id="_3">Авторизация</h2>
 <p>После добавления MCP-сервера откроется страница авторизации MarketAut.</p>
 <p>Проверьте запрашиваемые права и нажмите <strong>Разрешить доступ</strong>.</p>
 <p><img alt="" src="../img/qwen/qwenwork-oauth-permission.png" /></p>
@@ -243,17 +251,16 @@
 <p><img alt="" src="../img/qwen/qwenwork-authorization-success.png" /><br />
 Дождитесь завершения процесса авторизации. Авторизация завершена, когда появляется сообщение <code>AUTHORIZATION SUCCESSFUL</code>, а зелёная полоса в нижней части окна доходит до конца.</p>
 <p>После этого окно можно закрыть вручную и вернуться в приложение QwenWork.</p>
-<h2 id="_5">Проверка подключения</h2>
+<h2 id="_4">Проверка подключения</h2>
 <ol>
 <li>Откройте <strong>Extensions → Connectors</strong>;</li>
 <li>Перейдите во вкладку <strong>Installed</strong>;</li>
-<li>Найдите коннектор <code>marketaut</code>;</li>
-<li>Раскройте коннектор;</li>
+<li>Нажмите на коннектор <code>marketaut-wb</code>;</li>
 <li>Убедитесь, что переключатель справа включён и отображается зелёным цветом.</li>
 </ol>
 <p>Зелёный переключатель означает, что коннектор MarketAut активен и QwenWork может использовать его инструменты в задачах.</p>
 <p>Ниже названия коннектора отображается список доступных инструментов MarketAut.</p>
-<p><img alt="" src="../img/qwen/qwenwork-tools-list.png" /></p>
+<p><img alt="" src="../img/qwen/qwen-tools.png" /></p>
 <p>Если переключатель включён и инструменты отображаются в списке, подключение успешно завершено.</p>
 <p>Чтобы временно запретить QwenWork использовать MarketAut, выключите переключатель. Удалять коннектор для этого не требуется.</p>
 <h2 id="qwenwork_1">Использование QwenWork</h2>
@@ -265,17 +272,25 @@
 <p><img alt="" src="../img/qwen/qwenwork-example-request.png" /></p>
 <p>QwenWork обратится к доступным инструментам MarketAut и выведет полученные данные.</p>
 <p>Если QwenWork получил данные из MarketAut, подключение настроено корректно.</p>
-<h2 id="_6">Обновление инструментов</h2>
+<h2 id="_5">Обновление инструментов</h2>
 <p>Если в диаграмме MarketAut появились новые инструменты или были изменены существующие, обновите их список в QwenWork.</p>
 <ol>
 <li>Откройте <strong>Extensions → Connectors</strong>;</li>
 <li>Перейдите во вкладку <strong>Installed</strong>;</li>
-<li>Найдите коннектор <code>marketaut</code>;</li>
+<li>Нажмите на коннектор <code>marketaut-wb</code>;</li>
 <li>Нажмите кнопку <strong>Reset</strong>.</li>
 </ol>
-<p><img alt="" src="../img/qwen/qwenwork-reset-tools.png" /></p>
+<p><img alt="" src="../img/qwen/qwen-reset.png" /></p>
 <p>Кнопка <strong>Reset</strong> перезапускает подключение к MarketAut и заново загружает актуальный список инструментов.</p>
-<p>При необходимости повторно подтвердите авторизацию. После обновления раскройте коннектор и проверьте список доступных инструментов.</p></div>
+<p>При необходимости повторно подтвердите авторизацию. После обновления проверьте список доступных инструментов.</p>
+<h2 id="_6">Удаление коннектора</h2>
+<ol>
+<li>Откройте <strong>Extensions → Connectors</strong> и перейдите во вкладку <strong>Installed</strong>;</li>
+<li>Нажмите на коннектор <strong>marketaut-wb</strong>;</li>
+<li>Нажмите значок корзины справа.<p><img alt="" src="../img/qwen/qwen-delete-tools.png" /></p>
+</li>
+</ol>
+<p>Коннектор будет удалён. Чтобы подключить его снова, повторите шаги из раздела <a href="#connect">Подключение</a>.</p></div>
             </div>
         </div>
 
