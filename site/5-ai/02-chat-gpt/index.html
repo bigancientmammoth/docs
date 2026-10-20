@@ -110,6 +110,10 @@
 <li>
     <a href="../04-qwen-work/" class="dropdown-item">QwenWork</a>
 </li>
+                                    
+<li>
+    <a href="../05-gemini/" class="dropdown-item">Gemini</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -187,12 +191,12 @@
 <p>Перед началом подключения убедитесь, что:</p>
 <ul>
 <li>аккаунт Wildberries успешно создан и настроен — <a href="/4-platform/01-accounts/">Настройка аккаунта</a>; </li>
-<li>диаграмма создана, настроена и запущена — <a href="/4-platform/03-diagrams/">Создание и запуск диаграммы </a>; </li>
-<li>получен MCP-адрес на домашней странице MarketAut — <a href="/3-start/02-home/">Где найти MCP-адрес </a>.</li>
+<li>диаграмма создана, настроена и запущена — <a href="/4-platform/03-diagrams/">Создание и запуск диаграммы</a>;</li>
+<li>получен MCP-адрес на домашней странице MarketAut — <a href="/3-start/02-home/">Где найти MCP-адрес</a>.</li>
 </ul>
 <blockquote>
 <p><strong>Важно</strong></p>
-<p>Добавление собственного MCP-плагина доступно в <a href="https://chatgpt.com/">веб-версии ChatGPT</a> и в мобильном приложении ChatGPT. Доступность функции зависит от тарифа и прав пользователя в рабочем пространстве. В этой инструкции подключение показано на примере веб-версии ChatGPT.</p>
+<p>Добавление собственного MCP-плагина доступно в <a href="https://chatgpt.com/">веб-версии ChatGPT</a>. После этого плагин станет доступен и в мобильном приложении ChatGPT. Доступность функции зависит от тарифа и прав пользователя в рабочем пространстве. В этой инструкции подключение показано на примере веб-версии ChatGPT.</p>
 </blockquote>
 <h2 id="_2">Видеоинструкция</h2>
 <p><a href="https://youtu.be/FgPWTnW0Kyw">Смотреть на YouTube →</a></p>
@@ -201,56 +205,63 @@
 <ol>
 <li>
 <p>В левом меню ChatGPT откройте <strong>Плагины</strong>;</p>
-<p><img alt="Раздел «Плагины» в меню ChatGPT" src="../img/gpt/plugins-sidebar.png" /></p>
+<p><img alt="" src="../img/gpt/plugins-sidebar.png" /></p>
 </li>
 <li>
-<p>Справа нажмите <strong>Добавить</strong> и выберите <strong>Создать MCP-приложение</strong>;</p>
-<p><img alt="" src="../img/gpt/create-mcp-app.png" /></p>
+<p>Справа нажмите <strong>Добавить</strong> и выберите <strong>Добавить пользовательский сервер MCP</strong>;</p>
+<p><img alt="" src="../img/gpt/create-mcp.png" /></p>
 </li>
 <li>
-<p>Скопируйте MCP-адрес из блока подключения агента на <a href="https://marketaut.ru/app/home">домашней странице MarketAut</a> и вставьте его в поле <strong>Подключение</strong>;</p>
+<p>Скопируйте MCP-адрес из блока <strong>Подключите вашего агента</strong> на <a href="https://marketaut.ru/app/home">домашней странице MarketAut</a>, например <code>https://marketaut.ru/mcp/wb</code>;</p>
+<p><img alt="" src="../img/gpt/mcp-address.png" /></p>
+</li>
+<li>
+<p>Заполните форму:</p>
+<p>- <strong>Название</strong> — любое название на ваш выбор, например <code>MarketAut WB</code>;<br />
+  - <strong>Описание</strong> — можно оставить пустым;<br />
+  - <strong>Подключение</strong> — вставьте скопированный MCP-адрес;<br />
+  - <strong>Аутентификация</strong> — <code>OAuth</code>.</p>
+</li>
+<li>
+<p>Установите флажок <strong>Я понимаю и хочу продолжить</strong> и нажмите <strong>Создать в виде плагина</strong>;</p>
+<p><img alt="" src="../img/gpt/mcp-app.png" /></p>
+</li>
+<li>
+<p>Нажмите <strong>Подключить MarketAut WB</strong>;</p>
+<p><img alt="" src="../img/gpt/connect-wb.png" /></p>
+</li>
+<li>
+<p>В окне авторизации нажмите <strong>Разрешить доступ</strong>.</p>
+<p><img alt="" src="../img/gpt/gpr-autoriz.png" /></p>
 </li>
 </ol>
-<p>Например: <code>https://marketaut.ru/mcp/wb</code></p>
-<p><img alt="" src="../img/gpt/mcp-address.png" /><br />
-4. Заполните форму создания приложения:</p>
-<p>- <strong>Название</strong>  — любое название на ваш выбор, например <code>Wildberries</code>;<br />
-   - <strong>Описание</strong> — можно оставить пустым;<br />
-   - <strong>Подключение</strong> — URL-адрес MCP-сервера;<br />
-   - <strong>Аутентификация</strong> — <code>OAuth</code>.</p>
-<p>Установите флажок подтверждения условий и нажмите <strong>Создать</strong>.</p>
-<p><img alt="" src="../img/gpt/mcp-app-settings.png" /><br />
-5. Нажмите <strong>Перейти к Wildberries</strong>;</p>
-<p><img alt="" src="../img/gpt/connect-wildberries.png" /><br />
-6. В открывшемся окне авторизации нажмите <strong>Разрешить доступ</strong>.</p>
-<p><img alt="" src="../img/gpt/authorize-marketaut.png" /></p>
 <h2 id="_4">Проверка подключения</h2>
-<p>Откройте <strong>Плагины → Личные</strong>. В разделе созданных вами плагинов появится <strong>Wildberries</strong>.</p>
-<p>Нажмите на Wildberries, чтобы открыть его страницу.</p>
-<p><img alt="" src="../img/gpt/personal-plugins.png" /></p>
-<p>Чтобы посмотреть доступные инструменты, откройте приложение <strong>Wildberries</strong> в блоке <strong>«Приложения»</strong> на этой странице. </p>
-<p><img alt="" src="../img/gpt/wildberries-app-page.png" /></p>
+<p>Откройте <strong>Плагины → Личные</strong>. В разделе созданных вами плагинов появится <strong>MarketAut WB</strong>.</p>
+<p>Нажмите на <strong>MarketAut WB</strong>, чтобы открыть его страницу.</p>
+<p><img alt="" src="../img/gpt/personal-plugin.png" /></p>
+<p>Чтобы посмотреть доступные инструменты, откройте приложение <strong>MarketAut WB</strong> в блоке <strong>Приложения</strong> на этой странице. </p>
+<p><img alt="" src="../img/gpt/wb-app.png" /></p>
 <p>Доступные инструменты будут показаны по группам.</p>
-<p><img alt="" src="../img/gpt/wildberries-tools.png" /></p>
+<p><img alt="" src="../img/gpt/wb-tools.png" /></p>
 <h2 id="_5">Проверка в чате</h2>
-<p>Нажмите <strong>Попробовать в чате</strong> на странице Wildberries. Также можно открыть новый чат, нажать <strong>«+»</strong> возле поля ввода и выбрать Wildberries.</p>
-<p><img alt="" src="../img/gpt/add-wildberries-to-chat.png" /></p>
+<p>Нажмите <strong>Попробовать в чате</strong> на странице MarketAut WB. Также можно открыть новый чат, нажать <strong>+</strong> возле поля ввода и выбрать <strong>MarketAut WB</strong>.</p>
+<p><img alt="" src="../img/gpt/wb-chat.png" /></p>
 <p>Отправьте запрос, например:</p>
 <blockquote>
 <p>Проанализируй цены конкурентов на повязки для волос и предложи, какую цену выставить мне.</p>
 </blockquote>
-<p><img alt="" src="../img/gpt/example-question.png" /></p>
-<p>Если подключение работает, ChatGPT обратится к инструментам Wildberries и подготовит ответ.</p>
+<p><img alt="" src="../img/gpt/questions.png" /></p>
+<p>Если подключение работает, ChatGPT обратится к инструментам MarketAut WB и подготовит ответ.</p>
 <p><img alt="" src="../img/gpt/example-answer.png" /></p>
 <h2 id="_6">Обновление инструментов</h2>
 <p>Если вы добавили новые узлы на диаграмму MarketAut, сначала убедитесь, что диаграмма <strong>запущена</strong>. Остановленная диаграмма не работает, и её инструменты будут недоступны в ChatGPT.</p>
-<p>Откройте <strong>Плагины → Личные → Wildberries</strong>. Нажмите на три точки справа и выберите <strong>«Управлять»</strong>.</p>
-<p><img alt="" src="../img/gpt/manage-wildberries-app.png" /></p>
-<p>Прокрутите страницу вниз и нажмите <strong>«Обновить инструменты»</strong>. После обновления проверьте список инструментов приложения Wildberries.<br />
+<p>Откройте <strong>Плагины → Личные → MarketAut WB</strong>. Справа выберите <strong>Управлять</strong>.</p>
+<p><img alt="" src="../img/gpt/wb-manage.png" /></p>
+<p>Прокрутите страницу вниз и нажмите <strong>Обновить инструменты</strong>. После обновления проверьте список инструментов приложения MarketAut WB.<br />
 <img alt="" src="../img/gpt/refresh-wildberries-tools.png" /></p>
 <h2 id="_7">Удаление плагина</h2>
-<p>Откройте страницу Wildberries, нажмите <strong>«…»</strong> справа и выберите <strong>Удалить плагин</strong>.</p>
-<p><img alt="" src="../img/gpt/plugin-actions.png" /></p></div>
+<p>Откройте страницу <strong>MarketAut WB</strong>, справа нажмите  три точки и выберите <strong>Удалить плагин</strong>.</p>
+<p><img alt="" src="../img/gpt/delete-gpt-plugin.png" /></p></div>
             </div>
         </div>
 
