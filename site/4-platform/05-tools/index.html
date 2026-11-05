@@ -194,6 +194,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_14" class="nav-link">Реклама</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -257,6 +261,14 @@
 <ul>
 <li><strong>Интеграции</strong><br />
     - <a href="#telegram">Telegram</a></li>
+</ul>
+<ul>
+<li><strong>Реклама</strong><br />
+    - <a href="#promotion-campaigns">Рекламные кампании</a><br />
+    - <a href="#promotion-finances">Финансы рекламы</a><br />
+    - <a href="#promotion-media">Медиакампании</a><br />
+    - <a href="#promotion-clusters">Поисковые кластеры</a><br />
+    - <a href="#promotion-statistics">Статистика рекламы</a></li>
 </ul>
 <h2 id="_2">Контент</h2>
 <h3 id="catalogue">Каталог товаров</h3>
@@ -953,6 +965,225 @@
 <tr>
 <td><code>downloadFile</code></td>
 <td>Скачивает файл из Telegram</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_14">Реклама</h2>
+<h3 id="promotion-campaigns">Рекламные кампании</h3>
+<p>Блок позволяет создавать рекламные кампании и управлять ими: запускать, приостанавливать и останавливать кампании, менять товары, места размещения, ставки и дневные лимиты.</p>
+<p><strong>Категория токена WB:</strong> Продвижение<br />
+<strong>Доступ:</strong> чтение и запись</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>getAvailableSubjects</td>
+<td>Получает предметы, доступные для создания кампании</td>
+</tr>
+<tr>
+<td>getAvailableCards</td>
+<td>Получает карточки товаров, доступные для кампании</td>
+</tr>
+<tr>
+<td>createCampaign</td>
+<td>Создаёт рекламную кампанию</td>
+</tr>
+<tr>
+<td>getMinBids</td>
+<td>Получает минимальные ставки</td>
+</tr>
+<tr>
+<td>listAllCampaigns</td>
+<td>Получает список всех кампаний</td>
+</tr>
+<tr>
+<td>listCampaigns</td>
+<td>Получает информацию о выбранных кампаниях</td>
+</tr>
+<tr>
+<td>deleteCampaign</td>
+<td>Удаляет кампанию</td>
+</tr>
+<tr>
+<td>renameCampaign</td>
+<td>Переименовывает кампанию</td>
+</tr>
+<tr>
+<td>startCampaign</td>
+<td>Запускает кампанию</td>
+</tr>
+<tr>
+<td>pauseCampaign</td>
+<td>Приостанавливает кампанию</td>
+</tr>
+<tr>
+<td>stopCampaign</td>
+<td>Завершает кампанию</td>
+</tr>
+<tr>
+<td>setPlacements</td>
+<td>Изменяет места размещения рекламы</td>
+</tr>
+<tr>
+<td>setBids</td>
+<td>Изменяет ставки</td>
+</tr>
+<tr>
+<td>setCards</td>
+<td>Изменяет список товаров в кампании</td>
+</tr>
+<tr>
+<td>getRecommendedBids</td>
+<td>Получает рекомендуемые ставки</td>
+</tr>
+<tr>
+<td>getConfiguration</td>
+<td>Получает настройки и ограничения для кампаний</td>
+</tr>
+<tr>
+<td>getDailyLimits</td>
+<td>Получает дневные лимиты расходов</td>
+</tr>
+<tr>
+<td>setDailyLimits</td>
+<td>Устанавливает дневные лимиты расходов</td>
+</tr>
+</tbody>
+</table>
+<h3 id="promotion-finances">Финансы рекламы</h3>
+<p>Блок позволяет получать баланс рекламного кабинета, бюджеты кампаний, историю затрат и пополнений, а также пополнять бюджет кампании.</p>
+<p><strong>Категория токена WB:</strong> Продвижение<br />
+<strong>Доступ:</strong> чтение и запись</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>getBalance</td>
+<td>Получает баланс рекламного кабинета</td>
+</tr>
+<tr>
+<td>getCampaignBudgetBalances</td>
+<td>Получает бюджеты кампаний</td>
+</tr>
+<tr>
+<td>topUpCampaignBudget</td>
+<td>Пополняет бюджет кампании</td>
+</tr>
+<tr>
+<td>getCostsHistory</td>
+<td>Получает историю затрат</td>
+</tr>
+<tr>
+<td>getAccountTopUpsHistory</td>
+<td>Получает историю пополнений счёта</td>
+</tr>
+</tbody>
+</table>
+<h3 id="promotion-media">Медиакампании</h3>
+<p>Блок позволяет получать список медиакампаний и информацию о них.</p>
+<p><strong>Категория токена WB:</strong> Продвижение<br />
+<strong>Доступ:</strong> только чтение</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>getMediaCampaignsCount</td>
+<td>Получает количество медиакампаний</td>
+</tr>
+<tr>
+<td>getMediaCampaigns</td>
+<td>Получает список медиакампаний</td>
+</tr>
+<tr>
+<td>getMediaCampaign</td>
+<td>Получает информацию о медиакампании</td>
+</tr>
+</tbody>
+</table>
+<h3 id="promotion-clusters">Поисковые кластеры</h3>
+<p>Блок позволяет получать поисковые кластеры кампании и управлять ставками по ним и минус-фразами.</p>
+<p><strong>Категория токена WB:</strong> Продвижение<br />
+<strong>Доступ:</strong> чтение и запись</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>getClusters</td>
+<td>Получает поисковые кластеры кампании</td>
+</tr>
+<tr>
+<td>getClustersBids</td>
+<td>Получает ставки по кластерам</td>
+</tr>
+<tr>
+<td>setClustersBidsInSellersCurrency</td>
+<td>Устанавливает ставки по кластерам в валюте продавца</td>
+</tr>
+<tr>
+<td>setClustersBidsInRubles</td>
+<td>Устанавливает ставки по кластерам в рублях</td>
+</tr>
+<tr>
+<td>deleteClustersBids</td>
+<td>Удаляет ставки по кластерам</td>
+</tr>
+<tr>
+<td>getMinusPhrases</td>
+<td>Получает минус-фразы</td>
+</tr>
+<tr>
+<td>setMinusPhrases</td>
+<td>Устанавливает минус-фразы</td>
+</tr>
+</tbody>
+</table>
+<h3 id="promotion-statistics">Статистика рекламы</h3>
+<p>Блок позволяет получать статистику рекламных кампаний, медиакампаний и поисковых кластеров.</p>
+<p><strong>Категория токена WB:</strong> Продвижение<br />
+<strong>Доступ:</strong> только чтение</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>campaignStatistics</td>
+<td>Получает статистику рекламных кампаний</td>
+</tr>
+<tr>
+<td>mediaCampaignStatistics</td>
+<td>Получает статистику медиакампаний</td>
+</tr>
+<tr>
+<td>searchClustersStatistics</td>
+<td>Получает статистику по поисковым кластерам</td>
+</tr>
+<tr>
+<td>dailySearchClustersStatistics</td>
+<td>Получает статистику по поисковым кластерам по дням</td>
 </tr>
 </tbody>
 </table>
